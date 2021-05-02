@@ -1,0 +1,22 @@
+<BehaviorSets>
+	<BuyRhinocerosStoneGift>
+		<subjects>
+			<Guest_Young />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart" />
+			<BFBehAttachObject attachEntity="RhinocerosStone_Gift" container="back_inventory" detachAction="inventory" subjectNode="Bip01 Spine3" />
+			<BFBehAnimate targetAnim="Stand_Turn180" />
+		</behaviors>
+	</BuyRhinocerosStoneGift>
+	<BuyRhinocerosStoneGift>
+		<subjects>
+			<Guest_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart" />
+			<BFBehAttachObject attachEntity="RhinocerosStone_Gift" container="back_inventory" detachAction="inventory" subjectNode="Bip01 Spine3" />
+			<BFBehAnimate targetAnim="Stand_Turn180" />
+		</behaviors>
+	</BuyRhinocerosStoneGift>
+</BehaviorSets>

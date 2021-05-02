@@ -1,0 +1,2112 @@
+<BFAITaskTemplateList>
+	<BFAITaskTemplate Name="DefaultTask_HippopotamusBouncy" UniqueID="HippopotamusBouncy:DefaultTask_HippopotamusBouncy">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<water />
+				<Qualifiers_AND inHabitat="true" inSight="20" waterDepth="GE 2" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore=".002" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingInWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" />
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="Idle" />
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Surface_Submerge" TaskDelayMax="60" TaskDelayMin="30" UniqueID="HippopotamusBouncy:Surface_Submerge" distanceInfluenced="false">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater="true" isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<water />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore=".002" />
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="Surface_Submerge" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="WanderWater" UniqueID="HippopotamusBouncy:WanderWater">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater="true" isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-10" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="DefaultWander" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" rest="10" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="WanderWaterFloor" UniqueID="HippopotamusBouncy:WanderWaterFloor">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater="true" isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<water />
+				<Qualifiers_AND depthAboveBottom="LE 1" inHabitat="true" inSight="25" waterDepth="GE 2" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap exercise="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="WanderSubFloor" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" rest="10" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_4" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="GoToWater_Exercise" UniqueID="HippopotamusBouncy:GoToWater_Exercise">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers onLand="true" />
+			</Subjects>
+			<Targets>
+				<water />
+				<Qualifiers_AND inHabitat="true" inSight="20" waterDepth="GE 2" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingInWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="WanderLand" UniqueID="HippopotamusBouncy:WanderLand">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" locoSpeed="medium" maxPlayTime="20" minPlayTime="10">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" rest="10" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Sleep" UniqueID="HippopotamusBouncy:Sleep">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap rest="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_1" />
+			<BFBehPlaySet behSet="Lie" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap rest="-100" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="LookLeftRight" TaskDelayMax="60" TaskDelayMin="30" UniqueID="HippopotamusBouncy:LookLeftRight">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="5">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_3" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="LookLeftRight" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Gape" TaskDelayMax="60" TaskDelayMin="30" UniqueID="HippopotamusBouncy:Gape">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Gaping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalGapeGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Gape" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Roar" TaskDelayMax="120" TaskDelayMin="60" UniqueID="HippopotamusBouncy:Roar">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalRoarGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Roar" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="OffspringCheck" TaskDelayMax="300" TaskDelayMin="180" UniqueID="HippopotamusBouncy:OffspringCheck">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1000" />
+		<BFBehExecTask>
+			<BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITokenList>
+				<BFAIToken GiveTo="subject" Name="t_Childless" OnlyOne="true" Timeout="180" />
+			</BFAITokenList>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CantReproduce" TaskDelayMax="420" TaskDelayMin="300" UniqueID="HippopotamusBouncy:CantReproduce">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND b_Pregnant="E false" hasMate="false" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers_AND canMate="false" inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Childless />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="70">
+			<BFAIAttributeFloatMap reproduction="-27" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITokenList>
+				<BFAIToken GiveTo="subject" Name="t_Childless" OnlyOne="true" Timeout="180" />
+			</BFAITokenList>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteReproduction" TaskDelayMax="180" TaskDelayMin="60" UniqueID="Hippopotamus:InviteReproduction">
+		<BFAICreateData>
+			<Subjects>
+				<Hippopotamus_Adult_F />
+				<Qualifiers b_Pregnant="E false" />
+			</Subjects>
+			<Targets>
+				<Hippopotamus_Adult_M />
+				<Qualifiers_AND canMate="true" inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Childless />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="70">
+			<BFAIAttributeFloatMap reproduction="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehHeadLook />
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Reproduce" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="MatingCall_F" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitMate" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimate playTime="35" targetAnim="Lie_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondReproduction" UniqueID="Hippopotamus:RespondReproduction" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<Hippopotamus_Adult_M />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Reproduce />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_5" />
+			<BFBehHeadLook />
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="MatingCall_M" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockRadial rotError="180" subjectNode="Floor" targetRadius="3" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="75" GiveTo="target" Name="t_Pregnant1" Timeout="-1" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-50" rest="-10" />
+			<BFAITargetData rest="-10" />
+			<BFBehExecTask>
+				<BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Pregnant" UniqueID="HippopotamusBouncy:Pregnant">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Pregnant1 />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="50" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:PregnantAnimal" priority="1" timeout="30" useEntityName="true" />
+					<ZTEmoticonInfo emoticonName="EmotePregnant" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITargetData b_Pregnant="true" />
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="subject" Name="t_Pregnant" OnlyOne="true" RetainOnFailure="true" Timein="909.47" Timeout="-1" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BirthBushes" UniqueID="HippopotamusBouncy:BirthBushes">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<bush />
+				<Qualifiers_AND inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2010">
+			<BFAIBiomeMap alpine=".75" borealforest=".75" desert=".25" grassland=".50" savannah=".25" scrub=".25" temperateforest=".50" tropicalrainforest="1.00" tundra=".25" wetlands=".75" />
+			<BFAIAttributeFloatMap reproduction="-100" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToBirth" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_6">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BirthShade" UniqueID="HippopotamusBouncy:BirthShade">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<shade />
+				<Qualifiers_AND inHabitat="true" inSight="25" onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2005">
+			<BFAIAttributeFloatMap reproduction="-95" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToBirth" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_6">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Birth" UniqueID="HippopotamusBouncy:Birth">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND isSwimming="false" onLand="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000">
+			<BFAIAttributeFloatMap reproduction="-90" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_6">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Born" TaskDelayMax="100000" TaskDelayMin="10000" UniqueID="HippopotamusBouncy:Born">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" lifespan="LE 1" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Born" />
+					<ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Roar" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Puberty" TaskDelayMax="60" TaskDelayMin="60" UniqueID="HippopotamusBouncy:Puberty">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 5.22" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="50" GiveTo="subject" Name="t_Age" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Age_F" UniqueID="HippopotamusBouncy:Age_F">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Age />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehMorph initScale="0.55" morphPeriod="10" morphScale="true" morphTargetEntityType="HippopotamusBouncy_Adult_F" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Age_M" UniqueID="HippopotamusBouncy:Age_M">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young_M />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Age />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehMorph initScale="0.55" morphPeriod="10" morphScale="true" morphTargetEntityType="HippopotamusBouncy_Adult_M" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Old" TaskDelayMax="60" TaskDelayMin="60" UniqueID="Hippopotamus:Old">
+		<BFAICreateData>
+			<Subjects>
+				<Hippopotamus />
+				<Qualifiers lifespan="GE 40.25" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap lifespan="-100" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="Sleep" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="25" GiveTo="subject" Name="t_Die" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Die" UniqueID="HippopotamusBouncy:Die">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Die />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10000" />
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="Die_OldAge" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="HippopotamusBouncy:DrinkWaterTerrain">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<shore />
+				<Qualifiers_AND inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap thirst="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingDrink" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockWater subjectNode="Node_Mouth" targetAnim="Eat_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTActionInfo locID="animalactions:Drinking" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<BFBehPlaySet behSet="Drink" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAIAttributeFloatMap bathroom="30" thirst="-40" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Attacked_Adult" UniqueID="HippopotamusBouncy:Attacked_Adult">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Attack />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_9">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Grunt" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="b_XLargePrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_LargePrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_MediumPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_SmallPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="subject" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Attacked_Young" UniqueID="HippopotamusBouncy:Attacked_Young">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Attack />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_9">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="HippopotamusBouncy_Adult_F" Name="t_Help" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Grunt" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="b_LargePrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_MediumPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_SmallPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="subject" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="HelpYoung" UniqueID="HippopotamusBouncy:HelpYoung">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers isRelation="child" />
+			</Targets>
+			<Objects>
+				<t_Help />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1000" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ProtectYoung" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="fast" moveRadius="4" />
+			<BFBehPlaySet behSet="Roar" />
+			<BFBehPlaySet behSet="Roar" />
+			<BFBehPlaySet behSet="Roar" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="b_XLargePredator" Name="t_Flee" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_LargePredator" Name="t_Flee" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_MediumPredator" Name="t_Flee" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_SmallPredator" Name="t_Flee" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadeAttack" UniqueID="HippopotamusBouncy:EvadeAttack">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Flee />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion evasionRadius="30" locoSpeed="fast" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CallYoung" TaskDelayMax="420" TaskDelayMin="300" UniqueID="HippopotamusBouncy:CallYoung">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="5">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_3" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Grunt" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-35" />
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="HippopotamusBouncy_Young" Name="t_Come" Payload="subject" Radius="60" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="YoungCome" UniqueID="HippopotamusBouncy:YoungCome">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+			</Targets>
+			<Objects>
+				<t_Come />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Grunt" />
+			<BFBehMove locoSpeed="fast" moveRadius="5" />
+			<BFBehPlaySet behSet="Lie" />
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallYoungGood" priority="1" timeout="60" useTargetName="true" useTargetSpecies="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap health="-20" social="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="DustBathe" UniqueID="HippopotamusBouncy:DustBathe">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+			</Subjects>
+			<Targets_AND>
+				<dirt />
+				<biome />
+				<Qualifiers inSight="25" />
+			</Targets_AND>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap hygiene="-25" />
+			<BFAIBiomeMap alpine=".25" borealforest=".50" desert=".50" grassland=".75" savannah=".75" scrub=".75" temperateforest=".50" tropicalrainforest=".25" tundra=".25" wetlands="1.00" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToDustBathe" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTActionInfo locID="animalactions:TakingDustBath" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<ZTBehViewEvent viewKey="Pos_4">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDustBathGood" priority="1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<BFBehPlaySet behSet="Wallow" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAIAttributeFloatMap hygiene="-50" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="YoungChase" TaskDelayMax="60" TaskDelayMin="30" UniqueID="HippopotamusBouncy:YoungChase">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" notInSight="6" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="6" locoSpeed="fast" pursuitRadius="15" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_EvadePlayYoung" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="ChasePause" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="15" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" social="-30" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="YoungEvade" UniqueID="HippopotamusBouncy:YoungEvade">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_EvadePlayYoung />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fleeing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehEvasion evasionRadius="10" locoSpeed="fast" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" social="-30" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteFight" TaskDelayMax="180" TaskDelayMin="60" UniqueID="HippopotamusBouncy:InviteFight">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsBad="20">
+			<BFAIAttributeFloatMap reproduction="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Fight" Payload="subject" Reconsider="true" Timeout="10" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Gape" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteFight_NoFamily" TaskDelayMax="180" TaskDelayMin="60" UniqueID="HippopotamusBouncy:InviteFight_NoFamily">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 70" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers_AND inHabitat="true" isFamily="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap reproduction="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Fight" Payload="subject" Reconsider="true" Timeout="10" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Gape" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondFight" UniqueID="HippopotamusBouncy:RespondFight" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Fight />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="DockFight" targetBehSet="DockFight2" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fighting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalFightBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSyncSet resetPhase="true" subjectBehSet="FightSnap" targetBehSet="FightSnap" />
+			<BFBehSyncSet resetPhase="true" subjectBehSet="Fight" targetBehSet="DefendEqual" />
+			<BFBehSyncSet resetPhase="true" subjectBehSet="DefendEqual" targetBehSet="Fight" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-20" />
+			<BFAITargetData reproduction="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatGape" TaskDelayMax="120" TaskDelayMin="60" UniqueID="HippopotamusBouncy:FloatGape">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Gaping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalGapeGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Gape" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatRoar" TaskDelayMax="120" TaskDelayMin="60" UniqueID="HippopotamusBouncy:FloatRoar">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="25">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalRoarGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Roar" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatNoseBubbles" UniqueID="HippopotamusBouncy:FloatNoseBubbles">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ShakingHead" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalShakeHeadGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_NoseBubbles" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatNudge" UniqueID="HippopotamusBouncy:FloatNudge">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="20">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ShakingHead" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalShakeHeadGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Nudge" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatSplash" UniqueID="HippopotamusBouncy:FloatSplash">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Splashing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSplashGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Splash" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-10" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatIdle" UniqueID="HippopotamusBouncy:FloatIdle">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap privacy="-20" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Floating" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalFloatGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap privacy="-40" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatWaterToss" UniqueID="HippopotamusBouncy:FloatWaterToss">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Splashing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSplashGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_WaterToss" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-10" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RequestNurse" TaskDelayMax="15" TaskDelayMin="15" UniqueID="HippopotamusBouncy:RequestNurse">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="mother" isSwimming="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap hunger="-50" thirst="-50" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_RequestNurse" OnlyOne="true" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteNurse" UniqueID="HippopotamusBouncy:InviteNurse">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_RequestNurse />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_InviteNurse" OnlyOne="true" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehPlaySet behSet="WaitNurse" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondNurse" UniqueID="HippopotamusBouncy:RespondNurse" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="mother" isSwimming="false" />
+			</Targets>
+			<Objects>
+				<t_InviteNurse />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="DockNurse" targetBehSet="WaitNurse" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalNurseGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSyncSet subjectBehSet="Nurse" targetBehSet="NurseYoung" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap health="-50" hunger="-100" social="-10" thirst="-100" />
+			<BFAITargetData social="-20" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FollowMother" UniqueID="HippopotamusBouncy:FollowMother">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<HippopotamusBouncy_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isRelation="mother" notInSight="5" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore=".1" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FollowMother" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="YoungGrunt" />
+			<BFBehPursuit hitRadius="5" locoSpeed="fast" pursuitRadius="9" />
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-2" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ChewCud" UniqueID="HippopotamusBouncy:ChewCud">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Chew />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap hunger="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_1" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChewingCud" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="ChewCud" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap hunger="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="WanderWaterFloor_Midday" UniqueID="HippopotamusBouncy:WanderWaterFloor_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND inWater="true" isSwimming="true" />
+			</Subjects>
+			<Targets>
+				<water />
+				<Qualifiers_AND depthAboveBottom="LE 1" inHabitat="true" inSight="25" waterDepth="GE 2" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10">
+			<BFAIAttributeFloatMap exercise="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="WanderSubFloor" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" rest="10" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_4" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="GoToWater_Midday" UniqueID="HippopotamusBouncy:GoToWater_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND onLand="true" timeOfDayMax="LE 16" timeOfDayMin="GE 8" />
+			</Subjects>
+			<Targets>
+				<water />
+				<Qualifiers_AND inHabitat="true" inSight="20" waterDepth="GE 2" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10">
+			<BFAIAttributeFloatMap exercise="-40" privacy="-20" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingInWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatNudge_Midday" UniqueID="HippopotamusBouncy:FloatNudge_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND isSwimming="true" timeOfDayMax="LE 16" timeOfDayMin="GE 8" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ShakingHead" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalShakeHeadGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Nudge" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatSplash_Midday" UniqueID="HippopotamusBouncy:FloatSplash_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND isSwimming="true" timeOfDayMax="LE 16" timeOfDayMin="GE 8" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap stimulation="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Splashing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSplashGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Splash" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-10" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatIdle_Midday" UniqueID="HippopotamusBouncy:FloatIdle_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers_AND isSwimming="true" timeOfDayMax="LE 16" timeOfDayMin="GE 8" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needGoodPoints="5">
+			<BFAIAttributeFloatMap privacy="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Floating" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalFloatGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap privacy="-40" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FloatWaterToss_Midday" UniqueID="HippopotamusBouncy:FloatWaterToss_Midday">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy />
+				<Qualifiers isSwimming="true" timeOfDayMax="LE 16" timeOfDayMin="GE 8" />
+			</Subjects>
+			<Targets>
+				<self />
+				<Qualifiers isSwimming="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap stimulation="-35" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Splashing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSplashGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TreadWater_WaterToss" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-10" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadePredator_Young" UniqueID="HippopotamusBouncy:EvadePredator_Young">
+		<BFAICreateData>
+			<Subjects>
+				<HippopotamusBouncy_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<b_XLargePredator />
+				<b_LargePredator />
+				<b_MediumPredator />
+				<b_SmallPredator />
+				<Qualifiers_AND inSight="2" sameSpecies="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="85" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion avoidWater="true" evasionRadius="30" locoSpeed="evade" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+</BFAITaskTemplateList>

@@ -1,0 +1,3061 @@
+<BFAITaskTemplateList>
+	<BFAITaskTemplate Name="DefaultTask_GorillaToon" UniqueID="GorillaToon:DefaultTask_GorillaToon">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers inWater="true" />
+			</Subjects>
+			<Targets>
+				<ground_cover />
+				<dirt />
+				<Qualifiers_AND inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore=".002" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLand" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-30" />
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="Idle" />
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="SlowWander" UniqueID="GorillaToon:SlowWander">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" rest="GE 70" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidWater="true" maxPlayTime="20" minPlayTime="10">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-50" rest="5" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="MediumWander" UniqueID="GorillaToon:MediumWander">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" rest="LE 69" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidWater="true" locoSpeed="medium" maxPlayTime="20" minPlayTime="10">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-100" rest="10" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FastWander" UniqueID="GorillaToon:FastWander">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" rest="LE 49" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap exercise="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RunningAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidObstacleRadius="5" avoidWater="true" locoSpeed="fast" maxPlayTime="20" minPlayTime="10">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-100" rest="15" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="SleepShade" UniqueID="GorillaToon:SleepShade">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+			</Subjects>
+			<Targets>
+				<shade />
+				<Qualifiers_AND inHabitat="true" inSight="25" onLand="true" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap rest="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShade" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove locoSpeed="medium" pathRadius="3" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTActionInfo locID="animalactions:RestShade" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<ZTBehViewEvent viewKey="Pos_3">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSleepShadeGood" priority="1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<BFBehPlaySet behSet="Sleep" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAIAttributeFloatMap privacy="-10" rest="-100" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Call_Sleep" TaskDelayMax="180" TaskDelayMin="60" UniqueID="GorillaToon:Call_Sleep">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap rest="-45" social="-20" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TroopCall" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallSelfGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="TroopCall" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" />
+			<BFAITokenList>
+				<BFAIToken GiveTo="target" Name="t_Sleep" Payload="subject" Timeout="20" />
+			</BFAITokenList>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="LeaderSleep" UniqueID="GorillaToon:LeaderSleep">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Sleep />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap rest="-45" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="GorillaToon" Name="t_SocialSleep" Payload="subject" Radius="25" Reconsider="true" Timeout="20" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSleepTogetherGood" priority="1" timeout="60" useTargetSpecies="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="SleepBack" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap rest="-100" social="-20" />
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="SocialSleep" UniqueID="GorillaToon:SocialSleep">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+			</Subjects>
+			<Targets>
+				<fromToken />
+			</Targets>
+			<Objects>
+				<t_SocialSleep />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap rest="-40" social="-5" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingSleep" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial rotError="180" subjectNode="Floor" targetRadius="6" />
+			<BFBehHeadLook disengage="true" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap rest="-100" social="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTActionInfo locID="animalactions:Sleeping" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<ZTBehViewEvent viewKey="Pos_7">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSleepTogetherGood" priority="2" timeout="60" useTargetSpecies="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<BFBehPlaySet behSet="SleepBack" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Sleep" UniqueID="GorillaToon:Sleep">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap rest="-35" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="SleepBack" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalRestVeryGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap rest="-100" />
+			<BFAITokenList>
+				<BFAIToken Chance="50" GiveTo="subject" Name="t_Stretch" Timeout="5" />
+			</BFAITokenList>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Stretch" UniqueID="GorillaToon:Stretch">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers rest="LE 1" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Stretch />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1" needPointsGood="5">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Stretching" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalStretchGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="LieBack_Stretch" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Chuckle" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:Chuckle">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Chuckling" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallSelfGood" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="ChuckleLong" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap stimulation="-15" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Roar" UniqueID="GorillaToon:Roar">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsBad="20">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RoarAngry" />
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalRoarSelfBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Roar" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="GroomSelf" UniqueID="GorillaToon:GroomSelf">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="5">
+			<BFAIAttributeFloatMap hygiene="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GroomingSelf" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalGroomSelfGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Groom" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap hygiene="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalHygieneVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="LookLeftRight" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:LookLeftRight">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalLookAroundGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="LookLeftRight" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Dig" UniqueID="GorillaToon:Dig">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsBad="20">
+			<BFAIAttributeFloatMap hunger="-2" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:DiggingForFood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHungryBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Dig" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap hygiene="10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalHungerBad" emoticonScale="0.75" />
+						<ZTThoughtInfo global="true" locID="animalthoughts:HungryAnimal" priority="1" timeout="30" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Puberty" TaskDelayMax="60" TaskDelayMin="60" UniqueID="GorillaToon:Puberty">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" lifespan="GE 6.26" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="50" GiveTo="subject" Name="t_Age" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Age_F" Priority="100" UniqueID="GorillaToon:Age_F">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Age />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehMorph initScale="0.5" morphPeriod="10" morphScale="true" morphTargetEntityType="GorillaToon_Adult_F" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Age_M" Priority="100" UniqueID="GorillaToon:Age_M">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young_M />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Age />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehMorph initScale="0.5" morphPeriod="10" morphScale="true" morphTargetEntityType="GorillaToon_Adult_M" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Old" TaskDelayMax="60" TaskDelayMin="60" UniqueID="GorillaMountain:Old">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaMountain />
+				<Qualifiers lifespan="GE 40.25" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap lifespan="-100" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="Sleep" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="25" GiveTo="subject" Name="t_Die" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Die" Priority="100" UniqueID="GorillaToon:Die">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Die />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10000" />
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="Die_OldAge" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="DrinkWaterTerrain" UniqueID="GorillaToon:DrinkWaterTerrain">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<shore />
+				<Qualifiers_AND inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap thirst="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingDrink" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockWater subjectNode="Node_Mouth" targetAnim="Sit_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_2" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalThirstGood" />
+						<ZTActionInfo locID="animalactions:Drinking" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<BFBehAnimate targetAnim="Sit_Drink" />
+			</BFBehExecTask>
+			<BFAIAttributeFloatMap bathroom="30" thirst="-40" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="AttackGuest" Priority="5" TaskDelayMax="60" TaskDelayMin="30" UniqueID="GorillaToon:AttackGuest" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<Guest_Adult_M />
+				<Qualifiers_AND b_Attacked="E false" inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="500" />
+		<BFBehExecTask>
+			<BFBehPlaySet behSet="BroadcastAttack" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChasingGuest" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit failureRadius="80" hitRadius="3" locoSpeed="fast" pursuitRadius="30" />
+		</BFBehExecTask>
+		<BFAICompletionData invalidateTarget="true">
+			<BFBehExecTask>
+				<BFBehHeadLook />
+				<BFBehSyncSet subjectBehSet="WaitAttackGuest" targetBehSet="DockAttacked" />
+				<BFBehHeadLook disengage="true" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+						<ZTActionInfo locID="animalactions:AttackingGuest" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<ZTBehViewEvent viewKey="Neg_10">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="true" locID="guestthoughts:AnimalAttackedGuestBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<BFBehSyncSet subjectBehSet="AttackGuest" targetBehSet="AttackedGorilla" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="true" locID="zoomessages:GuestAttacked" priority="-1" timeout="60" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAISubjectData b_Escaped="true" />
+			<BFAITargetData b_Attacked="true" f_departurePoints="-100" happiness="100" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Drum" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:Drum">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="15">
+			<BFAIAttributeFloatMap social="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drum" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrumGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Drum" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Ponder" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:Ponder">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="20">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingCurious" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalPonderGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Ponder" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteKissAdult_F" UniqueID="GorillaToon:InviteKissAdult_F">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_M />
+				<GorillaLowland_Adult_M />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isSwimming="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingBeKissed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_KissAdultF" Payload="subject" Reconsider="true" Timeout="10" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingKissed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="15" targetAnim="Stand_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondKissAdult_F" UniqueID="GorillaToon:RespondKissAdult_F" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_KissAdultF />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" needPointsGood="30">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingKissOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6" />
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="DockKiss" targetBehSet="WaitKiss" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:KissingOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehSyncSet subjectBehSet="Kiss" targetBehSet="Kiss" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" />
+			<BFAITargetData social="-30" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteKissAdult_M" UniqueID="GorillaToon:InviteKissAdult_M">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<GorillaLowland_Adult_F />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isSwimming="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingBeKissed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_KissAdultM" Payload="subject" Reconsider="true" Timeout="10" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingKissed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="15" targetAnim="Stand_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondKissAdult_M" UniqueID="GorillaToon:RespondKissAdult_M" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_KissAdultM />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" needPointsGood="30">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingKissOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6" />
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="DockKiss" targetBehSet="WaitKiss" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:KissingOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKissGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSyncSet subjectBehSet="Kiss" targetBehSet="Kiss" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" />
+			<BFAITargetData social="-30" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteGroomAdult_M" UniqueID="GorillaToon:InviteGroomAdult_M">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<GorillaLowland_Adult_F />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isSwimming="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap hygiene="-30" social="-10" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingBeGroomed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_GroomAdultM" Payload="subject" Reconsider="true" Timeout="10" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingGroomed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="15" targetAnim="Sit_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondGroomAdult_M" UniqueID="GorillaToon:RespondGroomAdult_M" reserveTag="general">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND hunger="LE 50" inWater_OR_onLand="true" isSwimming="false" rest="LE 50" thirst="LE 50" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_GroomAdultM />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1000">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingGroomOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="DockGroomOther" targetBehSet="WaitGroomOther" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GroomingOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalGroomGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSyncSet subjectBehSet="GroomOther" targetBehSet="WaitGroomOther" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-30" />
+			<BFAITargetData hygiene="-30" social="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="JumpLowFence" TaskDelayMax="180" TaskDelayMin="90" UniqueID="GorillaToon:JumpLowFence" reserveTag="General" sensorTag="habitat">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+			</Subjects>
+			<Targets>
+				<b_lowfence />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" needPointsBad="30" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToJumpFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockFence locoSpeed="fast" subjectNode="Node_Mouth" targetAnim="JumpAcross_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:JumpingFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="JumpAcross_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:EscapedAnimal" priority="-1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Attacked" UniqueID="GorillaToon:Attacked">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Attack />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:AlarmCall" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Stand_Growl" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="b_LargePrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_MediumPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="b_SmallPrey" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+						<BFAIToken GiveTo="subject" Name="t_Flee" Payload="target" Radius="30" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadeAttack" UniqueID="GorillaToon:EvadeAttack">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 35" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Flee />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion avoidWater="true" evasionRadius="30" locoSpeed="evade" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadeAttack" UniqueID="GorillaToon:EvadeAttack:1">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="G 35" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Flee />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion avoidWater="true" evasionRadius="25" locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadeAttack" UniqueID="GorillaToon:EvadeAttack:2">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Flee />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion avoidWater="true" evasionRadius="25" locoSpeed="medium" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="OffspringCheck" TaskDelayMax="300" TaskDelayMin="180" UniqueID="GorillaToon:OffspringCheck">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1000" />
+		<BFBehExecTask>
+			<BFBehScript context="behavior" file="scripts/canreproduce.lua" function="canreproduce" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITokenList>
+				<BFAIToken GiveTo="subject" Name="t_Childless" OnlyOne="true" Timeout="180" />
+			</BFAITokenList>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CantReproduce" TaskDelayMax="420" TaskDelayMin="300" UniqueID="GorillaToon:CantReproduce">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND b_Pregnant="E false" hasMate="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_M />
+				<GorillaLowland_Adult_M />
+				<Qualifiers_AND canMate="false" inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Childless />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="80">
+			<BFAIAttributeFloatMap reproduction="-27" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalCantReproduce" priority="-1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITokenList>
+				<BFAIToken GiveTo="subject" Name="t_Childless" OnlyOne="true" Timeout="180" />
+			</BFAITokenList>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteReproduction" TaskDelayMax="180" TaskDelayMin="60" UniqueID="GorillaMountain:InviteReproduction">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaMountain_Adult_F />
+				<Qualifiers b_Pregnant="E false" />
+			</Subjects>
+			<Targets>
+				<GorillaMountain_Adult_M />
+				<Qualifiers_AND canMate="true" inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Childless />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="80">
+			<BFAIAttributeFloatMap reproduction="-40" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehHeadLook />
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Reproduce" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="MatingCall_F" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitMate" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimate playTime="35" targetAnim="LieBack_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteReproduction_LowlandGorilla" TaskDelayMax="180" TaskDelayMin="60" UniqueID="GorillaMountain:InviteReproduction_LowlandGorilla">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaMountain_Adult_F />
+				<Qualifiers b_Pregnant="E false" />
+			</Subjects>
+			<Targets>
+				<GorillaLowland_Adult_M />
+				<Qualifiers_AND canMate="true" inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Childless />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="60">
+			<BFAIAttributeFloatMap reproduction="-35" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehHeadLook />
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Reproduce" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="MatingCall_F" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitMate" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimate playTime="35" targetAnim="Lie_Idle" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondReproduction" UniqueID="GorillaToon:RespondReproduction" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaMountain_Adult_M />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Reproduce />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_5" />
+			<BFBehHeadLook />
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="MatingCall_M" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToMate" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockRadial rotError="180" subjectNode="Floor" targetRadius="2" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehSyncSet subjectBehSet="Mate" targetBehSet="Mate" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="45" GiveTo="target" ModifyChance="true" Name="t_Pregnant1" Timeout="-1" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-50" rest="-10" />
+			<BFAITargetData rest="-10" />
+			<BFBehExecTask>
+				<BFBehScript context="behavior" file="scripts/setmates.lua" function="setmates" />
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Pregnant" UniqueID="GorillaToon:Pregnant">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Pregnant1 />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="50" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:PregnantAnimal" priority="1" timeout="30" useEntityName="true" />
+					<ZTEmoticonInfo emoticonName="EmotePregnant" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAITargetData b_Pregnant="true" />
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="subject" Name="t_Pregnant" OnlyOne="true" RetainOnFailure="true" Timein="1023.16" Timeout="-1" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BirthBushes" UniqueID="GorillaToon:BirthBushes">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<bush />
+				<Qualifiers_AND inHabitat="true" inSight="25" />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2010">
+			<BFAIBiomeMap alpine=".75" borealforest=".75" desert=".25" grassland=".50" savannah=".25" scrub=".25" temperateforest=".50" tropicalrainforest="1.00" tundra=".25" wetlands=".75" />
+			<BFAIAttributeFloatMap reproduction="-100" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToBirth" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieFront_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_8">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BirthShade" UniqueID="GorillaToon:BirthShade">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<shade />
+				<Qualifiers_AND inHabitat="true" inSight="25" onLand="true" />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2005">
+			<BFAIAttributeFloatMap reproduction="-95" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToBirth" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieFront_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_8">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Birth" UniqueID="GorillaToon:Birth">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000">
+			<BFAIAttributeFloatMap reproduction="-90" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieFront_Idle" />
+			<BFBehPlaySet behSet="Birth" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_8">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BirthMix" UniqueID="GorillaToon:BirthMix">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<GorillaLowland_Adult_M />
+				<Qualifiers isRelation="mate" />
+			</Targets>
+			<Objects>
+				<t_Pregnant />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2050">
+			<BFAIAttributeFloatMap reproduction="-90" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Birthing" />
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalGoingToBirth" priority="1" timeout="30" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieFront_Idle" />
+			<BFBehPlaySet behSet="BirthRandom" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap reproduction="-100" />
+			<BFAISubjectData b_Pregnant="false" />
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Pos_8">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalBornGood" priority="2" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalBirth" priority="1" timeout="30" useEntityName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAnimalReproductionVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Born" TaskDelayMax="100000" TaskDelayMin="10000" UniqueID="GorillaToon:Born">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" lifespan="LE 1" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="2000" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Born" />
+					<ZTEmoticonInfo emoticonName="EmoteBirth" emoticonScale="0.5" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Scream" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="YoungChase" TaskDelayMax="60" TaskDelayMin="30" UniqueID="GorillaToon:YoungChase">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Young />
+				<GorillaLowland_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" notInSight="6" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="6" locoSpeed="fast" pursuitRadius="15" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_EvadePlayYoung" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="Chuckle" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="15" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="YoungEvade" UniqueID="GorillaToon:YoungEvade">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_EvadePlayYoung />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fleeing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedGood" priority="2" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehEvasion avoidWater="true" evasionRadius="10" locoSpeed="fast" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" rest="30" social="-20" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="AdultChase" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:AdultChase">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult />
+				<GorillaLowland_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" notInSight="6" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="25">
+			<BFAIAttributeFloatMap social="-25" stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayChasing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="6" locoSpeed="fast" pursuitRadius="20" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_EvadePlayAdult" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehPursuit hitRadius="6" locoSpeed="fast" pursuitRadius="20" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" rest="20" social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="AdultEvade" UniqueID="GorillaToon:AdultEvade">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_EvadePlayAdult />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="EvadePlay" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" rest="20" social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="MaleAdultChase" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:MaleAdultChase">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" reproduction="GE 50" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_M />
+				<GorillaLowland_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" notInSight="3" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsBad="20">
+			<BFAIAttributeFloatMap reproduction="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChasingAnimal" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="6" locoSpeed="fast" pursuitRadius="15" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_EvadeAngry" Payload="subject" Radius="30" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="BeatChest" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="15" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-10" reproduction="-10" rest="20" stimulation="-10" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="MaleAdultEvade" UniqueID="GorillaToon:MaleAdultEvade">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Targets>
+			<Objects>
+				<t_EvadeAngry />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fleeing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="EvadeAngry" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-20" reproduction="-10" rest="20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="FollowMother" UniqueID="GorillaToon:FollowMother">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<GorillaLowland_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isRelation="mother" isSwimming="false" notInSight="5" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore=".1" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FollowMother" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="6" />
+			<ZTBehViewEvent viewKey="Pos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalFollowMotherGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-2" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CallChild" TaskDelayMax="180" TaskDelayMin="120" UniqueID="GorillaToon:CallChild">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND isSwimming="false" onLand="true" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Young />
+				<GorillaLowland_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isRelation="child" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="20">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="QuestionBark" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="target" Name="t_Come" Payload="subject" Radius="60" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ChildCome" UniqueID="GorillaToon:ChildCome">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+			</Targets>
+			<Objects>
+				<t_Come />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehMove locoSpeed="fast" moveRadius="5" />
+			<BFBehPlaySet behSet="Sit" />
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallYoungGood" priority="2" timeout="60" useTargetName="true" useTargetSpecies="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap health="-20" social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CallMother" TaskDelayMax="160" TaskDelayMin="60" UniqueID="GorillaToon:CallMother">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND isSwimming="false" onLand="true" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<GorillaLowland_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isRelation="mother" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsBad="20">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" useTargetName="true" useTargetSpecies="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Scream" />
+			<BFBehPlaySet behSet="Stand" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-20" />
+			<BFBehExecTask>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken GiveTo="target" Name="t_ComeAdult" Payload="subject" Radius="60" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="MotherCome" UniqueID="GorillaToon:MotherCome">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+			</Targets>
+			<Objects>
+				<t_ComeAdult />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="QuestionBark" />
+			<BFBehMove locoSpeed="fast" moveRadius="5" />
+			<BFBehPlaySet behSet="Grunt" />
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="1" timeout="60" useTargetName="true" useTargetSpecies="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-20" stimulation="-20" />
+			<BFAITargetData health="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="DigFood" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:DigFood">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="20">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:DiggingForFood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDigFoodGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="DigFood" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap hunger="10" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationGood" emoticonScale="0.75" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Somersault" UniqueID="GorillaToon:Somersault">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="30">
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Somersault" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalSomersaultGood" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Somersault" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap exercise="-30" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InvitePickup" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:InvitePickup">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="mother" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData needPointsGood="10">
+			<BFAIAttributeFloatMap social="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_Pickup" Payload="subject" Reconsider="true" Timeout="15" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="CallMother_Wait" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondPickup" UniqueID="GorillaToon:RespondPickup" attachTag="back">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_Pickup />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1000" />
+		<BFBehExecTask>
+			<BFBehHeadLook />
+			<BFBehSyncSet subjectBehSet="WaitPickup" targetBehSet="DockPickup" />
+			<BFBehHeadLook disengage="true" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<BFBehSyncSet resetPhase="true" subjectBehSet="MommaPickupBaby" targetBehSet="BabyPickedUpByMomma" />
+			</BFBehExecTask>
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CarryBaby" TaskDelayMax="120" TaskDelayMin="60" UniqueID="GorillaToon:CarryBaby" objectContainer="back">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<GorillaToon_Young />
+				<GorillaLowland_Young />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Carrying" useObjectName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidWater="true" maxPlayTime="20" minPlayTime="10">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap health="-30" social="-30" />
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="DetachBaby" />
+				<ZTBehViewEvent viewKey="Pos_5">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" useTargetName="true" useTargetObject="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAITargetData social="-20" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="CarryBabyToShade" TaskDelayMax="180" TaskDelayMin="120" UniqueID="GorillaToon:CarryBabyToShade" objectContainer="back">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+			</Subjects>
+			<Targets>
+				<shade />
+				<Qualifiers_AND inHabitat="true" inSight="25" onLand="true" />
+			</Targets>
+			<Objects>
+				<GorillaToon_Young />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="1200" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Carrying" useObjectName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="-35" />
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="DetachBaby" />
+				<ZTBehViewEvent viewKey="Pos_5">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCarryObjectGood" priority="1" timeout="60" useTargetName="true" useTargetObject="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+			<BFAITargetData health="-30" social="-20" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RequestNurse" TaskDelayMax="15" TaskDelayMin="15" UniqueID="GorillaToon:RequestNurse">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<GorillaToon_Adult_F />
+				<GorillaLowland_Adult_F />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="mother" isSwimming="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap hunger="-50" thirst="-50" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_RequestNurse" OnlyOne="true" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehPlaySet behSet="CallMother" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="InviteNurse" UniqueID="GorillaToon:InviteNurse">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_F />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers inHabitat="true" />
+			</Targets>
+			<Objects>
+				<t_RequestNurse />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<BFBehFaceTarget />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken GiveTo="target" Name="t_InviteNurse" OnlyOne="true" Payload="subject" Reconsider="true" Timeout="30" />
+				</BFAITokenList>
+			</BFBehSendToken>
+			<BFBehAnimate targetAnim="Stand_QuestionBark" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehPlaySet behSet="WaitNurse" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="RespondNurse" UniqueID="GorillaToon:RespondNurse" reserveTag="General">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<fromToken />
+				<Qualifiers_AND inHabitat="true" inWater_OR_onLand="true" isRelation="mother" isSwimming="false" />
+			</Targets>
+			<Objects>
+				<t_InviteNurse />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehSyncSet resetPhase="true" subjectBehSet="DockNurse" targetBehSet="WaitNurse" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalNurseGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSyncSet subjectBehSet="Nurse" targetBehSet="MommaNurseYoung" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap health="-50" hunger="-100" social="-10" thirst="-100" />
+			<BFAITargetData social="-20" />
+		</BFAICompletionData>
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ClimbFence_High" TaskDelayMax="180" TaskDelayMin="90" UniqueID="GorillaToon:ClimbFence_High" reserveTag="General" sensorTag="habitat">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+			</Subjects>
+			<Targets>
+				<hedge />
+				<bamboo />
+				<chainlink />
+				<ironbar />
+				<postrail />
+				<woodslat />
+				<woodslatwindow />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="100" needPointsBad="30" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimbFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockFence subjectNode="p_FenceClimbNode" targetAnim="Stand_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="ClimbFence_High" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" useTargetName="true" />
+					<ZTMessageInfo global="true" locID="zoomessages:EscapedAnimal" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ClimbFence_Low" TaskDelayMax="180" TaskDelayMin="90" UniqueID="GorillaToon:ClimbFence_Low" reserveTag="General" sensorTag="habitat">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult />
+			</Subjects>
+			<Targets>
+				<lowhedge />
+				<lowbamboo />
+				<lowchainlink />
+				<lowironbar />
+				<lowpostrail />
+				<lowwoodslat />
+				<lowpostrope />
+				<whitepicket />
+				<lowmosaic />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="101" needPointsBad="30" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimbFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockFence subjectNode="p_FenceClimbNode" targetAnim="Stand_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingFence" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="ClimbFence_Low" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalEscapedBad" priority="-1" timeout="60" useTargetName="true" />
+					<ZTMessageInfo global="true" locID="zoomessages:EscapedAnimal" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData>
+			<BFBehExecTask>
+				<BFBehPlaySet behSet="FailureSet" />
+			</BFBehExecTask>
+		</BFAIFailureData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ThrashWater" UniqueID="GorillaToon:ThrashWater">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND breath="LE 95" isFloating="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10000" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drowning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_8">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="ThrashWater" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap breath=".45" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" useTargetName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ThrashWater_Drowning" UniqueID="GorillaToon:ThrashWater_Drowning">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND breath="GE 95" health="LE 95" isFloating="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10000" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drowning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_8">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="ThrashWater" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap breath=".45" health=".25" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalLowBreath" priority="-1" timeout="15" useTargetName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ThrashWater_Old" UniqueID="GorillaToon:ThrashWater_Old">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND isFloating="true" lifespan="GE 13.42" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10045" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drowning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_8">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="ThrashWater" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap breath=".45" health=".2" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalDrowning" priority="-1" timeout="15" useTargetName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+				<BFBehSendToken>
+					<BFAITokenList>
+						<BFAIToken Chance="0.5" GiveTo="target" Name="t_DrownOld" Payload="subject" Reconsider="true" Timeout="15" />
+					</BFAITokenList>
+				</BFBehSendToken>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ThrashWater_Die" UniqueID="GorillaToon:ThrashWater_Die">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND breath="GE 95" health="GE 95" isFloating="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10050" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drowning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_8">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Die_Drown" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalDieBreath" priority="-1" timeout="15" useTargetName="true" />
+						<ZTEmoticonInfo emoticonName="EmoteAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="ThrashWater_DieOld" UniqueID="GorillaToon:ThrashWater_DieOld">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon />
+				<Qualifiers_AND isFloating="true" />
+			</Subjects>
+			<Targets>
+				<self />
+			</Targets>
+			<Objects>
+				<t_DrownOld />
+			</Objects>
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="10050" />
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Drowning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_8">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDrownBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Die_Drown" />
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFBehExecTask>
+				<ZTBehViewEvent viewKey="Neg_10">
+					<ZTFeedbackData>
+						<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" useTargetName="true" />
+					</ZTFeedbackData>
+				</ZTBehViewEvent>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTMessageInfo global="true" locID="zoomessages:AnimalDied" priority="-1" timeout="60" useEntityName="true" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Growl_Predator" TaskDelayMax="360" TaskDelayMin="240" UniqueID="GorillaToon:Growl_Predator">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<b_MediumPredator />
+				<b_SmallPredator />
+				<Qualifiers inSight="15" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap stimulation="-30" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GrowlAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<BFBehPlaySet behSet="Stand_Growl" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="50" GiveTo="target" Name="t_Flee" Payload="subject" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="BeatChest_Predator" TaskDelayMax="600" TaskDelayMin="360" UniqueID="GorillaToon:BeatChest_Predator">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<b_MediumPredator />
+				<b_SmallPredator />
+				<Qualifiers inSight="10" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap stimulation="-35" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChallengeOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<BFBehPlaySet behSet="BeatChest" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="50" GiveTo="target" Name="t_Flee" Payload="subject" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="Roar_Predator" TaskDelayMax="240" TaskDelayMin="120" UniqueID="GorillaToon:Roar_Predator">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Adult_M />
+				<Qualifiers_AND inWater_OR_onLand="true" isSwimming="false" />
+			</Subjects>
+			<Targets>
+				<b_MediumPredator />
+				<b_SmallPredator />
+				<Qualifiers inSight="15" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData>
+			<BFAIAttributeFloatMap stimulation="-25" />
+		</BFAIEvalData>
+		<BFBehExecTask>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RoarAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<BFBehPlaySet behSet="Roar" />
+			<BFBehSendToken>
+				<BFAITokenList>
+					<BFAIToken Chance="50" GiveTo="target" Name="t_Flee" Payload="subject" Reconsider="true" Timeout="59" />
+				</BFAITokenList>
+			</BFBehSendToken>
+		</BFBehExecTask>
+		<BFAICompletionData>
+			<BFAIAttributeFloatMap social="20" stimulation="-20" />
+			<BFBehExecTask>
+				<ZTBehFeedback>
+					<ZTFeedbackData>
+						<ZTEmoticonInfo emoticonName="EmoteAnimalAngry" />
+					</ZTFeedbackData>
+				</ZTBehFeedback>
+			</BFBehExecTask>
+		</BFAICompletionData>
+	</BFAITaskTemplate>
+	<BFAITaskTemplate Name="EvadePredator_Young" UniqueID="GorillaToon:EvadePredator_Young">
+		<BFAICreateData>
+			<Subjects>
+				<GorillaToon_Young />
+				<Qualifiers inWater_OR_onLand="true" />
+			</Subjects>
+			<Targets>
+				<b_XLargePredator />
+				<b_LargePredator />
+				<b_MediumPredator />
+				<b_SmallPredator />
+				<Qualifiers_AND inSight="2" sameSpecies="false" />
+			</Targets>
+			<Objects />
+		</BFAICreateData>
+		<BFAIEvalData fixedScore="85" />
+		<BFBehExecTask>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChasedBad" priority="-1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:FleeingPredator" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion avoidWater="true" evasionRadius="30" locoSpeed="evade" />
+		</BFBehExecTask>
+		<BFAICompletionData />
+		<BFAIFailureData />
+	</BFAITaskTemplate>
+</BFAITaskTemplateList>

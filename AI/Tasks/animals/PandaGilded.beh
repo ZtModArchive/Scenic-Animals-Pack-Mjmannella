@@ -1,0 +1,2557 @@
+<BehaviorSets>
+	<Default_Happy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultSit weight="60" />
+					<DefaultLand weight="40" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy>
+	<Default_VeryHappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultSit weight="40" />
+					<DefaultLand weight="60" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy>
+	<Default_Happy_inWater>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<Default_inWater_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_inWater>
+	<Default_VeryHappy_inWater>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<Default_inWater_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_inWater>
+	<Default_Happy_isSwimming>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_isSwimming>
+	<Default_VeryHappy_isSwimming>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_6">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_isSwimming>
+	<Default_Unhappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultSit weight="90" />
+					<DefaultUnhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy>
+	<Default_VeryUnhappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultSit weight="80" />
+					<DefaultUnhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy>
+	<Default_Unhappy_inWater>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<Default_inWater_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_inWater>
+	<Default_VeryUnhappy_inWater>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<Default_inWater_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_inWater>
+	<Default_Unhappy_isSwimming>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_isSwimming>
+	<Default_VeryUnhappy_isSwimming>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_isSwimming>
+	<DefaultStand>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Standing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</DefaultStand>
+	<DefaultSit>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sitting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+		</behaviors>
+	</DefaultSit>
+	<DefaultTreadWater>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</DefaultTreadWater>
+	<DefaultLieBack>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBack_Idle" />
+		</behaviors>
+	</DefaultLieBack>
+	<DefaultLie>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</DefaultLie>
+	<DefaultSleepBack>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="SleepBack_Idle" />
+		</behaviors>
+	</DefaultSleepBack>
+	<DefaultSleep>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Sleep_Idle" />
+		</behaviors>
+	</DefaultSleep>
+	<Default_inWater_Happy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Yawning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Yawn" />
+		</behaviors>
+	</Default_inWater_Happy>
+	<Default_isSwimming_Happy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidLand="true" locoSpeed="medium" maxPlayTime="15" minPlayTime="7" />
+			<BFBehSetAttribute>
+				<BFAITargetData exercise="-10" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Happy>
+	<DefaultUnhappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Whimper" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</DefaultUnhappy>
+	<Default_inWater_Unhappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Whimper" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_inWater_Unhappy>
+	<Default_isSwimming_Unhappy>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Unhappy>
+	<Idle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Idle" />
+					<water behSet="Water_Idle" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Idle>
+	<Ground_Idle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="DefaultStand" />
+					<Sit behSet="DefaultSit" />
+					<Lie behSet="DefaultLie" />
+					<LieBack behSet="DefaultLieBack" />
+					<Sleep behSet="DefaultSleep" />
+					<SleepBack behSet="DefaultSleepBack" />
+					<default behSet="DefaultStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Ground_Idle>
+	<Water_Idle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<TreadWater behSet="DefaultTreadWater" />
+					<Swim behSet="DefaultTreadWater" />
+					<default behSet="DefaultTreadWater" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Water_Idle>
+	<DefaultLand>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Default_Sit weight="40" />
+					<Default_Lie weight="40" />
+					<Default_Wander weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</DefaultLand>
+	<Default_Wander>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalWalkAroundGood" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehWander locoSpeed="slow" playTime="15" />
+			<BFBehSetAttribute>
+				<BFAISubjectData excercise="-10" rest="-10" social="5" stimulation="5" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</Default_Wander>
+	<Default_Sit>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sitting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCuteGood" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Sit_Idle weight="70" />
+					<Sit_ScratchEarFrontPaw weight="5" />
+					<Sit_ScratchEarRearPaw weight="5" />
+					<LickPaw_GroomA weight="10" />
+					<Sit_LookLeft weight="10" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<BFBehSetAttribute>
+				<BFAISubjectData rest="-10" social="5" stimulation="5" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</Default_Sit>
+	<Default_Lie>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCuteGood" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Lie_Idle weight="70" />
+					<Lie_Yawn weight="5" />
+					<Lie_ScratchA weight="5" />
+					<LieSide_Idle weight="10" />
+					<LieBack_Idle weight="10" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<BFBehSetAttribute>
+				<BFAISubjectData rest="-10" social="5" stimulation="5" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</Default_Lie>
+	<Sit_Idle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Sit_Idle" />
+		</behaviors>
+	</Sit_Idle>
+	<TreadWater_Idle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</TreadWater_Idle>
+	<Think>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="Idle" />
+					<default behSet="Idle" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Think>
+	<LookAt>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Idle weight="50" />
+					<Investigate weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LookAt>
+	<Investigate>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetRadius="3" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Sniff" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</Investigate>
+	<InvestigateLarge>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehMove closestApproach="true" pathRadius="10" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</InvestigateLarge>
+	<Die_OldAge>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDied" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_OldAge>
+	<Die_Sick>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying_Sick" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_Sick>
+	<Die_Fight>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight>
+	<Stand>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand>
+	<Sit>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+		</behaviors>
+	</Sit>
+	<LieBack>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBack_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<LieBack_Idle weight="75" />
+					<LieBack_A weight="25" />
+					<LieBack_B weight="10" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</LieBack>
+	<LieFront>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Lie_Idle weight="50" />
+					<Lie_Scratch weight="25" />
+					<Lie_ScratchA weight="25" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</LieFront>
+	<SleepBack>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="SleepBack_Idle" />
+		</behaviors>
+	</SleepBack>
+	<SleepFront>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</SleepFront>
+	<SleepBaby>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShade" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="SleepBaby_Idle" />
+		</behaviors>
+	</SleepBaby>
+	<Sleep>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<SleepBack weight="50" />
+					<SleepFront weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Sleep>
+	<Lie>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LieBack weight="50" />
+					<LieFront weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Lie>
+	<Poop>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Medium" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop>
+	<Poop_Sick>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Medium_Sick" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop_Sick>
+	<Pee>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Pee_Idle" />
+		</behaviors>
+	</Pee>
+	<Eat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Sit_Eat weight="50" />
+					<EatFat weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Eat>
+	<Sit_Eat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</Sit_Eat>
+	<EatFat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatFat_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatFat_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatFat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</EatFat>
+	<Drink>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="Drink_Idle" />
+		</behaviors>
+	</Drink>
+	<EnterTrough>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehPlaySet behSet="Stand" />
+			<BFBehDock subjectNode="Node_Front" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTrough>
+	<UseTrough>
+		<subjects>
+			<PandaGilded_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseTrough>
+	<UseTrough>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTroughBaby_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTroughBaby_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTroughBaby_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseTrough>
+	<DrinkTrough>
+		<subjects>
+			<PandaGilded_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="10" targetAnim="EatTrough_Idle" />
+		</behaviors>
+	</DrinkTrough>
+	<DrinkTrough>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="10" targetAnim="EatTroughBaby_Idle" />
+		</behaviors>
+	</DrinkTrough>
+	<ExitTrough>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitTrough>
+	<EnterFoodDish>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterFoodDish>
+	<UseFoodDish>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseFoodDish>
+	<DrinkFoodDish>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="Drink_Idle" />
+		</behaviors>
+	</DrinkFoodDish>
+	<ExitFoodDish>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight180" />
+		</behaviors>
+	</ExitFoodDish>
+	<EnterSubstratePile>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterSubstratePile>
+	<UseSubstratePile>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Sit_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseSubstratePile>
+	<ExitSubstratePile>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight180" />
+		</behaviors>
+	</ExitSubstratePile>
+	<Sniff>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_SniffA weight="50" />
+					<Stand_SniffB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Sniff>
+	<Stand_Sniff>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_SniffA weight="50" />
+					<Stand_SniffB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Stand_Sniff>
+	<ScratchSelf>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Sit_ScratchEarFrontPaw weight="50" />
+					<Sit_ScratchEarRearPaw weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</ScratchSelf>
+	<GroomSelf>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LickPaw_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<LickPaw_GroomA weight="50" />
+					<LickPaw_GroomB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<BFBehAnimate targetAnim="LickPaw_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<LickPaw_GroomA weight="50" />
+					<LickPaw_GroomB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</GroomSelf>
+	<Lie_Yawn>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Yawn" />
+		</behaviors>
+	</Lie_Yawn>
+	<Sit_Yawn>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Yawn" />
+		</behaviors>
+	</Sit_Yawn>
+	<Stand_Yawn>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Yawn" />
+		</behaviors>
+	</Stand_Yawn>
+	<Yawn>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Yawn" />
+					<Sit behSet="Sit_Yawn" />
+					<Lie behSet="Lie_Yawn" />
+					<default behSet="Stand_Yawn" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Yawn>
+	<Stand_Bark>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Bark" />
+		</behaviors>
+	</Stand_Bark>
+	<Sit_Bark>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Bark" />
+		</behaviors>
+	</Sit_Bark>
+	<Walk_Bark>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Walk_Bark" />
+		</behaviors>
+	</Walk_Bark>
+	<Bark>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Bark" />
+					<Sit behSet="Sit_Bark" />
+					<Walk behSet="Walk_Bark" />
+					<default behSet="Stand_Bark" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Bark>
+	<Stand_Bleat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Bleat" />
+		</behaviors>
+	</Stand_Bleat>
+	<Sit_Bleat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Bleat" />
+		</behaviors>
+	</Sit_Bleat>
+	<Bleat>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Bleat" />
+					<Sit behSet="Sit_Bleat" />
+					<default behSet="Stand_Bleat" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Bleat>
+	<Stand_Grunt>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</Stand_Grunt>
+	<Sit_Grunt>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Grunt" />
+		</behaviors>
+	</Sit_Grunt>
+	<Grunt>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Grunt" />
+					<Sit behSet="Sit_Grunt" />
+					<default behSet="Stand_Grunt" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Grunt>
+	<Stand_Whimper>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Whimper" />
+		</behaviors>
+	</Stand_Whimper>
+	<FailureSet>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_Whimper weight="50" />
+					<Stand_Bark weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</FailureSet>
+	<Sit_Whimper>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Whimper" />
+		</behaviors>
+	</Sit_Whimper>
+	<Whimper>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Whimper" />
+					<Sit behSet="Sit_Whimper" />
+					<default behSet="Stand_Whimper" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Whimper>
+	<Roll>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LieRoll weight="50" />
+					<LieBackRoll weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Roll>
+	<LieRoll>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LieRoll_Left weight="50" />
+					<LieRoll_Right weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LieRoll>
+	<LieRoll_Left>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_RollL" />
+		</behaviors>
+	</LieRoll_Left>
+	<LieRoll_Right>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_RollR" />
+		</behaviors>
+	</LieRoll_Right>
+	<LieBackRoll>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LieBackRoll_Left weight="50" />
+					<LieBackRoll_Right weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LieBackRoll>
+	<LieBackRoll_Left>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBack_RollA" />
+		</behaviors>
+	</LieBackRoll_Left>
+	<LieBackRoll_Right>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBack_RollB" />
+		</behaviors>
+	</LieBackRoll_Right>
+	<Somersault_Forward>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Somersault" />
+		</behaviors>
+	</Somersault_Forward>
+	<Somersault_Backward>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_BackSomersault" />
+		</behaviors>
+	</Somersault_Backward>
+	<Somersault>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Somersault_Forward weight="50" />
+					<Somersault_Backward weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Somersault>
+	<SwingHead>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_SwingHead" />
+		</behaviors>
+	</SwingHead>
+	<SuckPaw>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="PawSuck_Idle" />
+		</behaviors>
+	</SuckPaw>
+	<Hide>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SitHide_Idle" />
+		</behaviors>
+	</Hide>
+	<BatObject_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_BatObject" />
+		</behaviors>
+	</BatObject_Whap>
+	<BatObject>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_BatObject" />
+		</behaviors>
+	</BatObject>
+	<TackleObject_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_TackleObject" />
+		</behaviors>
+	</TackleObject_Whap>
+	<TackleObject>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TackleObject" />
+		</behaviors>
+	</TackleObject>
+	<DockAttacked>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud" />
+			<BFBehDockNow reserveSlotName="general" subjectNode="p_PreyOffset" targetNode="p_PredatorOffset" />
+		</behaviors>
+	</DockAttacked>
+	<Attacked>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_2LieSide_KnockedDown" />
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</Attacked>
+	<Sick>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Sick>
+	<VerySick>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBack_Idle" />
+		</behaviors>
+	</VerySick>
+	<NudgeObject_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_NudgeObject" />
+		</behaviors>
+	</NudgeObject_Whap>
+	<ShoveBarrel_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_ShoveBarrel" />
+		</behaviors>
+	</ShoveBarrel_Whap>
+	<NudgeObject>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_NudgeObject" />
+		</behaviors>
+	</NudgeObject>
+	<EnterBall>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBall>
+	<UseBall_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BatObject_Whap weight="33" />
+					<TackleObject_Whap weight="33" />
+					<NudgeObject_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBall_Whap>
+	<UsePursuitBall_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BatObject_Whap weight="33" />
+					<TackleObject_Whap weight="33" />
+					<NudgeObject_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UsePursuitBall_Whap>
+	<UseBarrel_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BatObject_Whap weight="25" />
+					<TackleObject_Whap weight="25" />
+					<ShoveBarrel_Whap weight="25" />
+					<NudgeObject_Whap weight="25" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBarrel_Whap>
+	<UseCarTire_Whap>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SitPlayTire_Idle" />
+		</behaviors>
+	</UseCarTire_Whap>
+	<UseBall>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BatObject weight="33" />
+					<TackleObject weight="33" />
+					<NudgeObject weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBall>
+	<ExitBall>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight180" />
+		</behaviors>
+	</ExitBall>
+	<EnterShadeStructure>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockRadial rotError="180" subjectNode="Floor" targetRadius="3" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterShadeStructure>
+	<UseShadeStructure>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Sit_Idle" />
+		</behaviors>
+	</UseShadeStructure>
+	<ExitShadeStructure>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_TurnRight180" />
+		</behaviors>
+	</ExitShadeStructure>
+	<MarkTree>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="MarkTree_Idle" />
+		</behaviors>
+	</MarkTree>
+	<ShoveBarrel>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_ShoveBarrel" />
+		</behaviors>
+	</ShoveBarrel>
+	<Browse>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Browse_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Browse_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</Browse>
+	<Chew>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Idle" />
+		</behaviors>
+	</Chew>
+	<EnterShelter1>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+		</behaviors>
+	</EnterShelter1>
+	<EnterShelter2>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+		</behaviors>
+	</EnterShelter2>
+	<EnterShelter3>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+		</behaviors>
+	</EnterShelter3>
+	<EnterShelter4>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+		</behaviors>
+	</EnterShelter4>
+	<EnterShelter5>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+		</behaviors>
+	</EnterShelter5>
+	<EnterShelter6>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+		</behaviors>
+	</EnterShelter6>
+	<UseShelter>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Lie_Idle" />
+		</behaviors>
+	</UseShelter>
+	<ExitShelter1>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" />
+		</behaviors>
+	</ExitShelter1>
+	<ExitShelter2>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" />
+		</behaviors>
+	</ExitShelter2>
+	<ExitShelter3>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" />
+		</behaviors>
+	</ExitShelter3>
+	<ExitShelter4>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode08_Branch1DEnd2ExitD" />
+		</behaviors>
+	</ExitShelter4>
+	<ExitShelter5>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode10_Branch1EEnd2ExitE" />
+		</behaviors>
+	</ExitShelter5>
+	<ExitShelter6>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode12_Branch1FEnd2ExitF" />
+		</behaviors>
+	</ExitShelter6>
+	<ClimbOntoTree1>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_2Climb" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+		</behaviors>
+	</ClimbOntoTree1>
+	<ClimbOntoTree2>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_2Climb" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+		</behaviors>
+	</ClimbOntoTree2>
+	<ClimbOntoTree3>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_2Climb" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+		</behaviors>
+	</ClimbOntoTree3>
+	<InTree>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingIn" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateRandom maxPlays="8" minPlays="6">
+				<randomAnims>
+					<Climb_Idle weight="80" />
+					<Climb_LookLeft weight="10" />
+					<Climb_LookRight weight="10" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</InTree>
+	<ClimbOffTree1>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" />
+		</behaviors>
+	</ClimbOffTree1>
+	<ClimbOffTree2>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" />
+		</behaviors>
+	</ClimbOffTree2>
+	<ClimbOffTree3>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" />
+		</behaviors>
+	</ClimbOffTree3>
+	<Mate>
+		<subjects>
+			<PandaGilded_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Mating" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="10" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</Mate>
+	<Birth>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet maxPlays="1" minPlays="1">
+				<randomSets>
+					<SpawnF weight="50" />
+					<SpawnM weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Birth>
+	<SpawnF>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="PandaGilded_Young_F" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnF>
+	<SpawnM>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="PandaGilded_Young_M" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnM>
+	<MatingCall_F>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</MatingCall_F>
+	<MatingCall_M>
+		<subjects>
+			<PandaGilded_Adult_M />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</MatingCall_M>
+	<ChaseBall>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial locoSpeed="fast" subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehRandomSet>
+				<randomSets>
+					<BatObject_Whap weight="33" />
+					<TackleObject_Whap weight="33" />
+					<NudgeObject_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</behaviors>
+	</ChaseBall>
+	<CallMother>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Stand_Bleat" />
+		</behaviors>
+	</CallMother>
+	<WaitClimbOnBack>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToBeClimbed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Lie_Idle" />
+		</behaviors>
+	</WaitClimbOnBack>
+	<ClimbOnBack>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Carried" targetAnim="Stand_Idle" targetNode="Node_Carry" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</ClimbOnBack>
+	<MommaGetClimbedOn>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PickingUp" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAttachObject detachAction="dropitem" detachBehSet="LetBabyOff" locoMod="carryback" targetAnim="Lie_2LieBaby" targetBehSet="BeingCarriedOnBack" targetNode="Node_Carried" />
+		</behaviors>
+	</MommaGetClimbedOn>
+	<BeingCarriedOnBack>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingCarried" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="OnMotherBack_Idle" />
+		</behaviors>
+	</BeingCarriedOnBack>
+	<ClimbOnMomma>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_2OnMotherBack" />
+		</behaviors>
+	</ClimbOnMomma>
+	<MommaLetBabyOff>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dropping" useObjectName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBaby_2Lie" />
+		</behaviors>
+	</MommaLetBabyOff>
+	<RollOffMomma>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="OnMotherBack_2Sit" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalSocialVeryGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</RollOffMomma>
+	<LetBabyOff>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBaby_Idle" />
+			<BFBehSyncSet subjectBehSet="MommaLetBabyOff" syncEntity="object" targetBehSet="RollOffMomma" />
+		</behaviors>
+	</LetBabyOff>
+	<AttackGuest>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_2Sit_AttackGuest" />
+		</behaviors>
+	</AttackGuest>
+	<LookAround>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Sit behSet="Sit_LookAround" />
+					<Stand behSet="Stand_LookAround" />
+					<default behSet="Stand_LookAround" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</LookAround>
+	<Sit_LookAround>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Sit_LookLeft weight="50" />
+					<Sit_LookRight weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Sit_LookAround>
+	<Stand_LookAround>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_LookRight" />
+		</behaviors>
+	</Stand_LookAround>
+	<DockNurse>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Nurse" targetAnim="Stand_2Nurse" targetNode="Dock_Nurse" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</DockNurse>
+	<WaitNurse>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="SitNurse_Idle" />
+		</behaviors>
+	</WaitNurse>
+	<Nurse>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingNursed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="8" targetAnim="Nurse_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Nurse>
+	<MommaNurseYoung>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:NurseOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="SitNurse_Idle" />
+		</behaviors>
+	</MommaNurseYoung>
+	<DockWrestle>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Nurse" targetAnim="Stand_2Nurse" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</DockWrestle>
+	<WaitWrestle>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="LieBack_Idle" />
+		</behaviors>
+	</WaitWrestle>
+	<Wrestle_Dominant>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Wrestle_Dominant" />
+		</behaviors>
+	</Wrestle_Dominant>
+	<Wrestle_Submissive>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="LieBack_Wrestle_Submissive" />
+		</behaviors>
+	</Wrestle_Submissive>
+	<DockGroomYoung>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Nurse" targetAnim="Stand_2Nurse" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</DockGroomYoung>
+	<WaitGroomYoung>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Sit_Idle" />
+		</behaviors>
+	</WaitGroomYoung>
+	<Groomed>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+		</behaviors>
+	</Groomed>
+	<MommaGroomYoung>
+		<subjects>
+			<PandaGilded_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SitGroomYoung_Idle" />
+		</behaviors>
+	</MommaGroomYoung>
+	<ClimbFence_LowThin>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="ClimbFence_Idle" />
+			<BFBehAnimate targetAnim="ClimbFence_2Sit_Narrow" />
+		</behaviors>
+	</ClimbFence_LowThin>
+	<ClimbFence_LowThick>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="ClimbFence_Idle" />
+			<BFBehAnimate targetAnim="ClimbFence_2Sit_Wide" />
+		</behaviors>
+	</ClimbFence_LowThick>
+	<EvadePlay>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Evade weight="80" />
+					<Submit weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</EvadePlay>
+	<EvadeAngry>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Evade weight="20" />
+					<Submit weight="80" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</EvadeAngry>
+	<Submit>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Submitting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="6" targetAnim="LieBack_Idle" />
+		</behaviors>
+	</Submit>
+	<Evade>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fleeing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion evasionRadius="10" locoSpeed="fast" />
+		</behaviors>
+	</Evade>
+	<Rest>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<SideRest weight="30" />
+					<LieRest weight="70" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Rest>
+	<LieRest>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="10" targetAnim="Lie_Idle" />
+		</behaviors>
+	</LieRest>
+	<SideRest>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="10" targetAnim="LieSide_Idle" />
+		</behaviors>
+	</SideRest>
+	<PlayPounce>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Jump" />
+		</behaviors>
+	</PlayPounce>
+	<HideEyes>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="4" targetAnim="SitHide_Idle" />
+		</behaviors>
+	</HideEyes>
+	<ScentMark>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="4" targetAnim="MarkTree_Idle" />
+		</behaviors>
+	</ScentMark>
+	<CallMother2>
+		<subjects>
+			<PandaGilded_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="TreadWater_Idle" />
+					<TreadWater behSet="TreadWater_Idle" />
+					<Stand behSet="Bleat" />
+					<default behSet="Bleat" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</CallMother2>
+	<Roar>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BarkAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Bark" />
+		</behaviors>
+	</Roar>
+	<DockFight>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock redock="true" reserveSlotName="general" subjectNode="p_FightOffset" targetNode="p_FightOffset" />
+		</behaviors>
+	</DockFight>
+	<WaitFight>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitFight>
+	<Fight>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+		</behaviors>
+	</Fight>
+	<FightHurt>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+			<BFBehAnimate targetAnim="Stand_2LieSide_KnockedDown" />
+			<BFBehAnimate targetAnim="LieSide_Idle" />
+			<ZTBehViewEvent viewKey="Neg_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSetAttribute>
+				<BFAISubjectData health="30" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</FightHurt>
+	<DefendEqual>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Fight weight="50" />
+					<FightHurt weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</DefendEqual>
+	<Turn180>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight180" />
+		</behaviors>
+	</Turn180>
+	<LoopIdle>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="LoopStand" />
+					<Lie behSet="LoopLie" />
+					<Sleep behSet="LoopSleep" />
+					<default behSet="LoopStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</LoopIdle>
+	<LoopStand>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</LoopStand>
+	<LoopLie>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Lie_Idle" />
+		</behaviors>
+	</LoopLie>
+	<LoopSleep>
+		<subjects>
+			<PandaGilded />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</LoopSleep>
+	<DockAttackGuest>
+		<subjects>
+			<PandaGilded_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehDockRadial locoSpeed="fast" subjectNode="p_AttackGuestNode" targetAnim="Stand_Idle" />
+		</behaviors>
+	</DockAttackGuest>
+</BehaviorSets>

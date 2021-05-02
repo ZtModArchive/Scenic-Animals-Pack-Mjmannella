@@ -1,0 +1,2209 @@
+<BehaviorSets>
+	<Default_Happy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<DefaultHappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy>
+	<Default_VeryHappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultHappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy>
+	<Default_Happy_inWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<Default_inWater_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_inWater>
+	<Default_VeryHappy_inWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<Default_inWater_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_inWater>
+	<Default_Happy_isSwimming>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_isSwimming>
+	<Default_VeryHappy_isSwimming>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_isSwimming>
+	<Default_Unhappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultNoiseMaker weight="10" />
+					<DefaultUnhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy>
+	<Default_VeryUnhappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="70" />
+					<DefaultNoiseMaker weight="10" />
+					<DefaultUnhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy>
+	<Default_Unhappy_inWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultNoiseMaker weight="10" />
+					<Default_inWater_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_inWater>
+	<Default_VeryUnhappy_inWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="70" />
+					<DefaultNoiseMaker weight="10" />
+					<Default_inWater_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_inWater>
+	<Default_Unhappy_isSwimming>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_isSwimming>
+	<Default_VeryUnhappy_isSwimming>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_isSwimming>
+	<DefaultStand>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Standing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</DefaultStand>
+	<DefaultLie>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</DefaultLie>
+	<DefaultTreadWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</DefaultTreadWater>
+	<DefaultNoiseMaker>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TrumpetingAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Noisemaker" />
+		</behaviors>
+	</DefaultNoiseMaker>
+	<DefaultStandAggressive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Standing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="StandAggressive_Idle" />
+		</behaviors>
+	</DefaultStandAggressive>
+	<DefaultHappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidWater="true" locoSpeed="medium" maxPlayTime="15" minPlayTime="7" />
+			<BFBehSetAttribute>
+				<BFAITargetData exercise="-10" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</DefaultHappy>
+	<Default_inWater_Happy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SprayingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Drink_ShowerA weight="50" />
+					<Drink_ShowerB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Default_inWater_Happy>
+	<Default_isSwimming_Happy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidLand="true" locoSpeed="medium" maxPlayTime="15" minPlayTime="7" />
+			<BFBehSetAttribute>
+				<BFAITargetData exercise="-10" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Happy>
+	<DefaultUnhappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TrumpetingAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="NoiseMaker" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</DefaultUnhappy>
+	<Default_inWater_Unhappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TrumpetingAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="NoiseMaker" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_inWater_Unhappy>
+	<Default_isSwimming_Unhappy>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Unhappy>
+	<Idle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Idle" />
+					<water behSet="Water_Idle" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Idle>
+	<Ground_Idle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="DefaultStand" />
+					<Lie behSet="DefaultLie" />
+					<StandAggressive behSet="DefaultStandAggressive" />
+					<default behSet="DefaultStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Ground_Idle>
+	<Water_Idle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<TreadWater behSet="DefaultTreadWater" />
+					<Swim behSet="DefaultTreadWater" />
+					<default behSet="DefaultTreadWater" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Water_Idle>
+	<Think>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="Idle" />
+					<default behSet="Idle" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Think>
+	<LookAt>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Idle weight="50" />
+					<Investigate weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LookAt>
+	<Investigate>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</Investigate>
+	<InvestigateLarge>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehMove closestApproach="true" pathRadius="10" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</InvestigateLarge>
+	<Die_OldAge>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDied" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_OldAge>
+	<Die_Sick>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying_Sick" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_Sick>
+	<Die_Fight>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Killed" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight>
+	<Stand>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand>
+	<Lie>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</Lie>
+	<Sleep>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<SleepSide weight="20" />
+					<SleepStand weight="80" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Sleep>
+	<SleepSide>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="Lie_Idle" />
+		</behaviors>
+	</SleepSide>
+	<SleepStand>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="Stand_Idle" />
+		</behaviors>
+	</SleepStand>
+	<Poop>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Large" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop>
+	<Poop_Sick>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Large_Sick" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop_Sick>
+	<Pee>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Pee_Idle" />
+		</behaviors>
+	</Pee>
+	<RubEye>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_RubEye" />
+		</behaviors>
+	</RubEye>
+	<EarFlap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_EarFlapB" />
+		</behaviors>
+	</EarFlap>
+	<DustThrow>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_DustThrow" />
+		</behaviors>
+	</DustThrow>
+	<Sway>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Sway" />
+		</behaviors>
+	</Sway>
+	<FootSwing>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_FootSwing" />
+		</behaviors>
+	</FootSwing>
+	<PawGround>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_PawGround" />
+		</behaviors>
+	</PawGround>
+	<TrunkSwat>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</TrunkSwat>
+	<PlayBall>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</PlayBall>
+	<HeadRam>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_HeadRam" />
+		</behaviors>
+	</HeadRam>
+	<NoiseMaker>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Noisemaker" />
+		</behaviors>
+	</NoiseMaker>
+	<Trumpet>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Trumpet" />
+		</behaviors>
+	</Trumpet>
+	<FailureSet>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Trumpet" />
+		</behaviors>
+	</FailureSet>
+	<Roar>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Trumpet" />
+		</behaviors>
+	</Roar>
+	<MarkScent>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_MarkScent" />
+		</behaviors>
+	</MarkScent>
+	<EnterRockMarkScent1>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToMarkScent" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Front" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterRockMarkScent1>
+	<ScentMark>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MarkingScent" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalMarkScentGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimate targetAnim="Stand_MarkScent" />
+		</behaviors>
+	</ScentMark>
+	<ExitRockMarkScent1>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalSocialGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitRockMarkScent1>
+	<PeanutFeeder>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_UsePeanutFeeder" />
+		</behaviors>
+	</PeanutFeeder>
+	<EnterTree>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTree>
+	<BrowseTree>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Browse_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Browse_2Eat_BranchSlap" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_A" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</BrowseTree>
+	<ExitTree>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitTree>
+	<BrowseLow>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</BrowseLow>
+	<BrowseBush>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</BrowseBush>
+	<EnterEasel>
+		<subjects>
+			<ElephantStone_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Front" targetAnim="Stand_Idle" targetNode="Dock_Paint_0" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="0">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+		</behaviors>
+	</EnterEasel>
+	<EnterEasel>
+		<subjects>
+			<ElephantStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Paint_Young" targetAnim="Stand_Idle" targetNode="Dock_Paint_0" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="0">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+		</behaviors>
+	</EnterEasel>
+	<Paint>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<PaintRegular weight="90" />
+					<PaintVariant weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Paint>
+	<PaintRegular>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Painting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUseEaselGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimate targetAnim="Paint_Idle" />
+			<BFBehAnimate targetAnim="Paint_B" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="5">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+			<BFBehAnimate targetAnim="Paint_C" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="10">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+			<BFBehAnimate targetAnim="Paint_D" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="20">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+			<BFBehAnimate targetAnim="Paint_E" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="30">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</PaintRegular>
+	<PaintVariant>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Painting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUseEaselGood" priority="1" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimate targetAnim="Paint_Idle" />
+			<BFBehAnimate targetAnim="Paint_B" />
+			<BFBehSetAttribute>
+				<BFAITargetData f_PaintLevel="1">
+					<Options Reset="true" />
+				</BFAITargetData>
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalStimulationVeryGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</PaintVariant>
+	<ExitEasel>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitEasel>
+	<Eat>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</Eat>
+	<EatApple>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="target" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</EatApple>
+	<Drink>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimateRandom maxPlays="4" minPlays="2">
+				<randomAnims>
+					<Drink_A weight="50" />
+					<Drink_B weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Drink>
+	<EnterFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterFoodDish>
+	<EnterHollowLogLeft>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogLeft>
+	<EnterHollowLogRight>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogRight>
+	<EnterHollowLogMiddle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogMiddle>
+	<UseFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseFoodDish>
+	<DrinkFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimateRandom maxPlays="4" minPlays="2">
+				<randomAnims>
+					<Drink_A weight="50" />
+					<Drink_B weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</DrinkFoodDish>
+	<ExitFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitFoodDish>
+	<EnterBrowseHolder>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Browse" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBrowseHolder>
+	<UseBrowseHolder>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Browse_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_A" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseBrowseHolder>
+	<ExitBrowseHolder>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitBrowseHolder>
+	<EnterElevatedFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Browse" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterElevatedFoodDish>
+	<UseElevatedFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Browse_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_A" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseElevatedFoodDish>
+	<DrinkElevatedFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Browse_Idle" />
+			<BFBehAnimate targetAnim="Eat_Idle" />
+		</behaviors>
+	</DrinkElevatedFoodDish>
+	<ExitElevatedFoodDish>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitElevatedFoodDish>
+	<EnterShadeStructure>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestUnder" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockRadial rotError="180" subjectNode="Floor" targetRadius="3" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterShadeStructure>
+	<UseShadeStructure>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingUnder" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Stand_Idle" />
+		</behaviors>
+	</UseShadeStructure>
+	<ExitShadeStructure>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitShadeStructure>
+	<EnterBall>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBall>
+	<UseBall_Whap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</UseBall_Whap>
+	<UsePursuitBall_Whap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</UsePursuitBall_Whap>
+	<UseCarTire_Whap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</UseCarTire_Whap>
+	<UseBarrel_Whap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<PlayBarrel_Idle weight="50" />
+					<Barrel_Idle weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</UseBarrel_Whap>
+	<UseBall>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</UseBall>
+	<ExitBall>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitBall>
+	<EnterSubstratePile>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterSubstratePile>
+	<UseSubstratePile>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_PawGround weight="50" />
+					<Kneel_Idle weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseSubstratePile>
+	<ExitSubstratePile>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitSubstratePile>
+	<Graze>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</Graze>
+	<EnterTrough>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTrough>
+	<UseTrough>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseTrough>
+	<DrinkTrough>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="EatTrough_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="EatTrough_Idle" />
+		</behaviors>
+	</DrinkTrough>
+	<ExitTrough>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitTrough>
+	<EnterShelter1>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+		</behaviors>
+	</EnterShelter1>
+	<EnterShelter2>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+		</behaviors>
+	</EnterShelter2>
+	<UseShelter>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="LieBelly_Idle" />
+		</behaviors>
+	</UseShelter>
+	<ExitShelter1>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</ExitShelter1>
+	<ExitShelter2>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalPrivacyGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</ExitShelter2>
+	<SmashFence>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_HeadRam" />
+		</behaviors>
+	</SmashFence>
+	<Mate>
+		<subjects>
+			<ElephantStone_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Mating" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="10" targetAnim="Lie_Idle" />
+		</behaviors>
+	</Mate>
+	<Birth>
+		<subjects>
+			<ElephantStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet maxPlays="1" minPlays="1">
+				<randomSets>
+					<SpawnF weight="50" />
+					<SpawnM weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Birth>
+	<SpawnF>
+		<subjects>
+			<ElephantStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="ElephantStone_Young_F" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnF>
+	<SpawnM>
+		<subjects>
+			<ElephantStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="ElephantStone_Young_M" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnM>
+	<Sick>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Sick>
+	<VerySick>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="30" targetAnim="Lie_Idle" />
+		</behaviors>
+	</VerySick>
+	<MatingCall_F>
+		<subjects>
+			<ElephantStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Trumpet" />
+		</behaviors>
+	</MatingCall_F>
+	<MatingCall_M>
+		<subjects>
+			<ElephantStone_Adult_M />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Trumpet" />
+		</behaviors>
+	</MatingCall_M>
+	<TreadWater_Idle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</TreadWater_Idle>
+	<Stand_Idle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand_Idle>
+	<WaitAttackGuest>
+		<subjects>
+			<ElephantStone_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitAttackGuest>
+	<AttackGuest>
+		<subjects>
+			<ElephantStone_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_AttackGuest" />
+		</behaviors>
+	</AttackGuest>
+	<ChaseBall>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial locoSpeed="fast" subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWhap targetAnim="Stand_TrunkSwat" />
+			<ZTBehViewEvent viewKey="Pos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</behaviors>
+	</ChaseBall>
+	<TuskThrust>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandAggressive_TuskThrust" />
+		</behaviors>
+	</TuskThrust>
+	<DockFight>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock redock="true" reserveSlotName="general" subjectNode="p_FightOffset" targetNode="p_FightOffset" />
+		</behaviors>
+	</DockFight>
+	<WaitFight>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitFight>
+	<Fight>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandAggressive_TuskThrust" />
+		</behaviors>
+	</Fight>
+	<FightSnap>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</FightSnap>
+	<FightHurt>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<ZTBehViewEvent viewKey="Neg_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSetAttribute>
+				<BFAISubjectData health="30" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</FightHurt>
+	<DefendEqual>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Fight weight="50" />
+					<FightHurt weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</DefendEqual>
+	<Nurse>
+		<subjects>
+			<ElephantStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingNursed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="8" targetAnim="Nurse_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Nurse>
+	<DockNurse>
+		<subjects>
+			<ElephantStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock locoSpeed="fast" subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_NurseNode" />
+		</behaviors>
+	</DockNurse>
+	<WaitNurse>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitNurse>
+	<NurseYoung>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:NurseOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</NurseYoung>
+	<Caress>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_CaressAdult" />
+		</behaviors>
+	</Caress>
+	<BatheWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<SprayWater weight="50" />
+					<WallowWater weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</BatheWater>
+	<SprayWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SprayingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateRandom maxPlays="3" minPlays="2">
+				<randomAnims>
+					<Drink_ShowerA weight="50" />
+					<Drink_ShowerB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</SprayWater>
+	<WallowWater>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wallowing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="3" targetAnim="Lie_Roll" />
+		</behaviors>
+	</WallowWater>
+	<DockGreet>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToGreet" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_GreetNode" />
+		</behaviors>
+	</DockGreet>
+	<WaitGreet>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToGreet" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitGreet>
+	<Greet>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Greeting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="3" targetAnim="Stand_CaressAdult" />
+		</behaviors>
+	</Greet>
+	<GreetChild>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Greeting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="3" targetAnim="Stand_CaressYoung" />
+		</behaviors>
+	</GreetChild>
+	<GreetTeapot>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Greeting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="3" targetAnim="Teapot_Idle" />
+		</behaviors>
+	</GreetTeapot>
+	<WaitRam>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToRam" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitRam>
+	<DockRam>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToRam" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_RamNode" />
+		</behaviors>
+	</DockRam>
+	<Ram>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Ramming" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_HeadRam" />
+		</behaviors>
+	</Ram>
+	<WaitAggressive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Aggressive" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Noisemaker" />
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitAggressive>
+	<DockAggressive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Aggressive" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_AggressiveNode" />
+		</behaviors>
+	</DockAggressive>
+	<StandUpAggressive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Aggressive" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="StandAggressive_Idle" />
+			<BFBehAnimate targetAnim="StandAggressive_TuskThrust" />
+			<BFBehAnimate targetAnim="Stand_Noisemaker" />
+		</behaviors>
+	</StandUpAggressive>
+	<RespondAggressive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<StandUpAggressive weight="50" />
+					<Submissive weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</RespondAggressive>
+	<Submissive>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Submissive" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="WalkBack_Back" />
+		</behaviors>
+	</Submissive>
+	<CallMother>
+		<subjects>
+			<ElephantStone_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="TreadWater_Idle" />
+					<TreadWater behSet="TreadWater_Idle" />
+					<Stand behSet="Trumpet" />
+					<default behSet="Trumpet" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</CallMother>
+	<DockElephantLog_01>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehDock subjectNode="Node_Front" targetAnim="Stand_Idle" targetNode="Dock_01" />
+		</behaviors>
+	</DockElephantLog_01>
+	<DockElephantLog_02>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehDock subjectNode="Node_Front" targetAnim="Stand_Idle" targetNode="Dock_02" />
+		</behaviors>
+	</DockElephantLog_02>
+	<PickUpObject>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject detachAction="dropitem" locoMod="carry" targetAnim="Stand_2StandObject" targetNode="DockPickUp_01" />
+		</behaviors>
+	</PickUpObject>
+	<DropObject>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandObject_2Stand" />
+		</behaviors>
+	</DropObject>
+	<Turn180>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</Turn180>
+	<EnterDurianFruit>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterDurianFruit>
+	<UseDurianFruit>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="TrunkSwat" />
+			<ZTBehMorph morphEntity="target" morphPeriod="1" morphTargetEntityType="DurianFruit_Open_df" />
+		</behaviors>
+	</UseDurianFruit>
+	<EatDurianFruit>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Eat_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="Eat_Idle" />
+		</behaviors>
+	</EatDurianFruit>
+	<ExitDurianFruit>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="Turn180" />
+		</behaviors>
+	</ExitDurianFruit>
+	<LoopIdle>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="LoopStand" />
+					<Lie behSet="LoopLie" />
+					<default behSet="LoopStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</LoopIdle>
+	<LoopStand>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</LoopStand>
+	<LoopLie>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Lie_Idle" />
+		</behaviors>
+	</LoopLie>
+	<DockAttacked>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud" />
+			<BFBehDockNow reserveSlotName="general" subjectNode="p_PreyOffset" targetNode="p_PredatorOffset" />
+		</behaviors>
+	</DockAttacked>
+	<Attacked>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehPlaySet behSet="Die_Fight_Prey" />
+		</behaviors>
+	</Attacked>
+	<Die_Fight_Prey>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight_Prey>
+	<SwipeMed>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkSwat" />
+		</behaviors>
+	</SwipeMed>
+	<BiteMed>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_HeadRam" />
+		</behaviors>
+	</BiteMed>
+	<BitMediumEqual>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BitMed weight="50" />
+					<BitMedDie weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</BitMediumEqual>
+	<BitMed>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkPush" />
+		</behaviors>
+	</BitMed>
+	<BitMedDie>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkPush" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Killed" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</BitMedDie>
+	<HitMediumEqual>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<HitMed weight="50" />
+					<HitMedDie weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</HitMediumEqual>
+	<HitMed>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TrunkPush" />
+		</behaviors>
+	</HitMed>
+	<HitMedDie>
+		<subjects>
+			<ElephantStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Killed" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_StepBack" />
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</HitMedDie>
+</BehaviorSets>

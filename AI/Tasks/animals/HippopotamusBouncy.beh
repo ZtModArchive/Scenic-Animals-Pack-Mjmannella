@@ -1,0 +1,1997 @@
+<BehaviorSets>
+	<Default_Happy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<DefaultHappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy>
+	<Default_VeryHappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultHappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy>
+	<Default_Happy_inWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="90" />
+					<Default_inWater_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_inWater>
+	<Default_VeryHappy_inWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="80" />
+					<Default_inWater_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_inWater>
+	<Default_Happy_isSwimming>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_isSwimming>
+	<Default_VeryHappy_isSwimming>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_isSwimming>
+	<Default_Unhappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<DefaultUnhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy>
+	<Default_VeryUnhappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultUnhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy>
+	<Default_Unhappy_inWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="90" />
+					<Default_inWater_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_inWater>
+	<Default_VeryUnhappy_inWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="80" />
+					<Default_inWater_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_inWater>
+	<Default_Unhappy_isSwimming>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_isSwimming>
+	<Default_VeryUnhappy_isSwimming>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_isSwimming>
+	<DefaultStand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Standing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</DefaultStand>
+	<DefaultLie>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</DefaultLie>
+	<DefaultSleep>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sleeping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Sleep_Idle" />
+		</behaviors>
+	</DefaultSleep>
+	<DefaultTreadWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</DefaultTreadWater>
+	<DefaultHappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Gaping" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Gape" />
+		</behaviors>
+	</DefaultHappy>
+	<Default_inWater_Happy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wallowing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Wallow" />
+			<BFBehSetAttribute>
+				<BFAISubjectData hygiene="-5" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalHygieneGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_inWater_Happy>
+	<Default_isSwimming_Happy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidLand="true" locoSpeed="medium" maxPlayTime="15" minPlayTime="7" />
+			<BFBehSetAttribute>
+				<BFAITargetData exercise="-10" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Happy>
+	<DefaultUnhappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Roar" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</DefaultUnhappy>
+	<Default_inWater_Unhappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:StampingFoot" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Stomp" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_inWater_Unhappy>
+	<Default_isSwimming_Unhappy>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="TreadWater_WaterToss" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Unhappy>
+	<DefaultWander>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="WanderLand" />
+					<water behSet="WanderSurf" />
+					<underwater behSet="WanderSub" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</DefaultWander>
+	<WanderLand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidWater="true" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderLand>
+	<WanderWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="Surface_Submerge" />
+			<BFBehPlaySet behSet="DefaultWander" />
+		</behaviors>
+	</WanderWater>
+	<WanderSurf>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<WanderSurf_Fast weight="25" />
+					<WanderSurf_Med weight="25" />
+					<WanderSurf_Slow weight="25" />
+					<WanderSurf_Glide weight="25" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</WanderSurf>
+	<WanderSurf_Fast>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="fast" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Fast>
+	<WanderSurf_Med>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="medium" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Med>
+	<WanderSurf_Slow>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="slow" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Slow>
+	<WanderSurf_Glide>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="glide" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Glide>
+	<WanderSub>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<WanderSub_Fast weight="33" />
+					<WanderSub_Med weight="33" />
+					<WanderSub_Glide weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</WanderSub>
+	<WanderSub_Fast>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="fast" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Fast>
+	<WanderSub_Med>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="medium" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Med>
+	<WanderSub_Glide>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="glide" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Glide>
+	<WanderSubFloor>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove depthBelowSurface="12" locoSpeed="fast" />
+			<BFBehAnimate groundFit="false" interruptFlag="true" targetAnim="SwimSub_2StandFloor" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" ignoreBuoyNodes="true" locoSpeed="walksub" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSubFloor>
+	<Surface_Submerge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<water behSet="Submerge" />
+					<underwater behSet="Surface" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Surface_Submerge>
+	<Submerge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Submerging" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove depthBelowSurface="4" />
+		</behaviors>
+	</Submerge>
+	<Surface>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Surfacing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove depthBelowSurface="0" />
+		</behaviors>
+	</Surface>
+	<Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Idle" />
+					<water behSet="Water_Idle" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Idle>
+	<ChasePause>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Roar" />
+					<water behSet="TreadWater_Roar" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</ChasePause>
+	<Think>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="Idle" />
+					<default behSet="Idle" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Think>
+	<LookAt>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Idle weight="50" />
+					<Investigate weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LookAt>
+	<Investigate>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</Investigate>
+	<InvestigateLarge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehMove closestApproach="true" pathRadius="10" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</InvestigateLarge>
+	<Die_OldAge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDied" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_OldAge>
+	<Die_Sick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying_Sick" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_Sick>
+	<Die_Fight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight>
+	<Ground_Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="DefaultStand" />
+					<Lie behSet="DefaultLie" />
+					<Sleep behSet="DefaultSleep" />
+					<default behSet="DefaultStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Ground_Idle>
+	<Water_Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="DefaultTreadWater" />
+					<TreadWater behSet="DefaultTreadWater" />
+					<default behSet="DefaultTreadWater" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Water_Idle>
+	<Stand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand>
+	<Lie>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</Lie>
+	<Sleep>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</Sleep>
+	<Poop>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="PoopLand" />
+					<water behSet="PoopWater" />
+					<underwater behSet="PoopUnderwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Poop>
+	<PoopLand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Large" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</PoopLand>
+	<PoopWater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</PoopWater>
+	<PoopUnderwater>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWaterSub_Idle" />
+		</behaviors>
+	</PoopUnderwater>
+	<Poop_Sick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="PoopLand_Sick" />
+					<water behSet="PoopWater" />
+					<underwater behSet="PoopUnderwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Poop_Sick>
+	<PoopLand_Sick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Large_Sick" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</PoopLand_Sick>
+	<Pee>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="PeeLand" />
+					<water behSet="PoopWater" />
+					<underwater behSet="PoopUnderwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Pee>
+	<PeeLand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Pee_Idle" />
+		</behaviors>
+	</PeeLand>
+	<LookLeft>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_LookLeft" />
+		</behaviors>
+	</LookLeft>
+	<LookRight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_LookRight" />
+		</behaviors>
+	</LookRight>
+	<LookLeftRight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LookLeft weight="50" />
+					<LookRight weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LookLeftRight>
+	<Gape>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Gape" />
+		</behaviors>
+	</Gape>
+	<Bite>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Bite" />
+		</behaviors>
+	</Bite>
+	<Roar>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Roar" />
+		</behaviors>
+	</Roar>
+	<Fight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Bite" />
+		</behaviors>
+	</Fight>
+	<FightHurt>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Bite" />
+			<BFBehAnimate targetAnim="Stand_2Wallow_KnockedDown" />
+			<BFBehAnimate targetAnim="Wallow_Idle" />
+			<ZTBehViewEvent viewKey="Neg_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHurtBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehSetAttribute>
+				<BFAISubjectData health="30" />
+			</BFBehSetAttribute>
+		</behaviors>
+	</FightHurt>
+	<DefendEqual>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Fight weight="50" />
+					<FightHurt weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</DefendEqual>
+	<DockFight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehDockNow redock="true" reserveSlotName="general" subjectNode="p_FightOffset" targetNode="p_FightOffset" />
+		</behaviors>
+	</DockFight>
+	<DockFight2>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</DockFight2>
+	<FightSnap>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</FightSnap>
+	<FailureSet>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Failure" />
+					<water behSet="Water_Failure" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</FailureSet>
+	<Ground_Failure>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Roar" />
+					<default behSet="Roar" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Ground_Failure>
+	<Water_Failure>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="TreadWater_Grunt" />
+					<TreadWater behSet="TreadWater_Grunt" />
+					<default behSet="TreadWater_Grunt" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Water_Failure>
+	<Wallow>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="5" targetAnim="Wallow_Idle" />
+		</behaviors>
+	</Wallow>
+	<YoungGrunt>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="TreadWater_Grunt" />
+					<TreadWater behSet="TreadWater_Grunt" />
+					<Stand behSet="Grunt" />
+					<default behSet="Grunt" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</YoungGrunt>
+	<Grunt>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</Grunt>
+	<TreadWater_Grunt>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Grunt" />
+		</behaviors>
+	</TreadWater_Grunt>
+	<TreadWater_Roar>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Roar" />
+		</behaviors>
+	</TreadWater_Roar>
+	<TreadWater_Gape>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Gape" />
+		</behaviors>
+	</TreadWater_Gape>
+	<TreadWater_NoseBubbles>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_NoseBubbles" />
+		</behaviors>
+	</TreadWater_NoseBubbles>
+	<TreadWater_Nudge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Nudge" />
+		</behaviors>
+	</TreadWater_Nudge>
+	<TreadWater_Splash>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_Splash" />
+		</behaviors>
+	</TreadWater_Splash>
+	<TreadWater_WaterToss>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_WaterToss" />
+		</behaviors>
+	</TreadWater_WaterToss>
+	<Nudge>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Nudge" />
+		</behaviors>
+	</Nudge>
+	<EnterTreeRub>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToRub" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Dock_Rub" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTreeRub>
+	<RubTree>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_RubTreeA weight="50" />
+					<Stand_RubTreeB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Rubbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</RubTree>
+	<ExitTreeRub>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft90" />
+		</behaviors>
+	</ExitTreeRub>
+	<EnterBall>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBall>
+	<UseBall_Whap>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_Nudge" />
+		</behaviors>
+	</UseBall_Whap>
+	<UsePursuitBall_Whap>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_Nudge" />
+		</behaviors>
+	</UsePursuitBall_Whap>
+	<UseCarTire_Whap>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_Nudge" />
+		</behaviors>
+	</UseCarTire_Whap>
+	<UseBarrel_Whap>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_Nudge" />
+		</behaviors>
+	</UseBarrel_Whap>
+	<UseBall>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Nudge" />
+		</behaviors>
+	</UseBall>
+	<ExitBall>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitBall>
+	<Stomp>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Stomp" />
+		</behaviors>
+	</Stomp>
+	<Graze>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Graze" />
+		</behaviors>
+	</Graze>
+	<Chew>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Idle" />
+		</behaviors>
+	</Chew>
+	<BrowseBush>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Browse" />
+		</behaviors>
+	</BrowseBush>
+	<Eat>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</Eat>
+	<Drink>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="Drink_Idle" />
+		</behaviors>
+	</Drink>
+	<EnterFoodDish>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterFoodDish>
+	<EnterHollowLogLeft>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogLeft>
+	<EnterHollowLogRight>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogRight>
+	<EnterHollowLogMiddle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterHollowLogMiddle>
+	<UseFoodDish>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseFoodDish>
+	<DrinkFoodDish>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+		</behaviors>
+	</DrinkFoodDish>
+	<ExitFoodDish>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitFoodDish>
+	<EnterTrough>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTrough>
+	<UseTrough>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseTrough>
+	<DrinkTrough>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="Drink_Idle" />
+		</behaviors>
+	</DrinkTrough>
+	<ExitTrough>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitTrough>
+	<EnterSubstratePile>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterSubstratePile>
+	<UseSubstratePile>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" detachBehSet="Chew" targetAnim="Chew_Eat" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseSubstratePile>
+	<ExitSubstratePile>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitSubstratePile>
+	<Browse>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Browse" />
+		</behaviors>
+	</Browse>
+	<Stand_Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand_Idle>
+	<TreadWater_Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</TreadWater_Idle>
+	<TreadWaterSub_Idle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="TreadWaterSub_Idle" />
+		</behaviors>
+	</TreadWaterSub_Idle>
+	<DockAttacked>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud" />
+			<BFBehDockNow reserveSlotName="general" subjectNode="p_PreyOffset" targetNode="p_PredatorOffset" />
+		</behaviors>
+	</DockAttacked>
+	<Attacked>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_2Wallow_KnockedDown" />
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</Attacked>
+	<EnterShelter1>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+		</behaviors>
+	</EnterShelter1>
+	<EnterShelter2>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+		</behaviors>
+	</EnterShelter2>
+	<EnterShelter3>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+		</behaviors>
+	</EnterShelter3>
+	<EnterShelter4>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+		</behaviors>
+	</EnterShelter4>
+	<EnterShelter5>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+		</behaviors>
+	</EnterShelter5>
+	<EnterShelter6>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+		</behaviors>
+	</EnterShelter6>
+	<UseShelter>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Lie_Idle" />
+		</behaviors>
+	</UseShelter>
+	<ExitShelter1>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" />
+		</behaviors>
+	</ExitShelter1>
+	<ExitShelter2>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" />
+		</behaviors>
+	</ExitShelter2>
+	<ExitShelter3>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" />
+		</behaviors>
+	</ExitShelter3>
+	<ExitShelter4>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode08_Branch1DEnd2ExitD" />
+		</behaviors>
+	</ExitShelter4>
+	<ExitShelter5>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode10_Branch1EEnd2ExitE" />
+		</behaviors>
+	</ExitShelter5>
+	<ExitShelter6>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode12_Branch1FEnd2ExitF" />
+		</behaviors>
+	</ExitShelter6>
+	<Sick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Sick>
+	<VerySick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="30" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</VerySick>
+	<ChaseBall>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial locoSpeed="fast" subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWhap targetAnim="Stand_Nudge" />
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</behaviors>
+	</ChaseBall>
+	<Nurse>
+		<subjects>
+			<HippopotamusBouncy_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingNursed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="8" targetAnim="Stand_Nurse" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Nurse>
+	<DockNurse>
+		<subjects>
+			<HippopotamusBouncy_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock locoSpeed="fast" subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_NurseNode" />
+		</behaviors>
+	</DockNurse>
+	<WaitNurse>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitNurse>
+	<NurseYoung>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:NurseOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</NurseYoung>
+	<MatingCall_F>
+		<subjects>
+			<HippopotamusBouncy_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</MatingCall_F>
+	<MatingCall_M>
+		<subjects>
+			<HippopotamusBouncy_Adult_M />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Grunt" />
+		</behaviors>
+	</MatingCall_M>
+	<Mate>
+		<subjects>
+			<HippopotamusBouncy_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Mating" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="10" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</Mate>
+	<Birth>
+		<subjects>
+			<HippopotamusBouncy_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<SpawnF weight="50" />
+					<SpawnM weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Birth>
+	<SpawnF>
+		<subjects>
+			<HippopotamusBouncy_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="HippopotamusBouncy_Young_F" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnF>
+	<SpawnM>
+		<subjects>
+			<HippopotamusBouncy_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="HippopotamusBouncy_Young_M" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnM>
+	<ChewCud>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Chew_Idle" />
+			<BFBehAnimate targetAnim="Chew_Idle" />
+			<BFBehAnimate targetAnim="Chew_Idle" />
+		</behaviors>
+	</ChewCud>
+	<EnterSaltLick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterSaltLick>
+	<UseSaltLick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Drink_Lick" />
+		</behaviors>
+	</UseSaltLick>
+	<ExitSaltLick>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitSaltLick>
+	<InterspeciesTerritorialCall>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Roar" />
+		</behaviors>
+	</InterspeciesTerritorialCall>
+	<Turn180>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</Turn180>
+	<LoopIdle>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="LoopStand" />
+					<Lie behSet="LoopLie" />
+					<Sleep behSet="LoopSleep" />
+					<default behSet="LoopStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</LoopIdle>
+	<LoopStand>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</LoopStand>
+	<LoopLie>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Lie_Idle" />
+		</behaviors>
+	</LoopLie>
+	<LoopSleep>
+		<subjects>
+			<HippopotamusBouncy />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</LoopSleep>
+</BehaviorSets>

@@ -1,0 +1,22 @@
+<BehaviorSets>
+	<BuyElephantStoneGift>
+		<subjects>
+			<Guest_Young />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart" />
+			<BFBehAttachObject attachEntity="ElephantStone_Gift" container="back_inventory" detachAction="inventory" subjectNode="Bip01 Spine3" />
+			<BFBehAnimate targetAnim="Stand_Turn180" />
+		</behaviors>
+	</BuyElephantStoneGift>
+	<BuyElephantStoneGift>
+		<subjects>
+			<Guest_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="DockGiftCart" />
+			<BFBehAttachObject attachEntity="ElephantStone_Gift" container="back_inventory" detachAction="inventory" subjectNode="Bip01 Spine3" />
+			<BFBehAnimate targetAnim="Stand_Turn180" />
+		</behaviors>
+	</BuyElephantStoneGift>
+</BehaviorSets>

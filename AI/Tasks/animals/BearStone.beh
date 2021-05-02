@@ -1,0 +1,4576 @@
+<BehaviorSets>
+	<Default_Happy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="90" />
+					<DefaultHappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy>
+	<Default_VeryHappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultHappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy>
+	<Default_Happy_inWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="90" />
+					<Default_inWater_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_inWater>
+	<Default_VeryHappy_inWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="80" />
+					<Default_inWater_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_inWater>
+	<Default_Happy_isSwimming>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Pos_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalHappy" priority="0" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Happy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Happy_isSwimming>
+	<Default_VeryHappy_isSwimming>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="DPos_5">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryHappy" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Happy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryHappy_isSwimming>
+	<Default_Unhappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="80" />
+					<DefaultPant weight="10" />
+					<DefaultUnhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy>
+	<Default_VeryUnhappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultStand weight="70" />
+					<DefaultPant weight="10" />
+					<DefaultUnhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy>
+	<Default_Unhappy_inWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="80" />
+					<DefaultPant weight="10" />
+					<Default_inWater_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_inWater>
+	<Default_VeryUnhappy_inWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultLie weight="70" />
+					<DefaultPant weight="10" />
+					<Default_inWater_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_inWater>
+	<Default_Unhappy_isSwimming>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_2">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalUnhappy" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="90" />
+					<Default_isSwimming_Unhappy weight="10" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_Unhappy_isSwimming>
+	<Default_VeryUnhappy_isSwimming>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehViewEvent viewKey="Neg_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalVeryUnhappy" priority="2" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehRandomSet>
+				<randomSets>
+					<DefaultTreadWater weight="80" />
+					<Default_isSwimming_Unhappy weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Default_VeryUnhappy_isSwimming>
+	<DefaultStand>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Standing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</DefaultStand>
+	<DefaultLie>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</DefaultLie>
+	<DefaultSit>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sitting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+		</behaviors>
+	</DefaultSit>
+	<DefaultTreadWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</DefaultTreadWater>
+	<DefaultPant>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Panting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Pant" />
+		</behaviors>
+	</DefaultPant>
+	<DefaultHappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Yawning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Yawn" />
+		</behaviors>
+	</DefaultHappy>
+	<Default_inWater_Happy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Yawning" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Yawn" />
+		</behaviors>
+	</Default_inWater_Happy>
+	<Default_isSwimming_Happy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Wandering" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidLand="true" locoSpeed="medium" maxPlayTime="15" minPlayTime="7" />
+			<BFBehSetAttribute>
+				<BFAITargetData exercise="-10" />
+			</BFBehSetAttribute>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalExerciseGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Happy>
+	<DefaultUnhappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Roaring" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Roar" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</DefaultUnhappy>
+	<Default_inWater_Unhappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Pouncing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Pounce" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_inWater_Unhappy>
+	<Default_isSwimming_Unhappy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:TreadingWater" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAngry" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Default_isSwimming_Unhappy>
+	<DefaultWander>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="WanderLand" />
+					<water behSet="WanderSurf" />
+					<underwater behSet="WanderSub" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</DefaultWander>
+	<WanderLand>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WalkingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidWater="true" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderLand>
+	<WanderWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="Surface_Submerge" />
+			<BFBehPlaySet behSet="DefaultWander" />
+		</behaviors>
+	</WanderWater>
+	<WanderSurf>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<WanderSurf_Fast weight="25" />
+					<WanderSurf_Med weight="25" />
+					<WanderSurf_Slow weight="25" />
+					<WanderSurf_Glide weight="25" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</WanderSurf>
+	<WanderSurf_Fast>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="fast" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Fast>
+	<WanderSurf_Med>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="medium" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Med>
+	<WanderSurf_Slow>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="slow" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Slow>
+	<WanderSurf_Glide>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="glide" maxPlayTime="15" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSurf_Glide>
+	<WanderSub>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<WanderSub_Fast weight="25" />
+					<WanderSub_Med weight="25" />
+					<WanderSub_Slow weight="25" />
+					<WanderSub_Glide weight="25" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</WanderSub>
+	<WanderSub_Fast>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="fast" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Fast>
+	<WanderSub_Med>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="medium" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Med>
+	<WanderSub_Slow>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="slow" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Slow>
+	<WanderSub_Glide>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehWander avoidEntityRadius="8" avoidLand="true" avoidObstacleRadius="6" locoSpeed="glide" maxDepth="10" maxPlayTime="15" minDepth="2" minPlayTime="7">
+				<avoidEntityTypes>
+					<b_XLargePredator />
+					<b_LargePredator />
+					<b_MediumPredator />
+					<b_SmallPredator />
+				</avoidEntityTypes>
+			</BFBehWander>
+		</behaviors>
+	</WanderSub_Glide>
+	<Surface_Submerge>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<water behSet="Submerge" />
+					<underwater behSet="Surface" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Surface_Submerge>
+	<Submerge>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Submerging" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove depthBelowSurface="4" />
+		</behaviors>
+	</Submerge>
+	<Surface>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Surfacing" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehMove depthBelowSurface="0" />
+		</behaviors>
+	</Surface>
+	<Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Idle" />
+					<water behSet="Water_Idle" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</Idle>
+	<Think>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="Idle" />
+					<default behSet="Idle" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Think>
+	<LookAt>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Idle weight="50" />
+					<Investigate weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</LookAt>
+	<Investigate>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetRadius="4" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Stand_Sniff" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</Investigate>
+	<InvestigateLarge>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToLookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehMove closestApproach="true" pathRadius="10" />
+			<ZTBehViewEvent viewKey="Pos_2" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LookAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehFaceTarget />
+			<BFBehPlaySet behSet="Stand" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</InvestigateLarge>
+	<Die_OldAge>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDied" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_OldAge>
+	<Die_Sick>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Dying_Sick" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Sleep" />
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalDiedSickBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalDiedSick" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehKill fadeOutPeriod="1" killSubject="true" />
+		</behaviors>
+	</Die_Sick>
+	<Die_Fight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight>
+	<Ground_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="DefaultStand" />
+					<Lie behSet="DefaultLie" />
+					<Sit behSet="DefaultSit" />
+					<default behSet="DefaultStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Ground_Idle>
+	<Water_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="DefaultTreadWater" />
+					<TreadWater behSet="DefaultTreadWater" />
+					<default behSet="DefaultTreadWater" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Water_Idle>
+	<FailureSet>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Ground_Failure" />
+					<water behSet="Water_Failure" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</FailureSet>
+	<Ground_Failure>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="Roar" />
+		</behaviors>
+	</Ground_Failure>
+	<Water_Failure>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehPlaySet behSet="TreadWater_Idle" />
+		</behaviors>
+	</Water_Failure>
+	<Stand>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand>
+	<Sit>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Sitting" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate interruptible="true" playTime="8" targetAnim="Sit_Idle" />
+		</behaviors>
+	</Sit>
+	<Lie_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptible="true" playTime="8" targetAnim="Lie_Idle" />
+		</behaviors>
+	</Lie_Idle>
+	<LieBelly>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptible="true" playTime="8" targetAnim="LieBelly_Idle" />
+		</behaviors>
+	</LieBelly>
+	<LieBellyPaws>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptible="true" playTime="8" targetAnim="LieBellyPaws_Idle" />
+		</behaviors>
+	</LieBellyPaws>
+	<Belly>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<LieBelly weight="70" />
+					<LieBellyPaws weight="30" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Belly>
+	<Lie>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:LyingDown" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehRandomSet>
+				<randomSets>
+					<Lie_Idle weight="50" />
+					<LieSide weight="30" />
+					<Belly weight="20" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Lie>
+	<LieSide>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptible="true" playTime="8" targetAnim="LieSide_Idle" />
+		</behaviors>
+	</LieSide>
+	<Sleep_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</Sleep_Idle>
+	<SleepSide>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="20" targetAnim="SleepSide_Idle" />
+		</behaviors>
+	</SleepSide>
+	<Sleep>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Sleep_Idle weight="95" />
+					<SleepSide weight="5" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Sleep>
+	<Stand_Yawn>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Yawn" />
+		</behaviors>
+	</Stand_Yawn>
+	<Lie_Yawn>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Yawn" />
+		</behaviors>
+	</Lie_Yawn>
+	<Sit_Yawn>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Yawn" />
+		</behaviors>
+	</Sit_Yawn>
+	<Yawn>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Yawn" />
+					<Sit behSet="Sit_Yawn" />
+					<Lie behSet="Lie_Yawn" />
+					<default behSet="Stand_Yawn" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Yawn>
+	<Stand_Chuff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Chuff" />
+		</behaviors>
+	</Stand_Chuff>
+	<Sit_Chuff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Chuff" />
+		</behaviors>
+	</Sit_Chuff>
+	<Chuff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Chuff" />
+					<Sit behSet="Sit_Chuff" />
+					<default behSet="Stand_Chuff" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Chuff>
+	<Stand_Growl>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Growl" />
+		</behaviors>
+	</Stand_Growl>
+	<Sit_Growl>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Growl" />
+		</behaviors>
+	</Sit_Growl>
+	<Growl>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Stand behSet="Stand_Growl" />
+					<Sit behSet="Sit_Growl" />
+					<default behSet="Stand_Growl" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</Growl>
+	<Stand_Roar>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Roar" />
+		</behaviors>
+	</Stand_Roar>
+	<StandBi_Roar>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandBi_Roar" />
+		</behaviors>
+	</StandBi_Roar>
+	<Roar>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Stand_Roar weight="50" />
+					<StandBi_Roar weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Roar>
+	<Poop>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Medium" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop>
+	<Poop_Sick>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn spawnEntity="Poop_Medium_Sick" subjectNode="Poop" targetAnim="Poop_Idle" />
+		</behaviors>
+	</Poop_Sick>
+	<Pee>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Pee_Idle" />
+		</behaviors>
+	</Pee>
+	<Stand_Sniff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_SniffA weight="50" />
+					<Stand_SniffB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Stand_Sniff>
+	<StandBi_Sniff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<StandBi_SniffA weight="50" />
+					<StandBi_SniffB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</StandBi_Sniff>
+	<Sniff>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Stand_Sniff weight="50" />
+					<StandBi_Sniff weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Sniff>
+	<Shake>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_ShakeOff" />
+		</behaviors>
+	</Shake>
+	<GroomSelf>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAnimate targetAnim="LickPaw_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<LickPaw_GroomA weight="50" />
+					<LickPaw_GroomB weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</GroomSelf>
+	<Roll>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Lie_RollR weight="50" />
+					<Lie_RollL weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Roll>
+	<GroomYoung>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_GroomYoung" />
+		</behaviors>
+	</GroomYoung>
+	<Nuzzle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Nuzzle" />
+		</behaviors>
+	</Nuzzle>
+	<SwingHead>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_SwingHead" />
+		</behaviors>
+	</SwingHead>
+	<Pant>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Pant" />
+		</behaviors>
+	</Pant>
+	<ScratchSelf>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Sit_ScratchEarFrontPaw weight="50" />
+					<Sit_ScratchEarHindPaw weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</ScratchSelf>
+	<SuckPaw>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Sit_Idle" />
+			<BFBehAnimate targetAnim="PawSuck_Idle" />
+			<BFBehAnimate targetAnim="Sit_Idle" />
+		</behaviors>
+	</SuckPaw>
+	<Pounce>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Stand_Pounce weight="50" />
+					<Stand_Jump weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</Pounce>
+	<Eat>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Graze_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Graze_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</Eat>
+	<Graze>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Graze_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</Graze>
+	<Drink>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Eat_Drink" />
+			<BFBehAnimate targetAnim="Eat_Idle" />
+			<BFBehAnimate targetAnim="Eat_Drink" />
+		</behaviors>
+	</Drink>
+	<EnterFoodDish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterFoodDish>
+	<UseFoodDish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehRandomSet>
+				<randomSets>
+					<Eat_A weight="50" />
+					<Eat_B weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseFoodDish>
+	<Eat_A>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_A" targetNode="Dock_Attach" />
+		</behaviors>
+	</Eat_A>
+	<Eat_B>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+		</behaviors>
+	</Eat_B>
+	<DrinkFoodDish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Eat_Drink" />
+			<BFBehAnimate targetAnim="Eat_Idle" />
+			<BFBehAnimate targetAnim="Eat_Drink" />
+		</behaviors>
+	</DrinkFoodDish>
+	<ExitFoodDish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitFoodDish>
+	<EnterTrough>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="p_HollowLogDock" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterTrough>
+	<UseTrough>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="EatTrough_Idle" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseTrough>
+	<DrinkTrough>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="EatTrough_Idle" />
+			<BFBehAnimate targetAnim="Stand_Idle" />
+			<BFBehAnimate targetAnim="EatTrough_Idle" />
+		</behaviors>
+	</DrinkTrough>
+	<ExitTrough>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitTrough>
+	<EnterBeefShank>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBeefShank>
+	<UseBeefShank>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehRandomSet>
+				<randomSets>
+					<Eat_A weight="50" />
+					<Eat_B weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseBeefShank>
+	<ExitBeefShank>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitBeefShank>
+	<EnterLiveFood>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterLiveFood>
+	<UseLiveFood>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Eat_Idle" />
+			<BFBehAnimate targetAnim="Eat_B" />
+			<BFBehAnimate targetAnim="Eat_Idle" />
+			<BFBehAnimate targetAnim="Eat_A" />
+		</behaviors>
+	</UseLiveFood>
+	<ExitLiveFood>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitLiveFood>
+	<Fish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="5" targetAnim="Fish_Idle" />
+		</behaviors>
+	</Fish>
+	<CatchFish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Fish_2Stand_WithFish" />
+		</behaviors>
+	</CatchFish>
+	<Threaten>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_ThreatenObject" />
+		</behaviors>
+	</Threaten>
+	<DockFight>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehDockNow redock="true" reserveSlotName="general" subjectNode="p_FightOffset" targetNode="p_FightOffset" />
+		</behaviors>
+	</DockFight>
+	<DockFight2>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</DockFight2>
+	<FightSnap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</FightSnap>
+	<DockFight>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="2" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehDockNow redock="true" reserveSlotName="general" subjectNode="p_FightOffset" targetNode="p_FightOffset" />
+		</behaviors>
+	</DockFight>
+	<DockFight2>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPursuit hitRadius="2" locoSpeed="fast" pollFreq="0.1" pursuitRadius="20" />
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</DockFight2>
+	<DockPlayFight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockRadial locoSpeed="fast" subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_PredatorFightOffset" />
+		</behaviors>
+	</DockPlayFight>
+	<WaitPlayFight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayFight" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitPlayFight>
+	<WaitFight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitFight>
+	<SwipeMed>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="SwipeMed_Land" />
+					<water behSet="SwipeMed_Water" />
+					<underwater behSet="SwipeMed_Underwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</SwipeMed>
+	<SwipeMed_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</SwipeMed_Land>
+	<SwipeMed_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Swim_SwipeLeft weight="50" />
+					<Swim_SwipeRight weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</SwipeMed_Water>
+	<SwipeMed_Underwater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<SwimSub_SwipeLeft weight="50" />
+					<SwimSub_SwipeRight weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</SwipeMed_Underwater>
+	<BiteMed>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="BiteMed_Land" />
+					<water behSet="BiteMed_Water" />
+					<underwater behSet="BiteMed_Underwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</BiteMed>
+	<BiteMed_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+		</behaviors>
+	</BiteMed_Land>
+	<BiteMed_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Swim_Bite" />
+		</behaviors>
+	</BiteMed_Water>
+	<BiteMed_Underwater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SwimSub_Bite" />
+		</behaviors>
+	</BiteMed_Underwater>
+	<BitMediumEqual>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<BitMed weight="50" />
+					<BitMedDie weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</BitMediumEqual>
+	<BitMed>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+		</behaviors>
+	</BitMed>
+	<BitMedDie>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Killed" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</BitMedDie>
+	<HitMediumEqual>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<HitMed weight="50" />
+					<HitMedDie weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</HitMediumEqual>
+	<HitMed>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</HitMed>
+	<HitMedDie>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Killed" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Neg_10">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalKilledBad" priority="-1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTMessageInfo global="true" locID="zoomessages:AnimalAttacked" priority="-1" timeout="60" useEntityName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_AttackLow" />
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</HitMedDie>
+	<AttackLow>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</AttackLow>
+	<AttackBall_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</AttackBall_Whap>
+	<AttackBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</AttackBall>
+	<AttackMedium>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackMed" />
+		</behaviors>
+	</AttackMedium>
+	<AttackHigh>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_AttackHigh" />
+		</behaviors>
+	</AttackHigh>
+	<Attacked>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Attacked_Idle" />
+			<BFBehAnimate targetAnim="LieBellyPaws_Idle" />
+			<BFBehPlaySet behSet="Die_Fight" />
+		</behaviors>
+	</Attacked>
+	<ChasePrey>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehPursuit hitRadius="10" locoSpeed="stalk" pursuitRadius="30" />
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="ChasePrey_Land" />
+					<water behSet="ChasePrey_Water" />
+					<underwater behSet="ChasePrey_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</ChasePrey>
+	<ChasePrey_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="3" targetAnim="Stand_SniffA" />
+			<BFBehAnimate targetAnim="Stand_ThreatenObject" />
+		</behaviors>
+	</ChasePrey_Land>
+	<ChasePrey_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="3" targetAnim="TreadWater_Idle" />
+			<BFBehAnimate targetAnim="Swim_Roll" />
+		</behaviors>
+	</ChasePrey_Water>
+	<TeachChase>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<BFBehPursuit hitRadius="4" locoSpeed="stalk" pursuitRadius="30" />
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="ChasePrey_Land" />
+					<water behSet="ChasePrey_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</TeachChase>
+	<MissPrey>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RoarAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Roar" />
+		</behaviors>
+	</MissPrey>
+	<AttackPrey>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="AttackPrey_Land" />
+					<water behSet="AttackPrey_Water" />
+					<underwater behSet="AttackPrey_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</AttackPrey>
+	<AttackPrey_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_AttackHigh" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="30" />
+			<BFBehAnimate interruptFlag="true" loopFlag="true" targetAnim="Stand_AttackLow" />
+		</behaviors>
+	</AttackPrey_Land>
+	<AttackPrey_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Swim_Roll" />
+			<BFBehPursuit hitRadius="3" locoSpeed="fast" pursuitRadius="30" />
+			<BFBehAnimate interruptFlag="true" loopFlag="true" targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</AttackPrey_Water>
+	<Nudge>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_NudgeObject" />
+		</behaviors>
+	</Nudge>
+	<NudgeBall_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehWhap targetAnim="Stand_NudgeObject" />
+		</behaviors>
+	</NudgeBall_Whap>
+	<NudgeBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_NudgeObject" />
+		</behaviors>
+	</NudgeBall>
+	<EnterBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="EnterBall_Land" />
+					<water behSet="EnterBall_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</EnterBall>
+	<EnterBall_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBall_Land>
+	<EnterBall_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Swim_2SwimGnawIce" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterBall_Water>
+	<GrabBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Carry" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</GrabBall>
+	<PickUpBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject detachAction="dropitem" locoMod="carry" targetAnim="Stand_2StandObject" targetNode="Dock_Pickup" />
+		</behaviors>
+	</PickUpBall>
+	<PickUpBone>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject detachAction="dropitem" locoMod="carry" targetAnim="Stand_2StandObject" targetNode="Dock_PickUp" />
+		</behaviors>
+	</PickUpBone>
+	<PickUpRubberToy>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject detachAction="dropitem" locoMod="carry" targetAnim="Stand_2StandObject" targetNode="Dock_PickUp01" />
+		</behaviors>
+	</PickUpRubberToy>
+	<PickUpFeederBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject detachAction="dropitem" locoMod="carry" targetAnim="Stand_2StandObject" targetNode="Dock_Pickup" />
+		</behaviors>
+	</PickUpFeederBall>
+	<UseBall_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall_Whap weight="33" />
+					<NudgeBall_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBall_Whap>
+	<UsePursuitBall_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall_Whap weight="33" />
+					<NudgeBall_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UsePursuitBall_Whap>
+	<UseCarTire_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall_Whap weight="33" />
+					<NudgeBall_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseCarTire_Whap>
+	<UseBarrel_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall_Whap weight="33" />
+					<NudgeBall_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBarrel_Whap>
+	<UseBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="UseBall_Land" />
+					<water behSet="UseBall_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</UseBall>
+	<UseBall_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall weight="33" />
+					<NudgeBall weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseBall_Land>
+	<UseBall_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SwimGnawIce_Idle" />
+			<BFBehAnimate targetAnim="SwimGnawIce_PlayIce" />
+			<BFBehAnimate targetAnim="SwimGnawIce_Idle" />
+		</behaviors>
+	</UseBall_Water>
+	<PlayBone>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackLow weight="33" />
+					<Nudge weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</PlayBone>
+	<ExitBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="ExitBall_Land" />
+					<water behSet="ExitBall_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</ExitBall>
+	<ExitBall_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitBall_Land>
+	<ExitBall_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="SwimGnawIce_2Swim" />
+		</behaviors>
+	</ExitBall_Water>
+	<DropObject>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<groundcarry behSet="DropObject_Ground" />
+					<watercarry behSet="DropObject_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</DropObject>
+	<DropObject_Ground>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandObject_2Stand" />
+		</behaviors>
+	</DropObject_Ground>
+	<DropObject_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWaterObject_2TreadWater" />
+		</behaviors>
+	</DropObject_Water>
+	<TurnRight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</TurnRight>
+	<GuestAttack>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="OnGuest_Idle" />
+			<BFBehAnimate targetAnim="OnGuest_Roar" />
+		</behaviors>
+	</GuestAttack>
+	<DockGroom>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="Node_Mouth" />
+		</behaviors>
+	</DockGroom>
+	<WaitGroom>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitGroom>
+	<Stand_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</Stand_Idle>
+	<TreadWater_Idle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="TreadWater_Idle" />
+		</behaviors>
+	</TreadWater_Idle>
+	<WaitAttack>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitAttack>
+	<EnterIceBlock>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceBlock>
+	<UseIceBlock>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehRandomSet>
+				<randomSets>
+					<Eat_A weight="50" />
+					<Eat_B weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_Idle" targetNode="Dock_Attach" />
+			<BFBehAttachObject attachEntity="s_prop" container="foodprop" detachAction="killitem" targetAnim="Eat_B" targetNode="Dock_Attach" />
+		</behaviors>
+	</UseIceBlock>
+	<ExitIceBlock>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitIceBlock>
+	<EnterPoleRope>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDock subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="Dock_Swipe" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterPoleRope>
+	<UsePoleRope>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="50" />
+					<AttackLow weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UsePoleRope>
+	<UsePoleRope_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="50" />
+					<AttackBall_Whap weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UsePoleRope_Whap>
+	<ExitPoleRope>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnRight90" />
+		</behaviors>
+	</ExitPoleRope>
+	<EnterIceFloe_Large1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterA" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterA" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Large1>
+	<EnterIceFloe_Large2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterB" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterB" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Large2>
+	<UseIceFloe_Large>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingOn" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="LieBelly_Idle" />
+		</behaviors>
+	</UseIceFloe_Large>
+	<ExitIceFloe_Large1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitA" />
+		</behaviors>
+	</ExitIceFloe_Large1>
+	<ExitIceFloe_Large2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitB" />
+		</behaviors>
+	</ExitIceFloe_Large2>
+	<EnterIceFloe_Medium1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterA" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterA" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium1>
+	<EnterIceFloe_Medium2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterB" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterB" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium2>
+	<EnterIceFloe_Medium3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterC" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterC" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium3>
+	<EnterIceFloe_Medium4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterD" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterD" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium4>
+	<EnterIceFloe_Medium5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterE" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterE" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium5>
+	<EnterIceFloe_Medium6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterF" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterF" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium6>
+	<EnterIceFloe_Medium7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterG" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterG" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium7>
+	<EnterIceFloe_Medium8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterH" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterH" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium8>
+	<EnterIceFloe_Medium9>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterI" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterI" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium9>
+	<EnterIceFloe_Medium10>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterJ" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterJ" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium10>
+	<EnterIceFloe_Medium11>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterK" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterK" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium11>
+	<EnterIceFloe_Medium12>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterL" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterL" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium12>
+	<EnterIceFloe_Medium13>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterM" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterM" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium13>
+	<EnterIceFloe_Medium14>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterN" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterN" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium14>
+	<EnterIceFloe_Medium15>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterO" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterO" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium15>
+	<EnterIceFloe_Medium16>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="TreadWater_Idle" targetTAP="EnterP" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterP" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterIceFloe_Medium16>
+	<UseIceFloe_Medium>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingOn" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="LieBelly_Idle" />
+		</behaviors>
+	</UseIceFloe_Medium>
+	<ExitIceFloe_Medium1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitA" />
+		</behaviors>
+	</ExitIceFloe_Medium1>
+	<ExitIceFloe_Medium2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitB" />
+		</behaviors>
+	</ExitIceFloe_Medium2>
+	<ExitIceFloe_Medium3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitC" />
+		</behaviors>
+	</ExitIceFloe_Medium3>
+	<ExitIceFloe_Medium4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitD" />
+		</behaviors>
+	</ExitIceFloe_Medium4>
+	<ExitIceFloe_Medium5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitE" />
+		</behaviors>
+	</ExitIceFloe_Medium5>
+	<ExitIceFloe_Medium6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitF" />
+		</behaviors>
+	</ExitIceFloe_Medium6>
+	<ExitIceFloe_Medium7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitG" />
+		</behaviors>
+	</ExitIceFloe_Medium7>
+	<ExitIceFloe_Medium8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitH" />
+		</behaviors>
+	</ExitIceFloe_Medium8>
+	<ExitIceFloe_Medium9>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitI" />
+		</behaviors>
+	</ExitIceFloe_Medium9>
+	<ExitIceFloe_Medium10>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitJ" />
+		</behaviors>
+	</ExitIceFloe_Medium10>
+	<ExitIceFloe_Medium11>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitK" />
+		</behaviors>
+	</ExitIceFloe_Medium11>
+	<ExitIceFloe_Medium12>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitL" />
+		</behaviors>
+	</ExitIceFloe_Medium12>
+	<ExitIceFloe_Medium13>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitM" />
+		</behaviors>
+	</ExitIceFloe_Medium13>
+	<ExitIceFloe_Medium14>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitN" />
+		</behaviors>
+	</ExitIceFloe_Medium14>
+	<ExitIceFloe_Medium15>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitO" />
+		</behaviors>
+	</ExitIceFloe_Medium15>
+	<ExitIceFloe_Medium16>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitP" />
+		</behaviors>
+	</ExitIceFloe_Medium16>
+	<EnterHeatedRock1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterA" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterA" />
+		</behaviors>
+	</EnterHeatedRock1>
+	<EnterHeatedRock2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterB" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterB" />
+		</behaviors>
+	</EnterHeatedRock2>
+	<EnterHeatedRock3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterC" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterC" />
+		</behaviors>
+	</EnterHeatedRock3>
+	<EnterHeatedRock4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterD" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterD" />
+		</behaviors>
+	</EnterHeatedRock4>
+	<EnterHeatedRock5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterE" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterE" />
+		</behaviors>
+	</EnterHeatedRock5>
+	<EnterHeatedRock6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterF" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterF" />
+		</behaviors>
+	</EnterHeatedRock6>
+	<EnterHeatedRock7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterA" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterA" />
+		</behaviors>
+	</EnterHeatedRock7>
+	<EnterHeatedRock8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToUse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="EnterA" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTAP="false" subjectNode="Floor" targetTAP="EnterA" />
+		</behaviors>
+	</EnterHeatedRock8>
+	<UseHeatedRock>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingOn" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Sit_Idle" />
+			<BFBehAnimate targetAnim="Sit_2Stand" />
+		</behaviors>
+	</UseHeatedRock>
+	<ExitHeatedRock1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitA" />
+		</behaviors>
+	</ExitHeatedRock1>
+	<ExitHeatedRock2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitB" />
+		</behaviors>
+	</ExitHeatedRock2>
+	<ExitHeatedRock3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitC" />
+		</behaviors>
+	</ExitHeatedRock3>
+	<ExitHeatedRock4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitD" />
+		</behaviors>
+	</ExitHeatedRock4>
+	<ExitHeatedRock5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitE" />
+		</behaviors>
+	</ExitHeatedRock5>
+	<ExitHeatedRock6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitF" />
+		</behaviors>
+	</ExitHeatedRock6>
+	<ExitHeatedRock7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitG" />
+		</behaviors>
+	</ExitHeatedRock7>
+	<ExitHeatedRock8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="LieBelly_2Stand" />
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="ExitH" />
+		</behaviors>
+	</ExitHeatedRock8>
+	<EnterShelter1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode01_BaseA2Branch1AEnd" />
+		</behaviors>
+	</EnterShelter1>
+	<EnterShelter2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode03_BaseB2Branch1BEnd" />
+		</behaviors>
+	</EnterShelter2>
+	<EnterShelter3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode05_BaseC2Branch1CEnd" />
+		</behaviors>
+	</EnterShelter3>
+	<EnterShelter4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode07_BaseD2Branch1DEnd" />
+		</behaviors>
+	</EnterShelter4>
+	<EnterShelter5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode09_BaseE2Branch1EEnd" />
+		</behaviors>
+	</EnterShelter5>
+	<EnterShelter6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingRestShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Walk_Ahead" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+			<BFBehHeadLook disengage="true" />
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Bip01_DockNode11_BaseF2Branch1FEnd" />
+		</behaviors>
+	</EnterShelter6>
+	<UseShelter>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Sit_Idle" />
+			<BFBehAnimate targetAnim="Sit_2Stand" />
+		</behaviors>
+	</UseShelter>
+	<ExitShelter1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode02_Branch1AEnd2ExitA" />
+		</behaviors>
+	</ExitShelter1>
+	<ExitShelter2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode04_Branch1BEnd2ExitB" />
+		</behaviors>
+	</ExitShelter2>
+	<ExitShelter3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode06_Branch1CEnd2ExitC" />
+		</behaviors>
+	</ExitShelter3>
+	<ExitShelter4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode08_Branch1DEnd2ExitD" />
+		</behaviors>
+	</ExitShelter4>
+	<ExitShelter5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode10_Branch1EEnd2ExitE" />
+		</behaviors>
+	</ExitShelter5>
+	<ExitShelter6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ExitingShelter" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Bip01_DockNode12_Branch1FEnd2ExitF" />
+		</behaviors>
+	</ExitShelter6>
+	<EnterRock1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterA" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterA" />
+		</behaviors>
+	</EnterRock1>
+	<EnterRock2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterB" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterB" />
+		</behaviors>
+	</EnterRock2>
+	<EnterRock3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterC" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterC" />
+		</behaviors>
+	</EnterRock3>
+	<EnterRock4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterD" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterD" />
+		</behaviors>
+	</EnterRock4>
+	<EnterRock5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterE" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterE" />
+		</behaviors>
+	</EnterRock5>
+	<EnterRock6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterF" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterF" />
+		</behaviors>
+	</EnterRock6>
+	<EnterRock7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterG" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterG" />
+		</behaviors>
+	</EnterRock7>
+	<EnterRock8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterH" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterH" />
+		</behaviors>
+	</EnterRock8>
+	<EnterRock9>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterI" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterI" />
+		</behaviors>
+	</EnterRock9>
+	<EnterRock10>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterJ" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterJ" />
+		</behaviors>
+	</EnterRock10>
+	<EnterRock11>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterK" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterK" />
+		</behaviors>
+	</EnterRock11>
+	<EnterRock12>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterL" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterL" />
+		</behaviors>
+	</EnterRock12>
+	<EnterRock13>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterM" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterM" />
+		</behaviors>
+	</EnterRock13>
+	<EnterRock14>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterN" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterN" />
+		</behaviors>
+	</EnterRock14>
+	<EnterRock15>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterO" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterO" />
+		</behaviors>
+	</EnterRock15>
+	<EnterRock16>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterP" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterP" />
+		</behaviors>
+	</EnterRock16>
+	<EnterRock17>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterQ" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterQ" />
+		</behaviors>
+	</EnterRock17>
+	<EnterRock18>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterR" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterR" />
+		</behaviors>
+	</EnterRock18>
+	<EnterRock19>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterS" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterS" />
+		</behaviors>
+	</EnterRock19>
+	<EnterRock20>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterT" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterT" />
+		</behaviors>
+	</EnterRock20>
+	<EnterRock21>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToClimb" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDockTAP subjectNode="Floor" targetAnim="Stand_Idle" targetTAP="Rock_EnterU" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Climbing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTap="false" subjectNode="Floor" targetTAP="Rock_EnterU" />
+		</behaviors>
+	</EnterRock21>
+	<UseRock>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:RestingOn" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="20" targetAnim="Sit_Idle" />
+			<BFBehAnimate targetAnim="Sit_2Stand" />
+		</behaviors>
+	</UseRock>
+	<ExitRock1>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitA" />
+		</behaviors>
+	</ExitRock1>
+	<ExitRock2>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitB" />
+		</behaviors>
+	</ExitRock2>
+	<ExitRock3>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitC" />
+		</behaviors>
+	</ExitRock3>
+	<ExitRock4>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitD" />
+		</behaviors>
+	</ExitRock4>
+	<ExitRock5>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitE" />
+		</behaviors>
+	</ExitRock5>
+	<ExitRock6>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitF" />
+		</behaviors>
+	</ExitRock6>
+	<ExitRock7>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitG" />
+		</behaviors>
+	</ExitRock7>
+	<ExitRock8>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitH" />
+		</behaviors>
+	</ExitRock8>
+	<ExitRock9>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitI" />
+		</behaviors>
+	</ExitRock9>
+	<ExitRock10>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitJ" />
+		</behaviors>
+	</ExitRock10>
+	<ExitRock11>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitK" />
+		</behaviors>
+	</ExitRock11>
+	<ExitRock12>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitL" />
+		</behaviors>
+	</ExitRock12>
+	<ExitRock13>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitM" />
+		</behaviors>
+	</ExitRock13>
+	<ExitRock14>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitN" />
+		</behaviors>
+	</ExitRock14>
+	<ExitRock15>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitO" />
+		</behaviors>
+	</ExitRock15>
+	<ExitRock16>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitP" />
+		</behaviors>
+	</ExitRock16>
+	<ExitRock17>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitQ" />
+		</behaviors>
+	</ExitRock17>
+	<ExitRock18>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitR" />
+		</behaviors>
+	</ExitRock18>
+	<ExitRock19>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitS" />
+		</behaviors>
+	</ExitRock19>
+	<ExitRock20>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitT" />
+		</behaviors>
+	</ExitRock20>
+	<ExitRock21>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ClimbingDown" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimateTAP exitTAP="true" subjectNode="Floor" targetTAP="Rock_ExitU" />
+		</behaviors>
+	</ExitRock21>
+	<Mate>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Mating" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="10" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</Mate>
+	<Birth>
+		<subjects>
+			<BearStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet maxPlays="3" minPlays="1">
+				<randomSets>
+					<SpawnF weight="50" />
+					<SpawnM weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</Birth>
+	<SpawnF>
+		<subjects>
+			<BearStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="BearStone_Young_F" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnF>
+	<SpawnM>
+		<subjects>
+			<BearStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<BFBehSpawn fadeInPeriod="1" randomPosOffset="3" randomRotOffset="180" spawnEntity="BearStone_Young_M" spawnInTA="true" spawnRelation="child" subjectNode="Floor" />
+			<BFBehScript context="behavior" file="scripts/justgavebirth.lua" function="justgavebirth" />
+		</behaviors>
+	</SpawnM>
+	<Sick>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Idle" />
+		</behaviors>
+	</Sick>
+	<VerySick>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate playTime="30" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</VerySick>
+	<MatingCall_F>
+		<subjects>
+			<BearStone_Adult_F />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Chuff" />
+		</behaviors>
+	</MatingCall_F>
+	<MatingCall_M>
+		<subjects>
+			<BearStone_Adult_M />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:MatingCallAnswer" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Stand_Chuff" />
+		</behaviors>
+	</MatingCall_M>
+	<WaitAttackGuest>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</WaitAttackGuest>
+	<AttackGuest>
+		<subjects>
+			<BearStone_Adult />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate interruptFlag="true" targetAnim="Stand_AttackGuest" />
+		</behaviors>
+	</AttackGuest>
+	<StompIce>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_StompIce" />
+		</behaviors>
+	</StompIce>
+	<Slide>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Slide_Ahead" />
+		</behaviors>
+	</Slide>
+	<Jump>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_Jump" />
+		</behaviors>
+	</Jump>
+	<EnterGnawIceFloe>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToChewIce" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockSpline subjectNode="Node_GnawIce" targetAnim="Swim_2SwimGnawIce" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterGnawIceFloe>
+	<GnawIceFloe>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:ChewingIce" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_7">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalChewIceGood" priority="1" timeout="60" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehAnimate playTime="5" targetAnim="SwimGnawIce_Idle" />
+			<BFBehAnimate playTime="2" targetAnim="SwimGnawIce_PlayIce" />
+		</behaviors>
+	</GnawIceFloe>
+	<ExitGnawIceFloe>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:SwimmingAround" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Swim_TurnLeftA" />
+			<BFBehAnimate targetAnim="Swim_Ahead" />
+		</behaviors>
+	</ExitGnawIceFloe>
+	<LookLeftRight>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="StandBi_LookLeft" />
+			<BFBehAnimate targetAnim="StandBi_Idle" />
+			<BFBehAnimate targetAnim="StandBi_LookRight" />
+		</behaviors>
+	</LookLeftRight>
+	<EvadePlay>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<Evade weight="50" />
+					<Submit weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</EvadePlay>
+	<Submit>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Submitting" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<Lie_RollR weight="50" />
+					<Lie_RollL weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+		</behaviors>
+	</Submit>
+	<Evade>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:Fleeing" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehEvasion evasionRadius="10" locoSpeed="fast" />
+		</behaviors>
+	</Evade>
+	<Nurse>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:BeingNursed" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate playTime="8" targetAnim="Stand_Nurse" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTEmoticonInfo emoticonName="EmoteAnimalHungerGood" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+		</behaviors>
+	</Nurse>
+	<DockNurse>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehDock locoSpeed="fast" subjectNode="Node_Mouth" targetAnim="Stand_Idle" targetNode="p_NurseNode" />
+		</behaviors>
+	</DockNurse>
+	<WaitNurse>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:WaitingToNurse" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="LieSide_Idle" />
+		</behaviors>
+	</WaitNurse>
+	<NurseYoung>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:NurseOther" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehAnimate loopFlag="true" targetAnim="NurseBaby_Idle" />
+		</behaviors>
+	</NurseYoung>
+	<ChaseBall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToPlayWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehHeadLook />
+			<BFBehDockRadial locoSpeed="fast" subjectNode="p_PursuitBallNode" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:PlayingWith" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<BFBehRandomSet>
+				<randomSets>
+					<Threaten weight="33" />
+					<AttackBall_Whap weight="33" />
+					<NudgeBall_Whap weight="33" />
+				</randomSets>
+			</BFBehRandomSet>
+			<ZTBehViewEvent viewKey="Pos_3">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalPlayObjectGood" priority="2" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+		</behaviors>
+	</ChaseBall>
+	<CallMother>
+		<subjects>
+			<BearStone_Young />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet>
+				<behaviorTable>
+					<Swim behSet="TreadWater_Idle" />
+					<TreadWater behSet="TreadWater_Idle" />
+					<Stand behSet="Chuff" />
+					<default behSet="Chuff" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</CallMother>
+	<InterspeciesTerritorialCall>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:CallAt" useTargetName="true" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehViewEvent viewKey="Pos_4">
+				<ZTFeedbackData>
+					<ZTThoughtInfo global="false" locID="guestthoughts:AnimalCallGood" priority="0" timeout="60" useTargetName="true" useTargetTarget="true" />
+				</ZTFeedbackData>
+			</ZTBehViewEvent>
+			<BFBehPlaySet behSet="Roar" />
+		</behaviors>
+	</InterspeciesTerritorialCall>
+	<Turn180>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</Turn180>
+	<LoopIdle>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimSwitchSet loopFlag="true">
+				<behaviorTable>
+					<Stand behSet="LoopStand" />
+					<Lie behSet="LoopLie" />
+					<Sleep behSet="LoopSleep" />
+					<default behSet="LoopStand" />
+				</behaviorTable>
+			</BFBehAnimSwitchSet>
+		</behaviors>
+	</LoopIdle>
+	<LoopStand>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Stand_Idle" />
+		</behaviors>
+	</LoopStand>
+	<LoopLie>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Lie_Idle" />
+		</behaviors>
+	</LoopLie>
+	<LoopSleep>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate loopFlag="true" targetAnim="Sleep_Idle" />
+		</behaviors>
+	</LoopSleep>
+	<DockAttacked>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehScript context="behavior" file="scripts/playparticle.lua" function="playParticle" params="{Floor} runps PlacementCloud" />
+			<BFBehDockNow reserveSlotName="general" subjectNode="p_PreyOffset" targetNode="p_PredatorOffset" />
+		</behaviors>
+	</DockAttacked>
+	<Attacked>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Lie_Idle" />
+			<BFBehPlaySet behSet="Die_Fight_Prey" />
+		</behaviors>
+	</Attacked>
+	<Die_Fight_Prey>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehMorph NameIt="true" morphEntity="subject" morphTargetEntityType="Carcass_Meat" />
+		</behaviors>
+	</Die_Fight_Prey>
+	<PushOffGlass>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<ZTBehFeedback>
+				<ZTFeedbackData>
+					<ZTActionInfo locID="animalactions:GoingToRamTankWall" />
+				</ZTFeedbackData>
+			</ZTBehFeedback>
+			<ZTBehDockTankWall heightAboveGround="1" locoSpeed="fast" subjectNode="Node_RamWall" />
+			<BFBehAnimate targetAnim="SwimSub_PushOff" />
+		</behaviors>
+	</PushOffGlass>
+	<RollWater>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="Roll" />
+					<water behSet="RollWaterSurf" />
+					<underwater behSet="RollWaterSub" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</RollWater>
+	<RollWaterSurf>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Swim_Roll" />
+		</behaviors>
+	</RollWaterSurf>
+	<RollWaterSub>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimateRandom>
+				<randomAnims>
+					<SwimSub_BarrelRollLeft weight="50" />
+					<SwimSub_BarrelRollRight weight="50" />
+				</randomAnims>
+			</BFBehAnimateRandom>
+		</behaviors>
+	</RollWaterSub>
+	<EnterJarWithFish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="EnterJarWithFish_Land" />
+					<water behSet="EnterJarWithFish_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</EnterJarWithFish>
+	<EnterJarWithFish_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockRadial subjectNode="Node_Mouth" targetAnim="Stand_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterJarWithFish_Land>
+	<EnterJarWithFish_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehHeadLook />
+			<BFBehDockSpline subjectNode="Node_Mouth" targetAnim="TreadWater_Idle" />
+			<BFBehHeadLook disengage="true" />
+		</behaviors>
+	</EnterJarWithFish_Water>
+	<UseJarWithFish_Whap>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehRandomSet>
+				<randomSets>
+					<AttackBall_Whap weight="50" />
+					<NudgeBall_Whap weight="50" />
+				</randomSets>
+			</BFBehRandomSet>
+		</behaviors>
+	</UseJarWithFish_Whap>
+	<OpenJarWithFish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="SwipeMed_Land" />
+					<water behSet="SwipeMed_Water" />
+					<underwater behSet="SwipeMed_Underwater" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</OpenJarWithFish>
+	<ExitJarWithFish>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehLocoSwitchSet>
+				<behaviorTable>
+					<ground behSet="ExitJarWithFish_Land" />
+					<water behSet="ExitJarWithFish_Water" />
+				</behaviorTable>
+			</BFBehLocoSwitchSet>
+		</behaviors>
+	</ExitJarWithFish>
+	<ExitJarWithFish_Land>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="Stand_TurnLeft180" />
+		</behaviors>
+	</ExitJarWithFish_Land>
+	<ExitJarWithFish_Water>
+		<subjects>
+			<BearStone />
+		</subjects>
+		<behaviors>
+			<BFBehAnimate targetAnim="TreadWater_2Swim" />
+		</behaviors>
+	</ExitJarWithFish_Water>
+</BehaviorSets>
