@@ -1,0 +1,57 @@
+<BFTypedBinder binderType="ElephantToon_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Proboscidea>
+							<Elephantidae>
+								<ElephantToon>
+									<ElephantToon_Adult>
+										<ElephantToon_Adult_F />
+									</ElephantToon_Adult>
+								</ElephantToon>
+							</Elephantidae>
+						</Proboscidea>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\ElephantToon\ElephantToon_Adult_F_icon.dds" />
+			</UIAspect>
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="ElephantToon_Adult_F" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/ElephantToon/ElephantToon_Adult_F.bfm" scale="0.9" />
+					<BFDecalTextureCycleComponent materialName="elephant">
+						<Step hold="3.0" imageName="entities/units/animals/shared/tiger_blink_blank.dds" variance="0.5" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink01.dds" variance="" />
+						<Step hold="0.1" imageName="entities/units/animals/shared/ele_blink02.dds" variance="" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink03.dds" variance="" />
+						<Step hold="0.1" imageName="entities/units/animals/shared/ele_blink02.dds" variance="" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink01.dds" variance="" />
+					</BFDecalTextureCycleComponent>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

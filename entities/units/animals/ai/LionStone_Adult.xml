@@ -1,0 +1,100 @@
+<BFTypedBinder abstract="true" binderType="LionStone_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Felidae>
+								<LionStone>
+									<LionStone_Adult />
+								</LionStone>
+							</Felidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj3" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj4" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj5" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj6" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0.011426 1.201856" icon3Dscale="0.524328" />
+		<BFAIEntityDataShared b_Adult="1" b_BoneUser="true" b_MediumPrey="true" b_PicksUpBall="true" b_PicksUpBone="true" b_PicksUpFeederBall="true" b_PicksUpRattleBall="true" b_PicksUpRubberToy="true" b_Territorial="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="5" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSecondaryAnimComponent animName="Secondary_Angry" chance="100" frequency="0" loop="true" validAnims="Stand_Idle,Walk_Ahead,Stalk_Idle,Sit_Idle,Lie_Idle,GroomPaw_Idle,Eat_BiteA,Lie_LickObject,Lie_SearchLog,Sit_2TeethInspection,Sit_Listen,Stand_Listen,Lie_Listen,Stand_BiteHigh,Stand_BiteMed,Stand_BiteLow,Stand_BitLow,Stand_BitMed,Stand_HeadCockWater,Stand_HitMed,Stand_HitHigh,Stand_LickObject,Stand_PlayPounce,Stand_PlayRoar,Stand_ScratchLogHigh,Stand_ScratchLogLow,Stand_ScratchTree,Stand_SwatWater,Stand_SwipeLow,Stand_SwipeMed,TeethInspection_2Sit,TeethInspection_Idle,Tug_2Stand,Tug_Idle,Stand_2Tug">
+						<validAttribs>
+							<f_needPointsBad maxValue="100" minValue=".05" />
+						</validAttribs>
+					</BFSecondaryAnimComponent>
+					<BFSecondaryAnimComponent animName="Secondary_Happy" chance="100" frequency="0" loop="true" validAnims="Stand_Idle,Walk_Ahead,Stalk_Idle,Sit_Idle,Lie_Idle,GroomPaw_Idle,Eat_BiteA,Lie_LickObject,Lie_SearchLog,Sit_2TeethInspection,Sit_Listen,Stand_Listen,Lie_Listen,Stand_BiteHigh,Stand_BiteMed,Stand_BiteLow,Stand_BitLow,Stand_BitMed,Stand_HeadCockWater,Stand_HitMed,Stand_HitHigh,Stand_LickObject,Stand_PlayPounce,Stand_PlayRoar,Stand_ScratchLogHigh,Stand_ScratchLogLow,Stand_ScratchTree,Stand_SwatWater,Stand_SwipeLow,Stand_SwipeMed,TeethInspection_2Sit,TeethInspection_Idle,Tug_2Stand,Tug_Idle,Stand_2Tug">
+						<validAttribs>
+							<f_needPointsGood maxValue="100" minValue=".05" />
+						</validAttribs>
+					</BFSecondaryAnimComponent>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.65" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.65" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.65" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj4">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.65" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj5">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.35" length="1.5" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj6">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine" intensity="0.4" length="1.2" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.9" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" landScore="0" maxSlope=".75" motionClass="swimmer" radius=".375" waterScore="10" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,186 @@
+<BFTypedBinder abstract="true" binderType="BearStone_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Ursidae>
+								<BearStone>
+									<BearStone_Adult />
+								</BearStone>
+							</Ursidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj3" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj4" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj5" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj6" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Adult="1" b_BoneUser="true" b_XLargePrey="true" b_PicksUpBall="true" b_PicksUpBone="true" b_PicksUpFeederBall="true" b_PicksUpRattleBall="true" b_PicksUpRubberToy="true" b_Territorial="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="50" p_PredatorOffset="0 -2 0" s_MorphMessage="zoomessages:AnimalPuberty" />
+		<ZTPlacementData icon3Doffset="0 0 1.250000" icon3Dscale="0.581136" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.85" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.85" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.85" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj4">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.85" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj5">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.35" length="2.5" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj6">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine" intensity="0.4" length="2.5" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Statue_PolarBear\Statue_PolarBear.dds" material="7 - Default" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate stationaryAnim="Stand_Idle" version="1">
+							<stop name="Stand" />
+							<slow name="Walk" />
+							<medium name="Walk" />
+							<fast name="Run" />
+							<stalk name="Stalk" />
+							<glide name="Walk" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="water" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Swim">
+								<anim name="Swim_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</stop>
+							<slow maxAnimSpeed="1.0" maxResetPeriod="6" minAnimSpeed="0.75" minResetPeriod="4" name="Swim">
+								<anim name="Swim_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</slow>
+							<medium maxAnimSpeed="1.1" maxResetPeriod="6" minAnimSpeed="0.85" minResetPeriod="4" name="Swim">
+								<anim name="Swim_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</medium>
+							<fast maxAnimSpeed="1.2" maxResetPeriod="6" minAnimSpeed="0.95" minResetPeriod="4" name="Swim">
+								<anim name="Swim_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</fast>
+							<stalk maxAnimSpeed="1.1" maxResetPeriod="6" minAnimSpeed="0.85" minResetPeriod="4" name="Swim">
+								<anim name="Swim_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="SubSwim_2Swim" yaw="1.0" />
+							</stalk>
+							<glide flapAnim="Swim_2SwimGlide" maxAnimSpeed="1.5" maxResetPeriod="6" minAnimSpeed="0.5" minResetPeriod="4" name="SwimGlide">
+								<anim acceleration="-0.1" name="SwimGlide_Ahead" roll="0.5" yaw="1.0" />
+								<anim name="Swim_2SwimGlide" roll="0.5" yaw="1.0" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="underwater" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="SwimSub">
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+								<anim name="SwimSub_Ahead" pitch="0.5" yaw="1.0" />
+							</stop>
+							<slow maxAnimSpeed="1.0" maxResetPeriod="6" minAnimSpeed="0.75" minResetPeriod="4" name="SwimSub">
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+								<anim name="SwimSub_Ahead" pitch="0.5" yaw="1.0" />
+							</slow>
+							<medium maxAnimSpeed="1.1" maxResetPeriod="6" minAnimSpeed="0.85" minResetPeriod="4" name="SwimSub">
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+								<anim name="SwimSub_Ahead" pitch="0.5" yaw="1.0" />
+							</medium>
+							<fast maxAnimSpeed="1.2" maxResetPeriod="6" minAnimSpeed="0.95" minResetPeriod="4" name="SwimSub">
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+								<anim name="SwimSub_Ahead" pitch="0.5" yaw="1.0" />
+							</fast>
+							<stalk maxAnimSpeed="1.1" maxResetPeriod="6" minAnimSpeed="0.85" minResetPeriod="4" name="SwimSub">
+								<anim name="Swim_2SwimSub" yaw="1.0" />
+								<anim name="SwimSub_Ahead" pitch="0.5" yaw="1.0" />
+							</stalk>
+							<glide flapAnim="SwimSub_2SwimSubGlide" maxAnimSpeed="1.5" maxResetPeriod="6" minAnimSpeed="0.5" minResetPeriod="4" name="SwimSubGlide">
+								<anim acceleration="-0.1" name="SwimSubGlide_Ahead" pitch="0.5" yaw="1.0" />
+								<anim name="SwimSub_2SwimSubGlide" pitch="0.5" yaw="1.0" />
+							</glide>
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+				<BFNamedBinder binderName="watercarry" required="1">
+					<instance>
+						<BFLocoAnimate stationaryAnim="TreadWaterObject_Idle" version="1">
+							<stop name="TreadWaterObject" />
+							<slow name="SwimObject" />
+							<medium name="SwimObject" />
+							<fast name="SwimObject" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.3125" landScore="0" maxSlope=".75" motionClass="swimmer" radius=".625" waterScore="0" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

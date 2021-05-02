@@ -1,0 +1,118 @@
+<BFTypedBinder abstract="true" binderType="HippopotamusBouncy_Young">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Hippopotamidae>
+								<HippopotamusBouncy>
+									<HippopotamusBouncy_Young />
+								</HippopotamusBouncy>
+							</Hippopotamidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<ZTPlacementData icon3Doffset="0 0.004443 1.211817" icon3Dscale="0.381271" />
+		<BFAIEntityDataShared b_Adult="0" b_MediumPrey="true" b_MetalTroughEater="false" b_TroughEater="false" f_viewBonus="25" p_PreyOffset="0 1 0">
+			<BFAINeedAdjusts exercise="0.33" health="0.25" reproduction="0" stimulation="0.33" />
+		</BFAIEntityDataShared>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/HippopotamusBouncy/HippopotamusBouncy_Young_M.bfm" scale="0.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.3" length="2" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine2" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_BouncyRide_Hippo_df\Hippo_Ride.dds" material="HippopotamusBouncy_Adult_M_MTL" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+						<ZTAISensorLand />
+						<ZTAISensorTA sensorTag="habitat" />
+					</Sensors>
+					<StateThinkers>
+						<ZTAIStateThinker mergeKey="Name">
+							<BFAIStateVar Advanced="true" CessationThreshold="90" CriticalThreshold="90" Name="reproduction" TriggerThreshold="90" Value="" ValueMax="0" ValueMin="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence />
+						<path />
+						<entrance />
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" landScore="0" maxSlope=".50" motionClass="swimmer" radius=".375" waterScore="0" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="checkup" required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="health" cancelTestType="1" cancelThresholdValue="20" testType="4" thresholdValue="30">
+					<ZTStaffRequestData priority="5" subjectType="Keeper" tokenKey="t_CheckupBaby" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_needPointsGood="50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

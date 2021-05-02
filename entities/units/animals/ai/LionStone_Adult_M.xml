@@ -1,0 +1,57 @@
+<BFTypedBinder binderType="LionStone_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Felidae>
+								<LionStone>
+									<LionStone_Adult>
+										<LionStone_Adult_M />
+									</LionStone_Adult>
+								</LionStone>
+							</Felidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities/units/animals/LionStone/LionStone_Adult_M_icon.dds" />
+			</UIAspect>
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="LionStone_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" b_Predator="true" f_adoptCount="rand(1,1)" p_PredatorOffset="0 -2 0" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/LionStone/LionStone_Adult_M.bfm" scale="0.75" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Fountain_Lion\Lion_statue.dds" material="LionStone_Adult_MTL" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

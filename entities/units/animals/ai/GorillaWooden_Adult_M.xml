@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="GorillaWooden_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Primata>
+							<Pongidae>
+								<GorillaWooden>
+									<GorillaWooden_Adult>
+										<GorillaWooden_Adult_M />
+									</GorillaWooden_Adult>
+								</GorillaWooden>
+							</Pongidae>
+						</Primata>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="GorillaWooden_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" />
+	</shared>
+</BFTypedBinder>

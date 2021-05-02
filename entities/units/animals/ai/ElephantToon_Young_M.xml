@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="ElephantToon_Young_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Proboscidea>
+							<Elephantidae>
+								<ElephantToon>
+									<ElephantToon_Young>
+										<ElephantToon_Young_M />
+									</ElephantToon_Young>
+								</ElephantToon>
+							</Elephantidae>
+						</Proboscidea>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="ElephantToon_Young_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" />
+	</shared>
+</BFTypedBinder>

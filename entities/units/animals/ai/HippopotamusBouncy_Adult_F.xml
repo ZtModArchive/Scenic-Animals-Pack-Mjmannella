@@ -1,0 +1,41 @@
+<BFTypedBinder binderType="HippopotamusBouncy_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Hippopotamidae>
+								<HippopotamusBouncy>
+									<HippopotamusBouncy_Adult>
+										<HippopotamusBouncy_Adult_F />
+									</HippopotamusBouncy_Adult>
+								</HippopotamusBouncy>
+							</Hippopotamidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/HippopotamusBouncy/HippopotamusBouncy_Adult_M.bfm" scale="0.45" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+	</binder>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" />
+	</shared>
+</BFTypedBinder>

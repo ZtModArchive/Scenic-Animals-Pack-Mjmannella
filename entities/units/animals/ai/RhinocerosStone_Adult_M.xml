@@ -1,0 +1,41 @@
+<BFTypedBinder binderType="RhinocerosStone_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Perissodactyla>
+							<Rhinocerotidae>
+								<RhinocerosStone>
+									<RhinocerosStone_Adult>
+										<RhinocerosStone_Adult_M />
+									</RhinocerosStone_Adult>
+								</RhinocerosStone>
+							</Rhinocerotidae>
+						</Perissodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="RhinocerosStone_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/RhinocerosStone/RhinocerosStone_Adult_F.bfm" scale="1.1" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="KangarooBouncy_Young_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Diprodonta>
+							<Macropodidae>
+								<KangarooBouncy>
+									<KangarooBouncy_Young>
+										<KangarooBouncy_Young_F />
+									</KangarooBouncy_Young>
+								</KangarooBouncy>
+							</Macropodidae>
+						</Diprodonta>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="KangarooBouncy_Young_F" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="0" />
+	</shared>
+</BFTypedBinder>

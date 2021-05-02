@@ -1,0 +1,57 @@
+<BFTypedBinder binderType="LionBouncy_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Felidae>
+								<LionBouncy>
+									<LionBouncy_Adult>
+										<LionBouncy_Adult_M />
+									</LionBouncy_Adult>
+								</LionBouncy>
+							</Felidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities/units/animals/LionBouncy/LionBouncy_Adult_M_icon.dds" />
+			</UIAspect>
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="LionBouncy_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" b_Predator="true" f_adoptCount="rand(1,1)" p_PredatorOffset="0 -2 0" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/LionBouncy/LionBouncy_Adult_M.bfm" scale="0.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_BouncyRide_Lion_df\Lion_Adult_M_BouncyRide.dds" material="LionBouncy_Adult_MTL" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

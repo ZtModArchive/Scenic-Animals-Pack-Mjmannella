@@ -1,0 +1,35 @@
+<BFTypedBinder binderType="PandaGilded_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Ursidae>
+								<PandaGilded>
+									<PandaGilded_Adult>
+										<PandaGilded_Adult_M />
+									</PandaGilded_Adult>
+								</PandaGilded>
+							</Ursidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities/units/animals/PandaGilded/PandaGilded_Adult_M_icon.dds" />
+			</UIAspect>
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="PandaGilded_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" />
+	</shared>
+</BFTypedBinder>

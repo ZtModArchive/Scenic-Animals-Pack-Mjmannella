@@ -1,0 +1,67 @@
+<BFTypedBinder abstract="true" binderType="GiraffeWooden_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Giraffidae>
+								<GiraffeWooden>
+									<GiraffeWooden_Adult />
+								</GiraffeWooden>
+							</Giraffidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 -0.111719 1.036499" icon3Dscale="0.262606" />
+		<BFAIEntityDataShared b_Adult="1" b_LargePrey="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="15" p_PreyOffset="0 3 0" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Pelvis" intensity="0.3" length="2" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine3" intensity="0.3" lodLevel="0" offlength="0.25" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.6" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.3" length="2" lodLevel="0" offlength="-0.5" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.25" maxSlope=".50" motionClass="tallMover" radius=".5" wadeDepth="2" waterScore="10" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_GiraffeSlide_df\Giraffe_wood.dds" material="GiraffeWooden_Hello_mod0" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

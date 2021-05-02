@@ -1,0 +1,54 @@
+<BFTypedBinder binderType="GorillaToon_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Primata>
+							<Pongidae>
+								<GorillaToon>
+									<GorillaToon_Adult>
+										<GorillaToon_Adult_F />
+									</GorillaToon_Adult>
+								</GorillaToon>
+							</Pongidae>
+						</Primata>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/GorillaToon/GorillaToon_Young_F.bfm" scale="1.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj alwaysReplace="true" image="entities\objects\buildings\frontgate_df\gorilla_map_TOON.dds" material="Gorilla_Young" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

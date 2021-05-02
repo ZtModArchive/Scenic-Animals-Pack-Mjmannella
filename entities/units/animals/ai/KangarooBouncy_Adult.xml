@@ -1,0 +1,49 @@
+<BFTypedBinder abstract="true" binderType="KangarooBouncy_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Diprodonta>
+							<Macropodidae>
+								<KangarooBouncy>
+									<KangarooBouncy_Adult />
+								</KangarooBouncy>
+							</Macropodidae>
+						</Diprodonta>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTUserStaffAction>
+			<BoardObject locid="superstaff:rideanimal" />
+			<DisembarkObject locid="superstaff:exitanimal" showSelection="false" />
+		</ZTUserStaffAction>
+		<ZTUserCameraData parentingZOffset="0.4" swimmingUI="false" photoModeProhibited="false">
+         		<FPCameraNodes>
+            			<entry nodeName="Bip01 Spine2" />
+         		</FPCameraNodes>
+		</ZTUserCameraData>
+		<ZTPlacementData icon3Doffset="0 -0.044336 1.172217" icon3Dscale="0.613830" />
+		<BFAIEntityDataShared b_Adult="1" b_MediumPrey="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="5" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2.25" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.25" maxSlope=".50" motionClass="mover" radius=".5" wadeDepth="1" waterScore="10" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

@@ -1,0 +1,67 @@
+<BFTypedBinder abstract="true" binderType="RhinocerosStone_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Perissodactyla>
+							<Rhinocerotidae>
+								<RhinocerosStone>
+									<RhinocerosStone_Adult />
+								</RhinocerosStone>
+							</Rhinocerotidae>
+						</Perissodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTPlacementData icon3Doffset="0 0.001074 1.036035" icon3Dscale="0.404327" />
+		<BFAIEntityDataShared b_Adult="1" b_DinoPreyDummyUser="true" b_Territorial="true" b_LargePrey="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="30" p_PreyOffset="0 3 0" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Head" intensity="0.3" length="2" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" length="2" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine3" intensity="0.3" length="2" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.25" maxSlope=".50" motionClass="swimmer" radius=".5" waterScore="10" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Statue_Rhino\Statue_Rhino.dds" material="1 - Default" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

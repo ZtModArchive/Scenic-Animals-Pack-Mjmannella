@@ -1,0 +1,132 @@
+<BFTypedBinder abstract="true" binderType="ElephantToon_Young">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Proboscidea>
+							<Elephantidae>
+								<ElephantToon>
+									<ElephantToon_Young />
+								</ElephantToon>
+							</Elephantidae>
+						</Proboscidea>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj3" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<BFAIEntityDataShared b_Adult="0" b_LargePrey="true" b_PeanutFeederUser="true" b_PicksUpTinyElephantLog="true" b_SubstratePileEater="false" f_viewBonus="65">
+			<BFAINeedAdjusts exercise="0.33" health="0.25" reproduction="0" stimulation="0.33" />
+		</BFAIEntityDataShared>
+		<ZTPlacementData icon3Doffset="0 -0.024048 1.152832" icon3Dscale="0.238695" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Head" intensity="0.3" length="2" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine" intensity="0.3" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/ElephantToon/ElephantToon_Young_F.bfm" scale="0.5" />
+					<BFDecalTextureCycleComponent materialName="9 - Default">
+						<Step hold="3.0" imageName="entities/units/animals/shared/tiger_blink_blank.dds" variance="0.5" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink01.dds" variance="" />
+						<Step hold="0.1" imageName="entities/units/animals/shared/ele_blink02.dds" variance="" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink03.dds" variance="" />
+						<Step hold="0.1" imageName="entities/units/animals/shared/ele_blink02.dds" variance="" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/ele_blink01.dds" variance="" />
+					</BFDecalTextureCycleComponent>
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.25" landScore="30" maxSlope=".50" motionClass="swimmer" radius=".5" waterScore="20" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj alwaysReplace="true" image="entities\objects\buildings\frontgate_df\african_ele_map_source_TOON.dds" material="elephant" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+						<ZTAISensorLand />
+						<ZTAISensorTA sensorTag="habitat" />
+					</Sensors>
+					<StateThinkers>
+						<ZTAIStateThinker mergeKey="Name">
+							<BFAIStateVar Advanced="true" CessationThreshold="90" CriticalThreshold="90" Name="reproduction" TriggerThreshold="90" Value="" ValueMax="0" ValueMin="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence />
+						<path />
+						<entrance />
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFNamedBinder binderName="checkup" required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="health" cancelTestType="1" cancelThresholdValue="20" testType="4" thresholdValue="30">
+					<ZTStaffRequestData priority="5" subjectType="Keeper" tokenKey="t_CheckupBaby" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_needPointsGood="50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

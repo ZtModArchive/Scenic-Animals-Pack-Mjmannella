@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="PandaGilded_Young_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Ursidae>
+								<PandaGilded>
+									<PandaGilded_Young>
+										<PandaGilded_Young_F />
+									</PandaGilded_Young>
+								</PandaGilded>
+							</Ursidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="PandaGilded_Young_F" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="0" />
+	</shared>
+</BFTypedBinder>

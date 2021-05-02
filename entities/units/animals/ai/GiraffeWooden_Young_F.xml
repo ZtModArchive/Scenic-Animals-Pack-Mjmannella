@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="GiraffeWooden_Young_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Giraffidae>
+								<GiraffeWooden>
+									<GiraffeWooden_Young>
+										<GiraffeWooden_Young_F />
+									</GiraffeWooden_Young>
+								</GiraffeWooden>
+							</Giraffidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" />
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="GiraffeWooden_Young_F" />
+			</on>
+		</UIToggleButton>
+	</shared>
+</BFTypedBinder>

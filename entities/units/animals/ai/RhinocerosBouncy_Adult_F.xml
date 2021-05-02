@@ -1,0 +1,41 @@
+<BFTypedBinder binderType="RhinocerosBouncy_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Perissodactyla>
+							<Rhinocerotidae>
+								<RhinocerosBouncy>
+									<RhinocerosBouncy_Adult>
+										<RhinocerosBouncy_Adult_F />
+									</RhinocerosBouncy_Adult>
+								</RhinocerosBouncy>
+							</Rhinocerotidae>
+						</Perissodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/RhinocerosBouncy/RhinocerosBouncy_Adult_F.bfm" scale="0.45" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

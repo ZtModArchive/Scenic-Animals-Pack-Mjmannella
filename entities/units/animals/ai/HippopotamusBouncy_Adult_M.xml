@@ -1,0 +1,32 @@
+<BFTypedBinder binderType="HippopotamusBouncy_Adult_M">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Hippopotamidae>
+								<HippopotamusBouncy>
+									<HippopotamusBouncy_Adult>
+										<HippopotamusBouncy_Adult_M />
+									</HippopotamusBouncy_Adult>
+								</HippopotamusBouncy>
+							</Hippopotamidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<on>
+				<event data="BFString" msg="ZT_SETPLACEMENTOBJECT" string="HippopotamusBouncy_Adult_M" />
+			</on>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)" />
+	</shared>
+</BFTypedBinder>

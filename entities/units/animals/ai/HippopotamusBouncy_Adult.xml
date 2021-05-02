@@ -1,0 +1,76 @@
+<BFTypedBinder abstract="true" binderType="HippopotamusBouncy_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Artiodactyla>
+							<Hippopotamidae>
+								<HippopotamusBouncy>
+									<HippopotamusBouncy_Adult />
+								</HippopotamusBouncy>
+							</Hippopotamidae>
+						</Artiodactyla>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTUserStaffAction>
+			<BoardObject locid="superstaff:rideanimal" />
+			<DisembarkObject locid="superstaff:exitanimal" showSelection="false" />
+		</ZTUserStaffAction>
+		<ZTUserCameraData parentingZOffset="0.4" swimmingUI="false" photoModeProhibited="false">
+         		<FPCameraNodes>
+            			<entry nodeName="Bip01 Spine2" />
+         		</FPCameraNodes>
+		</ZTUserCameraData>
+		<ZTPlacementData icon3Doffset="0 0.013135 1.260107" icon3Dscale="0.409267" />
+		<BFAIEntityDataShared b_Adult="1" b_Territorial="true" b_LargePrey="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="20" p_PreyOffset="0 3 0" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.3" length="2.5" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine2" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_BouncyRide_Hippo_df\Hippo_Ride.dds" material="HippopotamusBouncy_Adult_M_MTL" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.375" landScore="0" maxSlope=".50" motionClass="swimmer" radius=".75" waterScore="0" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

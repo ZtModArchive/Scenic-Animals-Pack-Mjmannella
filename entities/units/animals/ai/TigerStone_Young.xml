@@ -1,0 +1,158 @@
+<BFTypedBinder abstract="true" binderType="TigerStone_Young">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Felidae>
+								<TigerStone>
+									<TigerStone_Young />
+								</TigerStone>
+							</Felidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<ZTPlacementData icon3Doffset="0 0 1.198096" icon3Dscale="0.496455" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities/units/animals/TigerStone/TigerStone_Adult_F_icon.dds" />
+			</UIAspect>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Adult="0" b_LargeAnimal="false" b_MediumPrey="true" b_MetalTroughEater="false" b_TroughEater="false" f_viewBonus="35" p_FightOffset="0 -2.5 180">
+			<BFAINeedAdjusts exercise="0.33" health="0.25" reproduction="0" stimulation="0.33" />
+		</BFAIEntityDataShared>
+		<BFGDetachInfo>
+			<detachActionTable>
+				<dropitem destination="drop" />
+				<killitem destination="kill" />
+			</detachActionTable>
+		</BFGDetachInfo>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Head" intensity="0.3" length="1" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" length="1" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/TigerStone/TigerStone_Young_F.bfm" scale="0.5" />
+					<BFDecalTextureCycleComponent materialName="Material #76">
+						<Step hold="3.0" imageName="entities/units/animals/shared/tiger_blink_blank.dds" variance="0.5" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/tiger_blink02.dds" variance="" />
+						<Step hold="0.1" imageName="entities/units/animals/shared/tiger_blink.dds" variance="" />
+						<Step hold="0.08" imageName="entities/units/animals/shared/tiger_blink02.dds" variance="" />
+					</BFDecalTextureCycleComponent>
+				</BFPhysObj>
+			</instance>
+			<shared>
+				<BFSharedPhysVars isWaterDisplacer="true" waterDisplacement="0.25 0.5 0.25">
+					<virtualNodes>
+						<Dock_IceBlock pitch="0" roll="0" x="0" y="-3" yaw="0" z="0" />
+						<Node_Swipe pitch="0" roll="0" x="0" y="-4" yaw="0" z="0" />
+					</virtualNodes>
+				</BFSharedPhysVars>
+			</shared>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\shared\tiger_statue.dds" material="Material #76" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+						<ZTAISensorLand />
+						<ZTAISensorTA sensorTag="habitat" />
+					</Sensors>
+					<StateThinkers>
+						<ZTAIStateThinker mergeKey="Name">
+							<BFAIStateVar Advanced="true" CessationThreshold="90" CriticalThreshold="90" Name="reproduction" TriggerThreshold="90" Value="" ValueMax="0" ValueMin="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence />
+						<path />
+						<entrance />
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="ground" required="1">
+					<instance>
+						<BFLocoAnimate version="1">
+							<stop name="Stand" />
+							<slow maxAnimSpeed="1.5" minAnimSpeed="1.2" name="Walk" />
+							<medium maxAnimSpeed="1.5" minAnimSpeed="1.2" name="Walk" />
+							<fast maxAnimSpeed="1.5" minAnimSpeed="1.2" name="Run" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.125" landScore="0" maxSlope=".75" motionClass="swimmer" radius=".25" waterScore="0" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="checkup" required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="health" cancelTestType="1" cancelThresholdValue="20" testType="4" thresholdValue="30">
+					<ZTStaffRequestData priority="5" subjectType="Keeper" tokenKey="t_CheckupBaby" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_needPointsGood="50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

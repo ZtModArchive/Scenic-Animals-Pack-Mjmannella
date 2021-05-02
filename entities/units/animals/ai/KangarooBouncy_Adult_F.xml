@@ -1,0 +1,47 @@
+<BFTypedBinder binderType="KangarooBouncy_Adult_F">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Diprodonta>
+							<Macropodidae>
+								<KangarooBouncy>
+									<KangarooBouncy_Adult>
+										<KangarooBouncy_Adult_F />
+									</KangarooBouncy_Adult>
+								</KangarooBouncy>
+							</Macropodidae>
+						</Diprodonta>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Male="0" f_adoptCount="rand(1,1)" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_BouncyRide_Kangaroo_df\Kangaroo_Ride.dds" material="KangarooBouncy_Young_F_MTL" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance b_Pregnant="false" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

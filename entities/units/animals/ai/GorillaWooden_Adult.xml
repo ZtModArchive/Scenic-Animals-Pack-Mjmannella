@@ -1,0 +1,90 @@
+<BFTypedBinder abstract="true" binderType="GorillaWooden_Adult">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Primata>
+							<Pongidae>
+								<GorillaWooden>
+									<GorillaWooden_Adult />
+								</GorillaWooden>
+							</Pongidae>
+						</Primata>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<BFAIEntityDataShared b_Adult="1" b_BallUser="true" b_BoneUser="true" b_EaselUser="true" b_FeederBallUser="true" b_PicksUpBall="true" b_PicksUpBone="true" b_PicksUpFeederBall="true" b_PicksUpRattleBall="true" b_PicksUpRubberToy="true" b_RubberToyUser="true" b_Territorial="true" b_MediumPrey="true" f_MorphMessageDuration="30" f_MorphMessagePriority="1" f_viewBonus="60" s_MorphMessage="zoomessages:AnimalPuberty" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine1" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="1.5" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.3" lodLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="2.0" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Playground_GorillaBars_df\GorillaMountain_Adult_toon.dds" material="Gorilla" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFLocomotionMgr />
+			</instance>
+			<binder>
+				<BFNamedBinder binderName="groundcarryyoung" required="1">
+					<instance>
+						<BFLocoAnimate stationaryAnim="SitBaby_Idle" version="1">
+							<stop name="StandBaby" />
+							<slow name="WalkBaby" />
+							<medium name="WalkBaby" />
+							<fast name="WalkBaby" />
+						</BFLocoAnimate>
+					</instance>
+				</BFNamedBinder>
+			</binder>
+		</BFBinder>
+		<BFNamedBinder binderName="back" required="1">
+			<instance>
+				<BFGEntityContainer>
+					<slots>
+						<BFGEntityContainerSlot capacity="1" hideContents="false" ownContents="true" />
+					</slots>
+				</BFGEntityContainer>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.25" maxSlope=".75" motionClass="mover" radius=".5" wadeDepth="1" waterScore="10" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>

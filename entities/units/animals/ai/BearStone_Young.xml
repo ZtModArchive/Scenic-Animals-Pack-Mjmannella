@@ -1,0 +1,153 @@
+<BFTypedBinder abstract="true" binderType="BearStone_Young">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Mammalia>
+						<Carnivora>
+							<Ursidae>
+								<BearStone>
+									<BearStone_Young />
+								</BearStone>
+							</Ursidae>
+						</Carnivora>
+					</Mammalia>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1">
+			<physObjParenting>
+				<parentObj attachnode="link" child="shadowObj" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj2" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj3" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj4" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj5" parent="mainObj" postype="ignore" rottype="use" />
+				<parentObj attachnode="link" child="shadowObj6" parent="mainObj" postype="ignore" rottype="use" />
+			</physObjParenting>
+		</BFGEntity>
+	</instance>
+	<shared>
+		<ZTDevComponent />
+		<ZTPlacementData icon3Doffset="0 0 1.250000" icon3Dscale="0.470806" />
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="entities\units\animals\BearStone\BearStone_Adult_F_icon.dds" />
+			</UIAspect>
+		</UIToggleButton>
+		<BFAIEntityDataShared b_Adult="0" b_ClimbsLargeTundraRockLarge="true" b_ClimbsMediumTundraRockLarge="true" b_MediumPrey="true" f_viewBonus="55">
+			<BFAINeedAdjusts exercise="0.33" health="0.25" reproduction="0" stimulation="0.33" />
+		</BFAIEntityDataShared>
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="shadowObj">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj2">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Toe0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj3">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 R Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob2.tga" width="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj4">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 L Finger0" intensity="0.2" maxLODLevel="0" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.35" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj5">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Neck" intensity="0.35" length="1" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.6" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="shadowObj6">
+			<instance>
+				<BFPhysObj>
+					<BFMovingBlobShadowComponent baseNode="Bip01 Spine" intensity="0.4" length="1" maxLODLevel="1" minLODLevel="0" shadowTexture="world\shadows\blob\round_blob3.tga" width="0.7" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFActorComponent actorfile="entities/units/animals/BearStone/BearStone_Young_F.bfm" scale=".55" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+		<BFNamedBinder binderName="texController" required="1">
+			<instance>
+				<BFAITextureController currState="well" defaultState="well">
+					<stateList>
+						<well>
+							<textureData>
+								<mainObj image="entities\objects\scenery\Statue_PolarBear\Statue_PolarBear.dds" material="7 - Default" />
+							</textureData>
+						</well>
+					</stateList>
+				</BFAITextureController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAICognitiveMgr>
+					<Sensors>
+						<ZTAISensor />
+						<BFAISensorSelf />
+						<ZTAISensorLand />
+						<ZTAISensorTA sensorTag="habitat" />
+					</Sensors>
+					<StateThinkers>
+						<ZTAIStateThinker mergeKey="Name">
+							<BFAIStateVar Advanced="true" CessationThreshold="90" CriticalThreshold="90" Name="reproduction" TriggerThreshold="90" Value="" ValueMax="0" ValueMin="0" />
+						</ZTAIStateThinker>
+					</StateThinkers>
+					<TaskThinkers>
+						<ZTAITaskThinker />
+					</TaskThinkers>
+				</BFAICognitiveMgr>
+			</instance>
+			<shared>
+				<BFAICogShared>
+					<BFAINoPerceive>
+						<fence />
+						<path />
+						<entrance />
+					</BFAINoPerceive>
+				</BFAICogShared>
+			</shared>
+		</BFBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFGCollisionTester escapeBuffer="0.1875" landScore="0" maxSlope=".75" motionClass="swimmer" radius=".375" waterScore="0" />
+			</instance>
+		</BFBinder>
+		<BFNamedBinder binderName="checkup" required="1">
+			<instance>
+				<ZTAIStaffRequestController attribName="health" cancelTestType="1" cancelThresholdValue="20" testType="4" thresholdValue="30">
+					<ZTStaffRequestData priority="5" subjectType="Keeper" tokenKey="t_CheckupBaby" />
+				</ZTAIStaffRequestController>
+			</instance>
+		</BFNamedBinder>
+		<BFBinder required="1">
+			<instance>
+				<BFAIEntityDataInstance f_needPointsGood="50" />
+			</instance>
+		</BFBinder>
+	</binder>
+</BFTypedBinder>
