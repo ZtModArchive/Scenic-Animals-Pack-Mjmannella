@@ -1,0 +1,217 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Bit">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Attacked_Idle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Chew">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Chew.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Cough">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_ScratchFace.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Eat">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Eat_Idle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_F_GruntRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Grunt.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_F_PlayRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Growl.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_F_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackGuest.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_F_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackPosture.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_FriendlyPuff">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Shiver.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_2Attacked.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Lick">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_CleanYoung.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_M_GruntRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Grunt.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_M_PlayRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Growl.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_M_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackGuest.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_M_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_AttackPosture.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Purr">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_RollYoung.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_PurrB">
+			<snd maxdist="" mindist="" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_RollYoung.wav" volume="" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Sleep">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Sleep_Idle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Snarl">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Stand_Squeak.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Adult_Yawn">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Diprotodon/sound/Diprotodon_Adult_F_Lie_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Bit">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Bit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Chew">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Chew.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Cough">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Cough.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Eat">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_FriendlyPuff">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_FriendlyPuff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_GruntRoar">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_GruntRoar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Hit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Lick">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Lick.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_PlayRoar">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_PlayRoar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_PurrA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Purr.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_PurrB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Purr.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Roar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Snarl">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Snarl.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_Young_Yawn">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Yawn.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_pawground_dirt">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_pawground_grassland">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionBouncy_pawground_tundra">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

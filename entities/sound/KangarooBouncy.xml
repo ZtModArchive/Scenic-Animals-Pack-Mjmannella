@@ -1,0 +1,50 @@
+<soundtags>
+   <!--Adult-->
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Adult_EatA.wav">
+         <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_ChewGulp.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Adult_EatB">
+         <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_BiteA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Adult_GruntA">
+         <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_LookCute.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Adult_GruntB">
+         <snd name="entities/units/animals/OtterSea/sound/OtterSea_Adult_F_VocalDisplay.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Young-->
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Young_EatA">
+         <snd name="entities/units/animals/KangarooRed/sound/KangarooRed_Young_EatA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Young_EatB">
+         <snd name="entities/units/animals/KangarooRed/sound/KangarooRed_Young_EatB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Young_GruntA">
+         <snd name="entities/units/animals/KangarooRed/sound/KangarooRed_Young_GruntA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <BFSoundtag>
+      <BF3DSndFactory name="KangarooBouncy_Young_GruntB">
+         <snd name="entities/units/animals/KangarooRed/sound/KangarooRed_Young_GruntB.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+   <!--Shared Sounds/Footsteps-->
+   <BFSoundtag>
+      <BF3DSndFactory name="thumptail">
+         <snd name="entities/units/animals/shared/sound/Animal_StampDirt_SoftA.wav" volume="1" mindist="4" maxdist="50"/>
+      </BF3DSndFactory>
+   </BFSoundtag>
+</soundtags>

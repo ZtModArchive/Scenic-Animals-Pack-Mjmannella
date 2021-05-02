@@ -1,0 +1,82 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_Belch">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Bluebuck/sound/Bluebuck_Adult_MatingCall.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_EatA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Bluebuck/sound/Bluebuck_Adult_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_F_MooA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Bluebuck/sound/Bluebuck_Adult_AlarmCall.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_GruntA">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Ibex/sound/Ibex_Adult_GruntA.wa" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_GruntB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Ibex/sound/Ibex_Adult_GruntA.wa" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Giraffe/sound/Giraffe_Adult_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Adult_SnortA">
+			<snd name="entities/units/animals/Bluebuck/sound/Bluebuck_Adult_Snort.wav" volume=".7" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_Belch">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Giraffe/sound/Giraffe_Young_Belch.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_BleatA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Giraffe/sound/Giraffe_Young_BleatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_BleatB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Giraffe/sound/Giraffe_Young_BleatB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_EatA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Giraffe/sound/Giraffe_Young_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_GruntA">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Giraffe/sound/Giraffe_Young_GruntA.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_GruntB">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Giraffe/sound/Giraffe_Young_GruntB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_MooA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Giraffe/sound/Giraffe_Young_MooA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Giraffe/sound/Giraffe_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GiraffeWooden_Young_SnortA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Giraffe/sound/Giraffe_Young_SnortA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

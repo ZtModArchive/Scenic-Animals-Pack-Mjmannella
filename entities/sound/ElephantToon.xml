@@ -1,0 +1,117 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Drink">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_Drink.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Eat">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/TapirBairds/sound/TapirBairds_Adult_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Stroke">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_PaintCanvas.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Dip">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Adult_Paint.wav" volume=".5" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Rumble">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TapirBairds/sound/TapirBairds_Adult_Bite.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_TrumpetA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TapirBairds/sound/TapirBairds_Adult_Whistle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_TrunkNoisemaker">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TapirBairds/sound/TapirBairds_Adult_AttackGuest.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Drink_ShowerA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantToon/sound/Drink_ShowerA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Drink_ShowerB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantToon/sound/Drink_ShowerB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_Drink">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_Drink.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_Eat">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_Rumble">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_RumbleB.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_TrumpetA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_TrumpetA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_TrunkNoisemaker">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantAfrican/sound/ElephantAfrican_Young_TrunkNoisemaker.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_Drink_ShowerA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantToon/sound/Drink_ShowerA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Young_Drink_ShowerB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/ElephantToon/sound/Drink_ShowerB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_pawground_dirt">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_pawground_grass">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_pawground_snow">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Hit">
+			<snd maxdist="50" mindist="4" name="entities\units\animals\shared\sound\Animal_Hit_HardA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Rub">
+			<snd maxdist="50" mindist="4" name="entities\units\animals\shared\sound\Animal_PawSnow_SoftB.wav" volume=".5" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Paw">
+			<snd maxdist="50" mindist="4" name="entities\units\animals\shared\sound\Animal_PawGrass_HardA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="ElephantToon_Adult_Swat">
+			<snd maxdist="50" mindist="4" name="entities\units\animals\shared\sound\Animal_Hit_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

@@ -1,0 +1,122 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Bit">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Bite.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Chew">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_ChewGulp.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_ChuffB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Howl.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Eat">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Regurgitate.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Bark.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_PlayRoar">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/WildDogAfrican/sound/DogWildAfrican_Adult_F_Chitter.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/WildDogAfrican/sound/DogWildAfrican_Adult_F_ViciousBark.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/WildDogAfrican/sound/DogWildAfrican_Adult_F_Hoot.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WildDogAfrican/sound/DogWildAfrican_Adult_F_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Sniff.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Adult_Yawn">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/WolfGray/sound/WolfGray_Adult_F_Yawn.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_RoarA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_RoarC.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_RoarB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_RoarC.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_PlayRoar">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Play_Roar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Yawn">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Yawn.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Chew">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Chew.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_ChuffB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_ChuffB.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Eat">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Sleep.wav" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Adult_Sneeze.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Sniff.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Hit.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="TigerToon_Young_Bit">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TigerBengal/sound/TigerBengal_Young_Bit.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

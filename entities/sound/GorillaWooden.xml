@@ -1,0 +1,147 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Eat">
+			<snd maxdist="25" mindist="8" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Adult_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_QuestionBark">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_Bark.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_HootBark">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_GruntC.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Drum">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/ApeBarbary_Adult_F_Attacked.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Chuckle">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_HeadBob.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Sleep">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Growl">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_Growl.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Kiss">
+			<snd maxdist="25" mindist="8" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Scream">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_GuestAttack.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Sneeze">
+			<snd maxdist="25" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Grunt">
+			<snd maxdist="25" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_GruntA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Belch">
+			<snd maxdist="25" mindist="10" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Adult_F_YawnThreat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Yawn">
+			<snd maxdist="25" mindist="8" name="entities/units/animals/ApeBarbary/sound/ApeBarbary_Young_F_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Adult_Spit">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/shared/sound/CamelDromedary_Young_SpitA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Eat">
+			<snd maxdist="25" mindist="8" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_QuestionBark">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_QuestionBark.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Drum">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Drum.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Chuckle">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Chuckle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Sleep">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Growl">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_GrowlA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Kiss">
+			<snd maxdist="25" mindist="8" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Kiss.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Scream">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_ScreamA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Belch">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Belch.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Yawn">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_Young_Grunt">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/GorillaMountain/sound/GorillaMountain_Young_GruntA.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_pawground_dirt">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_pawground_grassland">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="GorillaWooden_pawground_tundra">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

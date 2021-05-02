@@ -1,0 +1,72 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_Yawn">
+			<snd maxdist="50" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ScratchChinHigh_1_1.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ThrowUnderhand_1_4.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_BarkA">
+			<snd maxdist="50" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutSuperSuccess_1_1.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_BleatA">
+			<snd maxdist="50" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_CallForApplause_1_1.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_EatA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Adult_EatA.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_GruntA">
+			<snd maxdist="50" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_Point_1_1.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Adult_WhimperA">
+			<snd maxdist="25" mindist="4" name="entities/units/staff/MC/sound/MC_Adult_M_Stand_ShoutFailure_1_1.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_BarkA">
+			<sawwwwwwwwwwwwww maxdist="50" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_BarkA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_BleatA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_BleatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_EatA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_GruntA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_GruntA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_WhimperA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_WhimperA.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="PandaGilded_Young_Yawn">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/PandaGiant/sound/PandaGiant_Young_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

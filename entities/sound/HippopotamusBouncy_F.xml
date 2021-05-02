@@ -1,0 +1,97 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_Bite">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TortoiseGalapagos/sound/TortoiseGalapagos_Adult_Ram.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_EatA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TortoiseGalapagos/sound/TortoiseGalapagos_Adult_Chew.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_EatB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TortoiseGalapagos/sound/TortoiseGalapagos_Adult_Eat.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_GruntA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/TortoiseGalapagos/sound/TortoiseGalapagos_Adult_Yawn.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_NoseBubbles">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Adult_NoseBubbles.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_RoarB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/TortoiseGalapagos/sound/TortoiseGalapagos_Adult_MatingCall.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Adult_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Adult_WaterToss">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Adult_WaterToss.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_Bite">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_Bite.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_EatA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_EatB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_EatB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_GruntA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_GruntA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_NoseBubbles">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_NoseBubbles.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_RoarB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_Sleep">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_Young_WaterToss">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Hippopotamus/sound/Hippopotamus_Young_WaterToss.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_stampground_dirt">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_StampDirt_HardA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_stampground_grass">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_StampGrass_HardA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="HippopotamusBouncy_stampground_snow">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_StampSnow_HardA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

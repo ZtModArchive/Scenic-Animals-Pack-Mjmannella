@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="LionBouncy_Gift">
+	<types>
+		<entity>
+			<item>
+				<LionBouncy_Gift />
+			</item>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="UI/infopan/icon_LionBouncy_Gift.dds" />
+			</UIAspect>
+			<UIHelpInfo help="" ids="entityname:LionBouncy_Gift" long="" name="" short="" />
+		</UIToggleButton>
+		<BFAIEntityDataShared b_CommonGift="true" b_Puppet="true" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent isBFR="true" modelfile="entities/objects/Items/Gifts/LionBouncy_Gift" scale="1.0" switch="0 36" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

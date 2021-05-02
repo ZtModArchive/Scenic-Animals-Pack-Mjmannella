@@ -1,0 +1,192 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_Attacked">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_Bit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_ChuffA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Caracal/sound/Caracal_Adult_ChuffB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_ChuffB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Caracal/sound/Caracal_Adult_ChuffB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_ChuffC">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Caracal/sound/Caracal_Adult_ChuffB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_EatA">
+			<snd maxdist="30" mindist="8" name="entities/units/animals/Caracal/sound/Caracal_Adult_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_Graze">
+			<snd maxdist="30" mindist="8" name="entities/units/animals/Caracal/sound/Caracal_Adult_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_GrowlA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Adult_GrowlA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_GrowlB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Adult_GrowlB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_GrowlC">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Adult_GrowlC.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_Pant">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_RoarA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_RoarA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_RoarB">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Caracal/sound/Caracal_Adult_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_RoarC">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Caracal/sound/Caracal_Adult_Play_Roar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_Scratch">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Caracal/sound/Caracal_Adult_Hit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_SleepA">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Caracal/sound/Caracal_Adult_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_SniffA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_SniffB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_YawnA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Caracal/sound/Caracal_Adult_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Adult_YawnB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Adult_YawnB.wav" volume=".7" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_Attacked">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_Attacked.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_ChuffA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_ChuffA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_ChuffB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_ChuffB.wav" volume="1" />
+		</BF3DSndFactory>
+		<BFSoundtag>
+			<BF3DSndFactory name="BearStone_Young_ChuffC">
+				<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_ChuffC.wav" volume="1.2" />
+			</BF3DSndFactory>
+		</BFSoundtag>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_EatA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_GrowlA">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_GrowlA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_GrowlB">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_GrowlB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_GrowlC">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/BearPolar/sound/BearPolar_Young_GrowlB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_NurseA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_NurseA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_Pant">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_Pant.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/BearPolar/sound/BearPolar_Young_RoarA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/BearPolar/sound/BearPolar_Young_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_RoarC">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/BearPolar/sound/BearPolar_Young_RoarC.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_Scratch">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_Scratch.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_SleepA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/BearPolar/sound/BearPolar_Young_SleepA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_SniffA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_SniffA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_SniffB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_SniffB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_YawnA">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_YawnA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="BearStone_Young_YawnB">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/BearPolar/sound/BearPolar_Young_YawnB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

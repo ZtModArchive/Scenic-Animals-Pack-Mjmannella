@@ -1,0 +1,97 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Mew">
+			<snd maxdist="50" mindist="10" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_M_MatingCallA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Eat">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_EatA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_HeadStrikeA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Snort">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_SnortA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_SleepA.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Graze">
+			<snd maxdist="25" mindist="2" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_BiteA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Charge">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_LungeA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Adult_Attacked">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Deinosuchus/sound/Deinosuchus_Adult_AttackedA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Eat">
+			<snd maxdist="25" mindist="2" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Squeal">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_SquealA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Snort">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_SnortA.wav" volume=".9" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Sleep">
+			<snd maxdist="25" mindist="2" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_SleepA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Graze">
+			<snd maxdist="25" mindist="2" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Adult_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Charge">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Charge.wav" volume=".8" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_Young_Attacked">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/RhinocerosBlack/sound/RhinocerosBlack_Young_Attacked.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_pawground_dirt">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_pawground_grassland">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="RhinocerosStone_pawground_tundra">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

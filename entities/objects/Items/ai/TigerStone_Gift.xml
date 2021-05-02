@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="TigerStone_Gift">
+	<types>
+		<entity>
+			<item>
+				<TigerStone_Gift />
+			</item>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="UI/infopan/icon_TigerStone_Gift.dds" />
+			</UIAspect>
+			<UIHelpInfo help="" ids="entityname:TigerStone_Gift" long="" name="" short="" />
+		</UIToggleButton>
+		<BFAIEntityDataShared b_CommonGift="true" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/Items/Gifts/TigerStone_Gift.nif" scale="1.0" switch="0 36" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>

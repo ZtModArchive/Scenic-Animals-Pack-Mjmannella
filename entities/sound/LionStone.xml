@@ -1,0 +1,217 @@
+<soundtags>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Bit">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_Bite.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Chew">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Eat_Chew.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Cough">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Eat_ScratchFood.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Eat">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Eat_Tear.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_F_GruntRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_CallYoung.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_F_PlayRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_MatingCall.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_F_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_RoarA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_F_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_FriendlyPuff">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_TendNestA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_HeadSlamLeft.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Lick">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_GroomOther.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_M_GruntRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_CallYoung.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_M_PlayRoar">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_MatingCall.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_M_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_RoarA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_M_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Stand_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Purr">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_JawLock_Idle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_PurrB">
+			<snd maxdist="" mindist="" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_TendNestB.wav" volume="" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Sleep">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Carnotaurus/sound/Carnotaurus_Adult_F_Sleep_Idle.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Snarl">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_KickRight.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Adult_Yawn">
+			<snd maxdist="50" mindist="8" name="entities/units/animals/TyrannosaurusRex/sound/TyrannosaurusRex_Adult_F_Stand_Yawn.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Bit">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Bit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Chew">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Chew.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Cough">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Cough.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Eat">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Eat.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_FriendlyPuff">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_FriendlyPuff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_GruntRoar">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_GruntRoar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Hit">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Hit.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Lick">
+			<snd maxdist="50" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Lick.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_PlayRoar">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_PlayRoar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_PurrA">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Purr.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_PurrB">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Purr.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_RoarA">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Roar.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_RoarB">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_RoarB.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Sleep">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sleep.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Snarl">
+			<snd maxdist="25" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Snarl.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Sneeze">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sneeze.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Sniff">
+			<snd maxdist="25" mindist="4" name="entities/units/animals/Lion/Sound/Lion_Young_Sniff.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_Young_Yawn">
+			<snd maxdist="50" mindist="6" name="entities/units/animals/Lion/Sound/Lion_Young_Yawn.wav" volume="1.2" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_pawground_dirt">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawDirt_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_pawground_grassland">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawGrass_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+	<BFSoundtag>
+		<BF3DSndFactory name="LionStone_pawground_tundra">
+			<snd maxdist="50" mindist="2" name="entities/units/animals/shared/sound/Animal_PawSnow_SoftA.wav" volume="1" />
+		</BF3DSndFactory>
+	</BFSoundtag>
+</soundtags>

@@ -1,0 +1,30 @@
+<BFTypedBinder binderType="HippopotamusBouncy_Gift">
+	<types>
+		<entity>
+			<item>
+				<HippopotamusBouncy_Gift />
+			</item>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity entityVersion="1" />
+	</instance>
+	<shared>
+		<UIToggleButton template="adopt">
+			<UIAspect>
+				<default image="UI/infopan/icon_HippopotamusBouncy_Gift.dds" />
+			</UIAspect>
+			<UIHelpInfo help="" ids="entityname:HippopotamusBouncy_Gift" long="" name="" short="" />
+		</UIToggleButton>
+		<BFAIEntityDataShared b_CommonGift="true" />
+	</shared>
+	<binder>
+		<BFNamedBinder binderName="mainObj">
+			<instance>
+				<BFPhysObj>
+					<BFSimpleLODComponent modelfile="entities/objects/Items/Gifts/HippopotamusBouncy_Gift.nif" scale="1.0" switch="0 36" />
+				</BFPhysObj>
+			</instance>
+		</BFNamedBinder>
+	</binder>
+</BFTypedBinder>
