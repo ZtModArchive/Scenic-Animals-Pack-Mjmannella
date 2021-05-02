@@ -1,0 +1,31 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Pupazzo di neve</Snowman>
+		<Snowman_stt>Pupazzo di neve</Snowman_stt>
+		<Snowman_lower>il Pupazzo di neve</Snowman_lower>
+		<Snowman_ltt>Pupazzo di neve<br />Fare clic per selezionare e poi piazzare un Pupazzo di neve.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Pupazzo di neve</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+						<p />
+						<p />
+					</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

@@ -1,0 +1,35 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Schneemann</Snowman>
+		<Snowman_stt>Schneemann</Snowman_stt>
+		<Snowman_lower>den Schneemann</Snowman_lower>
+		<Snowman_ltt>Schneemann<br />Klicken sie, um den Schneemann auszuwählen und zu platzieren.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Schneemann</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+
+Der Reutlinger Cornelius Grätz stellte im Jahr 2000 mit 2099 Objekten den Weltrekord für die größte Schneemannsammlung auf. Nachdem der Rekord 2008 (3025 Objekte) und 2010 (3143 Objekte) bestätigt worden war, wurde er am 19. März 2013 von Karen Schmidt aus dem amerikanischen Coon Rapids mit 5127 Objekten gebrochen. Cornelius Grätz stellte seine Sammlung u. bereits in Museen in Reutlingen, Esslingen am Neckar, Deggendorf, Zons, Minden, Bautzen und Itzehoe aus. Zudem ist er Initiator des Weltschneemanntages, der seit 2010 jährlich stattfindet.<p />
+
+Erich Wolfgang Korngold komponierte mit elf Jahren das pantomimische Ballet Der Schneemann.<p />
+
+Der Bau eines Schneemanns erfolgt in der Regel mit feuchtem Schnee, sodass er  klebt und sich die Kugeln  rollen lassen. Anschließendes Frieren gilt als günstig, damit die angetaute Oberfläche der Schneekugeln erneut gefriert und dem Schneemann mehr Stabilität verleiht. Falls nicht genügend Wasser abschmilzt, wird  mit einer Gießkanne nachgeholfen. Das japanische Dorf Shiramine in der Präfektur Ishikawa ist bekannt für seine Schneemannbauten. Jedes Jahr Anfang Februar werden die Bewohner des Dorfes dazu angehalten, einen eigenen Schneemann zu bauen.
+</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

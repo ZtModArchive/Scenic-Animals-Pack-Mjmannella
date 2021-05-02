@@ -1,0 +1,100 @@
+<ZT2Strings>
+	<entityname>
+		<RhinocerosBouncy>Bouncy Rhinoceros</RhinocerosBouncy>
+		<RhinocerosBouncy_stt>Bouncy rhinoceros</RhinocerosBouncy_stt>
+		<RhinocerosBouncy_lower>the bouncy rhinoceros</RhinocerosBouncy_lower>
+      <RhinocerosBouncy_ltt>
+         <color r="255" g="248" b="178">
+            <b>Bouncy Rhinoceros</b>
+         </color>
+         <br/>
+         Click to select and then place the bouncy rhinoceros, a miniature animal made to be ridden.
+      </RhinocerosBouncy_ltt>
+	</entityname>
+	<zoopedia_rhinocerosbouncy>
+		<entry>Rhinoceros, Bouncy</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" height="320" width="640">
+					<cell padx="20" pady="20" width="600">
+						<cell width="284">
+							<cell bgimg="ui/zoopedia/littleBox-128.tga" width="96">
+								<img height="96" sh="64" src="entities\units\animals\RhinocerosBouncy\RhinocerosBouncy_Adult_F_icon.dds" sw="64" sx="0" sy="0" width="96" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_male.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_female.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="156" />
+							<br />
+							<cell pady="0" width="32">
+								<img height="32" sh="64" src="ui/zoopedia/LowRisk.dds" sw="64" sx="0" sy="0" width="32" />
+							</cell>
+							<cell padx="10" pady="0" width="224">Conservation Status:<br />
+								<color b="0" g="255" r="0">Low Risk</color>
+							</cell>
+						</cell>
+						<cell width="128">Zoo Decorations<br />
+							<img height="96" sh="128" src="ui/icon_biomes/icon_zoodecoration.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<cell width="128">Worldwide<br />
+							<img height="96" sh="128" src="ui/icon_maplocations/Rainforest_Worldwide.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<br />
+						<cell pady="10" width="284">
+							<br />Class: Mammals (Mammalia)<br />Order: Odd-toed Ungulates (Perissodactyla)<br />Family: Rhinos (Rhinocerotidae)<br />Genus: <i>Diceros</i>
+							<br />Species: <i>bouncer</i>
+						</cell>
+						<cell pady="10" width="256">
+							<img sh="85" src="ui/zoopedia/biome/tropicalrainforest_zoopedia_biomebrush.dds" sw="256" sx="0" sy="0" />
+						</cell>
+					</cell>
+				</cell>
+				<p />
+				<p />
+				<cell width="260" />
+				<cell width="300">
+					<cell width="64">
+						<img sh="64" src="ui/zoopedia/fact-icon64.tga" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell width="176">
+						<font name="arial" shadowa="50" shadowx="2" shadowy="1" size="12">Fun Bouncy Rhinoceros facts</font>
+					</cell>
+					<p />
+					<cell bgimg="ui/zoopedia/factBG.tga" padx="10" width="280">
+						<p />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Bouncy animals are a derived variety of toon animals, with the intent of being used for travel.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Bouncy animals enjoy being ridden by kids and adults alike.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Contrary to their name, bouncy animals are not made of rubber.
+</cell>
+						<br />
+					</cell>
+				</cell>
+				<cell width="340">
+  <color r="255" g="248" b="178">To unlock the bouncy rhinoceros in challenge or campaign games, you must earn a 2-star zoo fame rating for your zoo.</color><p />
+
+Bouncy rhinos may seem intimidating, but they're quite tame animals in reality. Their small mouthes mean that they only tend to eat small food like berries and insects.
+</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2.</cell>
+			</color>
+		</text>
+	</zoopedia_rhinocerosbouncy>
+</ZT2Strings>

@@ -1,0 +1,35 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Bonhomme de neige</Snowman>
+		<Snowman_stt>Bonhomme de neige</Snowman_stt>
+		<Snowman_lower>la Bonhomme de neige</Snowman_lower>
+		<Snowman_ltt>Bonhomme de neige<br />Sélectionnez, puis placez une Bonhomme de neige.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Bonhomme de neige</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+
+La construction d’un bonhomme de neige est un loisir pour enfants et adultes, généralement pratiqué lors des périodes de l’année où la neige est disponible en abondance. Dans la culture occidentale, et dans l’hémisphère nord, le bonhomme de neige est un symbole associé à Noël et à l’hiver. Un bonhomme de neige est généralement composé de deux (par exemple, en France) ou trois (par exemple, en Allemagne) grosses boules de neige empilées les unes sur les autres. La première, qui est aussi la plus grosse, fait office de corps. La plus petite boule de neige, placée tout en haut, représente la tête. Les détails du visage et du corps sont ajoutés par la suite : un fruit ou un légume (traditionnellement une carotte) en guise de nez, des brindilles, des cailloux ou des pièces de monnaie pour représenter la bouche, les bras et les yeux. On peut également habiller le bonhomme de neige en lui enroulant une écharpe autour du cou, en lui mettant un bonnet ou un chapeau sur la tête et des boutons de manteau sur le ventre. Un balai peut éventuellement lui être mis dans les bras, une pipe à la bouche, des lunettes de soleil sur les yeux, etc. On peut également constituer le corps du bonhomme de neige en remplissant une poubelle de type cylindrique de neige et en renversant ensuite cette poubelle pour faire une sorte de moulage en forme de poubelle inversée. La tête est ensuite constituée par une petite boule de neige que l'on fait rouler sur le manteau neigeux recouvrant le sol. Par effet d'agglutination, cette boule grossit de plus en plus jusqu'à atteindre la taille souhaitée par le créateur. Un seau renversé posé sur cette tête peut alors faire office de chapeau. L’abominable homme des neiges désigne le Yéti.<p />
+
+Il y a une chanson du temps des Fêtes où on raconte l'histoire d'un bonhomme de neige, Frosty the snowman ; Le bonhomme de neige, une chanson écrite par Jacques Plante sur une musique de Walter Grundhoff, interprétée entre autres par Tino Rossi, Fernand Gignac et Garou ; Dans La Reine des neiges on entend la chanson "je voudrais un bonhomme de neige" ; Sur l'album . . And then there were three du groupe Genesis, se trouve la chanson Snowbound dans laquelle il est fait mention d'un bonhomme de neige. Hey there's a snowman, Hey what a snowman. . . . La comptine "Le bonhomme de neige" de Jacques Prévert, musique de Joseph Kosma.<p />
+
+Der Schneemann  (1944), un dessin animé allemand de Hans Fischerkoesen dans lequel un bonhomme de neige, après avoir vécu quelques aventures en hiver, décide de voir ce qu'est l'été. Le Bonhomme de neige (1982), un court métrage animé de Dianne Jackson, mettant en scène un enfant façonnant un bonhomme de neige qui va prendre vie durant la nuit.
+</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

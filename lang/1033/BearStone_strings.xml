@@ -1,0 +1,100 @@
+<ZT2Strings>
+	<entityname>
+		<BearStone>Stone Bear</BearStone>
+		<BearStone_stt>Stone bear</BearStone_stt>
+		<BearStone_lower>the stone bear</BearStone_lower>
+      <BearStone_ltt>
+         <color r="255" g="248" b="178">
+            <b>Stone Bear</b>
+         </color>
+         <br/>
+         Click to select and then place the stone bear, a statue brought to life.
+      </BearStone_ltt>
+	</entityname>
+	<zoopedia_bearstone>
+		<entry>Bear, Stone</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" height="320" width="640">
+					<cell padx="20" pady="20" width="600">
+						<cell width="284">
+							<cell bgimg="ui/zoopedia/littleBox-128.tga" width="96">
+								<img height="96" sh="64" src="entities\units\animals\BearStone\BearStone_Adult_F_icon.dds" sw="64" sx="0" sy="0" width="96" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_male.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_female.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="156" />
+							<br />
+							<cell pady="0" width="32">
+								<img height="32" sh="64" src="ui/zoopedia/Vulnerable.dds" sw="64" sx="0" sy="0" width="32" />
+							</cell>
+							<cell padx="10" pady="0" width="224">Conservation Status:<br />
+								<color b="0" g="255" r="255">Vulnerable</color>
+							</cell>
+						</cell>
+						<cell width="128">Zoo Decorations<br />
+							<img height="96" sh="128" src="ui/icon_biomes/icon_zoodecoration.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<cell width="128">Worldwide<br />
+							<img height="96" sh="128" src="ui/icon_maplocations/desert_worldwide.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<br />
+						<cell pady="10" width="284">
+							<br />Class: Mammals (Mammalia)<br />Order: Carnivorans (Carnivora)<br />Family: Bears (Ursidae)<br />Genus: <i>Ursus</i>
+							<br />Species: <i>medusidus</i>
+						</cell>
+						<cell pady="10" width="256">
+							<img sh="85" src="ui/zoopedia/biome/desert_zoopedia_biomebrush.dds" sw="256" sx="0" sy="0" />
+						</cell>
+					</cell>
+				</cell>
+				<p />
+				<p />
+				<cell width="260" />
+				<cell width="300">
+					<cell width="64">
+						<img sh="64" src="ui/zoopedia/fact-icon64.tga" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell width="176">
+						<font name="arial" shadowa="50" shadowx="2" shadowy="1" size="12">Fun Stone Bear facts</font>
+					</cell>
+					<p />
+					<cell bgimg="ui/zoopedia/factBG.tga" padx="10" width="280">
+						<p />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">The producers of the living statues is Bearclays Bank in a guerilla effort to attract shareholders.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">84% Private Capital for Bearclays Bank has decreased by 4% since production.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">On April 8, 2008, public safety minister Paul A. Volcker stated that the company has taken "actions that extend to the very edge of its lawful and implied powers."
+</cell>
+						<br />
+					</cell>
+				</cell>
+				<cell width="340">
+  <color r="255" g="248" b="178">To unlock the stone bear in challenge or campaign games, you must earn a 3-star zoo fame rating for your zoo.</color><p />
+
+The stone bear is a titanic creature, being much denser than average polar bears. However, they are far more herbivorous than their Arctic inspirations.
+</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2. Made by Mjmannella.</cell>
+			</color>
+		</text>
+	</zoopedia_bearstone>
+</ZT2Strings>

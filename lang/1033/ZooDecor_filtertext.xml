@@ -1,0 +1,143 @@
+<ZT2Strings>
+      <LOC_STRING _locID="biometype:zoodecoration"  >Zoo Decorations</LOC_STRING>
+      <LOC_STRING _locID="biometype:zoodecoration_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Zoo Decorations</b>
+         </color>
+         <br/>
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:icon_stt"  >Zoo Decorations</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:deepwater"  >Deep Water</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:deepwater_stt"  >Deep Water</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:deepwater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Deep Water</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select deep water. Place the cursor over the world, and then click to create deep water.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:shallowwater"  >Shallow Water</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:shallowwater_stt"  >Shallow Water</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:shallowwater_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Shallow Water</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select shallow water. Place the cursor over the world, and then click to create shallow water.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground"  >Dirt</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground_stt"  >Dirt</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Dirt</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select dirt. Place the cursor over the world, and then click to create dirt.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground-cover"  >Grass</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground-cover_stt"  >Grass</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:ground-cover_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Grass</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select grass. Place the cursor over the world, and then click to create grass.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:mix"  >Grass and Dirt</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:mix_stt"  >Grass and Dirt</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:mix_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Grass and Dirt</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select grass and dirt. Place the cursor over the world, and then click to create an area of grass and dirt.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix"  >Tall Grass</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix_stt"  >Tall Grass</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Tall Grass</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select tall grass. Place the cursor over the world, and then click to create an area of tall grass.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix-terrain"  >Sparse Forest</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix-terrain_stt"  >Sparse Forest</LOC_STRING>
+      <LOC_STRING _locID="zoodecoration:foliage-mix-terrain_ltt"  >
+         <color r="255" g="248" b="178">
+            <b>Sparse Forest</b>
+         </color>
+         <br/>
+         
+         
+         
+         
+         
+         Click to select sparse forest. Place the cursor over the world, and then click to create sparse forest.
+      
+      
+      
+      
+      
+      </LOC_STRING>
+</ZT2Strings>

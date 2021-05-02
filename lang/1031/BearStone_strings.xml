@@ -1,0 +1,97 @@
+<ZT2Strings>
+	<entityname>
+		<BearStone>Bear Stearns</BearStone>
+		<BearStone_stt>Bear Stearns</BearStone_stt>
+		<BearStone_lower>den Bear Stearns</BearStone_lower>
+		<BearStone_ltt>Bear Stearns<br />Klicken sie, um den Bear Stearns auszuwählen und zu platzieren.</BearStone_ltt>
+	</entityname>
+	<zoopedia_bearstone>
+		<entry>Bear Stearns</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" height="320" width="640">
+					<cell padx="20" pady="20" width="600">
+						<cell width="284">
+							<cell bgimg="ui/zoopedia/littleBox-128.tga" width="96">
+								<img height="96" sh="64" src="entities\units\animals\BearStone\BearStone_Adult_F_icon.dds" sw="64" sx="0" sy="0" width="96" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_male.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_female.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="156" />
+							<br />
+							<cell pady="0" width="32">
+								<img height="32" sh="64" src="ui/zoopedia/Vulnerable.dds" sw="64" sx="0" sy="0" width="32" />
+							</cell>
+							<cell padx="10" pady="0" width="224">Gefährdungsstatus:<br />
+								<color b="0" g="255" r="255">Gefährdet</color>
+							</cell>
+						</cell>
+						<cell width="128">Wüste<br />
+							<img height="96" sh="128" src="ui/icon_biomes/icon_desert.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<cell width="128">desert_worldwide<br />
+							<img height="96" sh="128" src="ui/icon_maplocations/desert_worldwide.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<br />
+						<cell pady="10" width="284">
+							<br />Klasse: Mammals (Mammalia)<br />Ordnung: Carnivorans (Carnivora)<br />Familie: Bears (Ursidae)<br />Gattung: <i>Ursus</i>
+							<br />Art: <i>medusidus</i>
+						</cell>
+						<cell pady="10" width="256">
+							<img sh="85" src="ui/zoopedia/biome/desert_zoopedia_biomebrush.dds" sw="256" sx="0" sy="0" />
+						</cell>
+					</cell>
+				</cell>
+				<p />
+				<p />
+				<cell width="260" />
+				<cell width="300">
+					<cell width="64">
+						<img sh="64" src="ui/zoopedia/fact-icon64.tga" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell width="176">
+						<font name="arial" shadowa="50" shadowx="2" shadowy="1" size="12">Spannende Fakten zum Bear Stearns</font>
+					</cell>
+					<p />
+					<cell bgimg="ui/zoopedia/factBG.tga" padx="10" width="280">
+						<p />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">1934), 1969 als Börsenhändler bei Bear Stearns angestellt, wurde 1993 CEO und übernahm 2001 auch den Titel des Chairmans.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">März 2008, gab JPMorgan Chase &amp; Co. ein Übernahmeangebot für Bear Stearns bekannt.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Dies ist das höchste Gebäude Großbritanniens.
+</cell>
+						<br />
+					</cell>
+				</cell>
+				<cell width="340">Um den Bear Stearns im Herausforderungs- oder Kampagnenmodus freizugeben, muss der Zoo einen Bekanntheitsgrad von 3.0 Sternen erreichen.<p />
+
+Bear Stearns wurde am 1. Mai 1923 von Joseph A. Bear, Robert B. Stearns und Harold C. Mayer gegründet. Das Gründungskapital betrug 500. 000 US-Dollar, 7 Mitarbeiter waren zunächst beschäftigt. Den Börsencrash 1929 überstand die Bank und sie musste keinen ihrer Angestellten entlassen. 1933 wurde die erste Niederlassung in Chicago eröffnet, Bear Stearns hatte mittlerweile 75 Mitarbeiter und ein Grundkapital von 800. 000 US-Dollar. In diesem Jahr wurde Salim L. („Cy“) Lewis eingestellt, der später Chairman und Chief Executive wurde. Gleichzeitig wurde das Geschäft um den Handel mit Unternehmensanleihen erweitert, nachdem die Firma bis dahin vor allem mit Staatsanleihen gehandelt hatte. 1955 wurde das erste internationale Büro in Amsterdam eröffnet. Der 1949 eingestellte Alan („Ace“) C. Greenberg wurde 1978 Chairman und Chief Executive, nachdem Lewis gestorben war. 1985 erfolgte der Börsengang. James Cayne (geb. Er war Großaktionär geworden und ein professioneller Bridge-Spieler, der sich während der Hedgefonds-Krise 2007 tagelang bei einem Bridge-Turnier aufhielt. Im Dezember 2007 schrieb die Bank den ersten Quartalsverlust ihrer Geschichte. Im Januar 2008 musste Cayne zurücktreten und CEO wurde Alan D. Schwartz. 1999 kam Bear Stearns unter Beschuss, als die Bank wegen ihrer Rolle als Clearing Agent für A. R. Baron, eine kleine Brokerfirma, die ihre Kunden betrog, verklagt wurde. Bear Stearns zahlte schließlich 42 Mio. US-Dollar an Entschädigungen. 1998 verweigerte sich Bear Stearns der Rettung des Hedgefonds LTCM, der sich in eine massive Schieflage verspekuliert hatte und das Finanzsystem zu stürzen drohte. Alle anderen großen Banken einigten sich damals auf ein Hilfspaket für den 2000 endgültig aufgelösten Fonds.<p />
+
+Bear Stearns war bereits in den Anfangsphasen der Subprime-Krise 2007 in Schwierigkeiten geraten, nachdem drei vom Unternehmen aufgelegte Hedge-Fonds (High Grade Structured Credit Strategies Enhanced Fund, High Grade Structured Credit Strategies Fund und Asset-Backed Securities Fund) Insolvenz anmelden mussten. Die auf den Cayman-Inseln ansässigen Liquidatoren beantragten Gläubigerschutz beim New Yorker Gericht (U.S. Bankruptcy Court). Beim letztgenannten Fonds entstand ein Verlust von 4,5 Millionen US-Dollar, dies entspricht einem halben Prozent des Gesamtvolumens von 900 Millionen US-Dollar. In der Folge wurden an den Finanzmärkten immer wieder Gerüchte über Liquiditätsprobleme bei Bear Stearns laut. Am 10. März 2008 bezeichnete Bear Stearns in einer Medienmitteilung solche Gerüchte als „absolut unwahr“. Vier Tage später, am 14. März 2008, räumte Bear Stearns eine „deutliche Verschlechterung der Liquiditätslage in den letzten 24 Stunden“ ein. Diese sei nach Meinung von Bear Stearns unter anderem auch durch die anhaltenden Gerüchte verursacht worden, da der Kreditmarkt für Bear Stearns de facto nicht mehr zugänglich war. Gleichzeitig schnürten JPMorgan Chase &amp; Co. und die US-amerikanische Notenbank Federal Reserve ein Rettungspaket in Form eines Überbrückungskredits. Die Aktien von Bear Stearns brachen daraufhin um über 47 Prozent ein. Am Sonntag, dem 16. Der Übernahmepreis lag dabei bei rund zwei US-Dollar je Aktie, nachdem diese am Freitag bei 30,85 US-Dollar geschlossen hatte und noch am Donnerstag 57,00 US-Dollar wert war. Der Übernahmepreis entsprach damit einer Kapitalisierung von noch 236 Millionen US-Dollar. Das geschnürte Rettungspaket sah weiterhin vor, dass die US-amerikanische Notenbank praktisch sämtliche Verlustrisiken von Bear Stearns bis zu einem Gesamtbetrag von 29 Milliarden US-Dollar übernimmt, während JPMorgan Chase &amp; Co. die erste Milliarde eventuell anfallender Verluste übernimmt. Der Übernahmepreis wurde später auf rund 10 US-Dollar pro Aktie verbessert. Gleichzeitig erwarb JP Morgan Chase 39,5 Prozent der Aktien im Rahmen einer Kapitalerhöhung. Der Anteil wurde bis Ende April 2008 auf zirka 49 Prozent ausgebaut. Für den 29. Mai 2008 wurde eine außerordentliche Hauptversammlung im New Yorker Hauptquartier einberufen. Wichtigster Tagesordnungspunkt war die Billigung der Übernahme von Bear Stearns durch JP Morgan Chase. Am darauffolgenden Tag 30. Mai 2008 wurde die Übernahme dann vollzogen; für eine Aktie der Bear Stearns erhielten die Aktionäre 0,21753 Anteile der übernehmenden JPMorgan Chase.<p />
+
+Das Unternehmen war in die Bereiche Capital Markets, Wealth Management und Global Clearing Services untergliedert. Bear Stearns unterhielt in den USA Büros in New York, Atlanta, Boston, Chicago, Dallas, Denver, Los Angeles und San Francisco und San Juan. International war die Bank mit Niederlassungen in Dublin, Hongkong, London, Lugano, Mailand, Peking, São Paulo, Shanghai, Singapur und Tokio vertreten. Im Herbst 2007 wurde die Expansion mit der Eröffnung der Niederlassungen in Paris und Frankfurt fortgesetzt. Die Europa-Aktivitäten wurden im Wesentlichen über die Niederlassung in London gesteuert. Hier arbeiteten zirka 1. 000 der insgesamt über 14. 000 Mitarbeiter der Bank für Bear, Stearns International Limited, eine 100-%-Tochter von The Bear Stearns Company. Das Londoner Büro befand sich in Canary Wharf im Gebäude One Canada Square. Im Jahr 2009 sollte das neue Gebäude von Bear Stearns in London eröffnet werden, ebenfalls in Canary Wharf. Seit Anfang 2007 war Bear Stearns in Deutschland mit einer Zweigniederlassung in Frankfurt am Main vertreten. Bear Stearns vertrieb auch Finanzprodukte für Privatkunden unter dem Markennamen 'best markets'. In Deutschland wurden über Banken und Sparkassen Zertifikate vertrieben. Nach der abgeschlossenen Übernahme von Bear Stearns durch JP Morgan führt JP Morgan diese Finanzprodukte weiter fort.
+</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_bearstone>
+</ZT2Strings>

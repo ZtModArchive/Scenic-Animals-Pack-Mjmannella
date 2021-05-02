@@ -1,0 +1,5 @@
+<ZT2Strings>
+      <LOC_STRING _locID="FilterText:s_Product_Scenic" >Scenic Animal Pack</LOC_STRING>>
+      <LOC_STRING _locID="superstaff:rideanimal"  >Press SPACEBAR to ride %s</LOC_STRING>
+      <LOC_STRING _locID="superstaff:exitanimal"  >Press SPACEBAR to stop riding %s</LOC_STRING>
+</ZT2Strings>

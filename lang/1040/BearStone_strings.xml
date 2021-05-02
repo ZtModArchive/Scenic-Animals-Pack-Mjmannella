@@ -1,0 +1,90 @@
+<ZT2Strings>
+	<entityname>
+		<BearStone>Bear Stearns</BearStone>
+		<BearStone_stt>Bear Stearns</BearStone_stt>
+		<BearStone_lower>il Bear Stearns</BearStone_lower>
+		<BearStone_ltt>Bear Stearns<br />Fare clic per selezionare e poi piazzare un Bear Stearns.</BearStone_ltt>
+	</entityname>
+	<zoopedia_bearstone>
+		<entry>Bear Stearns</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" height="320" width="640">
+					<cell padx="20" pady="20" width="600">
+						<cell width="284">
+							<cell bgimg="ui/zoopedia/littleBox-128.tga" width="96">
+								<img height="96" sh="64" src="entities\units\animals\BearStone\BearStone_Adult_F_icon.dds" sw="64" sx="0" sy="0" width="96" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_male.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_female.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="156" />
+							<br />
+							<cell pady="0" width="32">
+								<img height="32" sh="64" src="ui/zoopedia/Vulnerable.dds" sw="64" sx="0" sy="0" width="32" />
+							</cell>
+							<cell padx="10" pady="0" width="224">Stato di conservazione:<br />
+								<color b="0" g="255" r="255">Vulnerabile</color>
+							</cell>
+						</cell>
+						<cell width="128">Deserto<br />
+							<img height="96" sh="128" src="ui/icon_biomes/icon_desert.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<cell width="128">desert_worldwide<br />
+							<img height="96" sh="128" src="ui/icon_maplocations/desert_worldwide.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<br />
+						<cell pady="10" width="284">
+							<br />Classe: Mammals (Mammalia)<br />Ordine: Carnivorans (Carnivora)<br />Famiglia: Bears (Ursidae)<br />Genere: <i>Ursus</i>
+							<br />Specie: <i>medusidus</i>
+						</cell>
+						<cell pady="10" width="256">
+							<img sh="85" src="ui/zoopedia/biome/desert_zoopedia_biomebrush.dds" sw="256" sx="0" sy="0" />
+						</cell>
+					</cell>
+				</cell>
+				<p />
+				<p />
+				<cell width="260" />
+				<cell width="300">
+					<cell width="64">
+						<img sh="64" src="ui/zoopedia/fact-icon64.tga" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell width="176">
+						<font name="arial" shadowa="50" shadowx="2" shadowy="1" size="12">Curiosità sul Bear Stearns</font>
+					</cell>
+					<p />
+					<cell bgimg="ui/zoopedia/factBG.tga" padx="10" width="280">
+						<p />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Attraverso la sussidiaria Bear Stearns Securities Corp.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Le obbligazioni ipotecarie create e rivendute dalle banche di Wall Street erano quindi garantite da panieri ipotecari sempre più scadenti e rischiosi.
+</cell>
+						<br />
+					</cell>
+				</cell>
+				<cell width="340">Per sbloccare il Bear Stearns in modalità sfida o campagna, è necessario avere 3.0 stella di popolarità per il tuo zoo.<p />
+
+Bear Stearns venne fondata a New York il 1º maggio 1923 da Joseph A. Bear, Robert B. Stearns e Harold C. Mayer con un capitale sociale di 500 000 dollari. Inizialmente attiva soprattutto sul mercato azionario, la società superò il crollo di Wall Street del 1929 senza tagliare posti di lavoro e nel 1933 aprì la sua prima filiale a Chicago. La prima sede all'estero fu aperta nel 1955 ad Amsterdam. Nel 1985 la società venne quotata sulla Borsa di New York e tra i suoi clienti annoverava corporazioni, istituzioni pubbliche, governi e singoli individui. I servizi offerti includevano finanza aziendale, fusioni e acquisizioni, investimenti istituzionali, gestione del rischio e vendita dei prodotti fixed-income, scambio di valuta, trading e ricerca, derivati, futures e risparmio gestito. offriva servizi di compensazione a livello globale, tra cui il prestito titoli. Il quartier generale della società era situato al 383 di Madison Avenue, a Manhattan. Nel 2007 Bear Stearns impiegava 15 500 dipendenti in tutto il mondo ed aveva filiali ad Atlanta, Boston, Chicago, Dallas, Denver, Houston, Los Angeles e San Francisco e sedi estere a Londra, Pechino, Dublino, Francoforte, Hong Kong, Lugano, Milano, San Paolo, Mumbai, Shanghai, Singapore e Tokyo. Nel 2007, agli albori della crisi che avrebbe segnato la sua fine, Bear Stearns fu individuata da un'indagine di Fortune come seconda società di intermediazione mobiliare più ammirata dagli addetti ai lavori, in termini di talento della forza lavoro, qualità della gestione del rischio e innovazione imprenditoriale.<p />
+
+Negli anni precedenti il fallimento, Bear Stearns fu particolarmente attiva nel processo di cartolarizzazione - cioè la trasformazione dei crediti in titoli scambiabili sul mercato - ed emise grandi quantità di asset-backed security, in gran parte costituite da obbligazioni garantite da mutui ipotecari (propriamente denominate mortgage-backed securities o mbs) e da altri strumenti finanziari costruiti su di esse, come le collateralized debt obligation o CDO (un titolo costituito da tranche impacchettate di diverse obbligazioni). Nel corso del 2006 e del 2007 la banca aumentò notevolmente la propria esposizione in questo mercato. La crescente domanda di mutui da cartolarizzare e rivendere agli investori portò ad esigere requisiti meno restrittivi per la loro concessione. A partire dal 2005 crebbe il numero dei mutui che venivano accesi senza verifiche sul reddito dei mutuatari o con una documentazione insufficiente e in gran parte erano a tasso variabile 2/28. Un numero crescente di tranche obbligazionarie rischiose (rating BBB) e difficili da piazzare sul mercato venivano impacchettate e rivendute sotto forma di cdo, cui le agenzie di rating attribuivano quasi per intero un rating AAA; ciò consentiva a chi emetteva cdo di piazzare le obbligazioni più scadenti sotto l'apparente forma di investimenti sicuri. Al novembre del 2006, la società possedeva un capitale di 66,7 miliardi di dollari e asset per un valore complessivo di 350,4 miliardi. Un anno dopo, nonostante i segnali negativi sul mercato subprime, Bear Stearns annoverava nel proprio portafoglio strumenti finanziari derivati per un importo nozionale di circa 13 400 miliardi di dollari, di cui 1 880 registrati come contratti di futures e opzioni. Gli asset a questo punto ammontavano a 395 miliardi a fronte di una capitalizzazione societaria pari a circa 11,1 miliardi, vale a dire un rapporto d'indebitamento di 35,6 a 1. Poiché gli asset che determinavano un rapporto d'indebitamento così elevato erano in gran parte illiquidi e potenzialmente privi di valore, la fiducia di investitori e creditori diminuì repentinamente, per poi evaporare di colpo nel momento in cui Bear Stearns fu costretta a rivolgersi alla Federal Reserve Bank di New York per arginare il rischio di controparte che avrebbe fatto seguito ad una liquidazione forzata degli asset.<p />
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_bearstone>
+</ZT2Strings>

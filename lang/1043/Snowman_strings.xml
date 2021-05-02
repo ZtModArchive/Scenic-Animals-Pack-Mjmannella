@@ -1,0 +1,29 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Sneeuwpop</Snowman>
+		<Snowman_stt>Sneeuwpop</Snowman_stt>
+		<Snowman_lower>de Sneeuwpop</Snowman_lower>
+		<Snowman_ltt>Sneeuwpop<br />Klik hier om een Sneeuwpop te selecteren en te plaatsen.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Sneeuwpop</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+					</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

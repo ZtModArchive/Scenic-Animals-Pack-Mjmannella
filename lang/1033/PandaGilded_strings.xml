@@ -1,0 +1,102 @@
+<ZT2Strings>
+	<entityname>
+		<PandaGilded>Gilded Panda</PandaGilded>
+		<PandaGilded_stt>Gilded panda</PandaGilded_stt>
+		<PandaGilded_lower>the gilded panda</PandaGilded_lower>
+      <PandaGilded_ltt>
+         <color r="255" g="248" b="178">
+            <b>Gilded Panda</b>
+         </color>
+         <br/>
+         Click to select and then place the gilded panda, a creature only known of in anicent legends.
+      </PandaGilded_ltt>
+	</entityname>
+	<zoopedia_pandagilded>
+		<entry>Panda, Gilded</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" height="320" width="640">
+					<cell padx="20" pady="20" width="600">
+						<cell width="284">
+							<cell bgimg="ui/zoopedia/littleBox-128.tga" width="96">
+								<img height="96" sh="64" src="entities/units/animals/PandaGilded/PandaGilded_Adult_M_icon.dds" sw="64" sx="0" sy="0" width="96" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_male.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="16">
+								<img height="16" sh="64" src="ui/zoopedia/icon_female.dds" sw="64" sx="0" sy="0" width="16" />
+							</cell>
+							<cell width="156" />
+							<br />
+							<cell pady="0" width="32">
+								<img height="32" sh="64" src="ui/zoopedia/Vulnerable.dds" sw="64" sx="0" sy="0" width="32" />
+							</cell>
+							<cell padx="10" pady="0" width="224">Conservation Status:<br />
+								<color b="0" g="255" r="255">Vulnerable</color>
+							</cell>
+						</cell>
+						<cell width="128">Zoo Decorations<br />
+							<img height="96" sh="128" src="ui/icon_biomes/icon_zoodecoration.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<cell width="128">Worldwide<br />
+							<img height="96" sh="128" src="ui/icon_maplocations/savannah_worldwide.dds" sw="128" sx="0" sy="0" width="96" />
+						</cell>
+						<br />
+						<cell pady="10" width="284">
+							<br />Class: Mammals (Mammalia)<br />Order: Carnivorans (Carnivora)<br />Family: Bears (Ursidae)<br />Genus: <i>Ailuropoda</i>
+							<br />Species: <i>aurus</i>
+						</cell>
+						<cell pady="10" width="256">
+							<img sh="85" src="ui/zoopedia/biome/savannah_zoopedia_biomebrush.dds" sw="256" sx="0" sy="0" />
+						</cell>
+					</cell>
+				</cell>
+				<p />
+				<p />
+				<cell width="260" />
+				<cell width="300">
+					<cell width="64">
+						<img sh="64" src="ui/zoopedia/fact-icon64.tga" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell width="176">
+						<font name="arial" shadowa="50" shadowx="2" shadowy="1" size="12">Fun Gilded Panda facts</font>
+					</cell>
+					<p />
+					<cell bgimg="ui/zoopedia/factBG.tga" padx="10" width="280">
+						<p />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">Gilded pandas are highly opportunistic, capable of eating anything.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">The first reports of gilded pandas date back to the famed explorer Fooleesh J. Ester in the European Alps.</cell>
+						<br />
+						<cell pady="10" width="32">
+							<img sh="32" src="ui/zoopedia/fact-bullet.tga" sw="32" sx="0" sy="0" />
+						</cell>
+						<cell pady="10" width="202">In spite of the natural durability of gold, gilded pandas are no less fragile than their Chinese counterparts..
+</cell>
+						<br />
+					</cell>
+				</cell>
+				<cell width="340">
+  <color r="255" g="248" b="178">To unlock the gilded panda in challenge or campaign games, you must earn a 5-star zoo fame rating for your zoo.</color><p />
+
+The gilded panda is an extremely elusive creature, with little known about even its most basic behaviour. As a result, this animal will assuredly please your guests. However, only the most experienced zoos are allowed to obtain this rare creature.
+						<p/>
+To unlock the gilded panda, you must complete the Mysterious Panda campaign.
+</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_pandagilded>
+</ZT2Strings>

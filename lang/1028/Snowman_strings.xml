@@ -1,0 +1,34 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>雪人</Snowman>
+		<Snowman_stt>雪人</Snowman_stt>
+		<Snowman_lower>雪人</Snowman_lower>
+		<Snowman_ltt>雪人<br />按一下即可選取並放置 雪人。</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>雪人</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+
+Bob Eckstein, The History of the Snowman: From the Ice Age to the Flea Market (2007) Scottie Davis, "Snow Day, A Photographic Journal of the Best Snowmen" (2004) Sandy Kinnee, Lost Origins of the Snowman: Bloodless Sacrifice" 2012 http://www.<p />
+						<p />
+
+全球最小的雪人只有0. 001毫米寬，也就是只有頭髮直徑的1/5，這個雪人由兩粒極細微的錫金屬粒組成。
+</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

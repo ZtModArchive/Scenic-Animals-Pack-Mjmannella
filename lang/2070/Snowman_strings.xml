@@ -1,0 +1,31 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Boneco de neve</Snowman>
+		<Snowman_stt>Boneco de neve</Snowman_stt>
+		<Snowman_lower>o/a Boneco de neve</Snowman_lower>
+		<Snowman_ltt>Boneco de neve<br />Clique para seleccionar e para colocar o/a Boneco de neve.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Boneco de neve</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+
+Em 2015, um homem do estado americano de Wisconsin ficou conhecido por fazer um grande boneco de neve com 22 pés de altura e uma base de 12 pés de largura. O recorde para o maior boneco de neve do mundo foi estabelecido em 2008 em Bethel, Maine. A mulher de neve estava de altura, e foi nomeada em homenagem a Olympia Snowe, a U.S. Senador representando o estado de Maine. O registro anterior também foi um boneco de neve construído em Bethel, Maine, em fevereiro de 1999. Ele era alto e pesava mais de 9 000 000 libra (massa)s (4 080 000 kg).
+</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>

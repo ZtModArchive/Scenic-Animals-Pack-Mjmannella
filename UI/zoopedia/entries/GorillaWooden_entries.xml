@@ -1,0 +1,7 @@
+<entries>
+	<BFHelpEntry entry="zoopedia_home">
+		<BFHelpEntry entry="zoopedia_animals" order="zoopedia_animal1">
+			<BFHelpEntry entry="zoopedia_gorillawooden" />
+		</BFHelpEntry>
+	</BFHelpEntry>
+</entries>

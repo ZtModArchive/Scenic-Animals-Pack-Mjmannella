@@ -1,0 +1,29 @@
+<ZT2Strings>
+	<entityname>
+		<Snowman>Muñeco de nieve</Snowman>
+		<Snowman_stt>Muñeco de nieve</Snowman_stt>
+		<Snowman_lower>Muñeco de nieve</Snowman_lower>
+		<Snowman_ltt>Muñeco de nieve<br />Click para seleccionar y colocar un Muñeco de nieve.</Snowman_ltt>
+	</entityname>
+	<zoopedia_snowman>
+		<entry>Muñeco de nieve</entry>
+		<text>
+			<color b="255" g="255" r="255">
+				<cell pady="0" width="1000" />
+				<p />
+				<cell width="260" />
+				<cell bgimg="ui/zoopedia/topCellBg.dds" width="640">
+					<cell width="150">
+						<img sh="64" src="entities\objects\scenery\Snowman\Snowman_icon.dds" sw="64" sx="0" sy="0" />
+					</cell>
+					<cell pady="15" width="400">
+						<p />
+					</cell>
+				</cell>
+				<p />
+				<cell width="260" />
+				<cell width="620">Coded with APE2</cell>
+			</color>
+		</text>
+	</zoopedia_snowman>
+</ZT2Strings>
